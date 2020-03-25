@@ -1,0 +1,8 @@
+graph_uri,dataset_uri,dataset_slug
+http://gss-data.org.uk/graph/gss_data/trade/ons-fdi,http://gss-data.org.uk/data/gss_data/trade/ons-fdi,ons-fdi
+http://gss-data.org.uk/graph/gss_data/trade/ons-international-trade-in-services,http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services,ons-international-trade-in-services
+http://gss-data.org.uk/graph/gss_data/trade/hmrc-rts-small-area,http://gss-data.org.uk/data/gss_data/trade/hmrc-rts-small-area,hmrc-rts-small-area
+http://gss-data.org.uk/graph/gss_data/trade/ons-uk-sa-trade-in-goods,http://gss-data.org.uk/data/gss_data/trade/ons-uk-sa-trade-in-goods,ons-uk-sa-trade-in-goods
+http://gss-data.org.uk/graph/gss_data/trade/ons-uk-total-trade,http://gss-data.org.uk/data/gss_data/trade/ons-uk-total-trade,ons-uk-total-trade
+http://gss-data.org.uk/graph/gss_data/trade/ons-uk-trade-in-goods-by-industry-country-and-commodity,http://gss-data.org.uk/data/gss_data/trade/ons-uk-trade-in-goods-by-industry-country-and-commodity,ons-uk-trade-in-goods-by-industry-country-and-commodity
+http://gss-data.org.uk/graph/gss_data/trade/ons-uk-trade-in-services,http://gss-data.org.uk/data/gss_data/trade/ons-uk-trade-in-services,ons-uk-trade-in-services
