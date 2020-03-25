@@ -1,0 +1,76 @@
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX qb:      <http://purl.org/linked-data/cube#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat:    <http://www.w3.org/ns/dcat#>
+PREFIX pmdds:   <http://publishmydata.com/def/dataset#>   
+PREFIX pmdcat:  <http://publishmydata.com/pmdcat#>
+
+
+CONSTRUCT {
+    GRAPH ?new_graph {
+        ?dataset 
+            dcterms:modified ?modified ;
+            dcterms:issued ?issued ;
+            dcterms:creator ?creator ;
+            dcterms:title ?title ;
+            dcterms:references ?refs ;
+            dcterms:license ?license ;
+            rdfs:label ?lbl ;
+            rdfs:comment ?comment ;
+            dcat:contactPoint ?contact ;
+            pmdcat:graph ?data_graph .
+        # Additional muttnik data:
+        ?dataset a pmdcat:Dataset ;
+                 dcterms:contributor ?contact ;
+                 dcterms:publisher ?contact .
+                # pmdcat:markdownDescription 
+                # dcat:keyword
+
+        # DataCube does not have to be the same URI as the Dataset, but am doing that here
+        ?dataset a pmdcat:DataCube . 
+        ?dataset pmdcat:datasetContents ?dataset .
+        
+        # Catalog record data
+        ?record 
+                a dcat:CatalogRecord ;
+                foaf:primaryTopic ?dataset ;
+                pmdcat:metadataGraph ?new_graph ;
+                dcterms:issued ?issued ;
+                dcterms:modified ?modified ;
+                rdfs:label ?record_lbl .
+        
+        ?catalog dcat:record ?record .
+        
+    }
+}
+{
+    # BIND(<http://gss-data.org.uk/graph/gss_data/trade/ons-fdi> AS ?graph)
+    BIND(<http://gss-data.org.uk/catalog/datasets> AS ?catalog)
+    BIND( IRI (CONCAT(STR(?graph), "/metadata")) AS ?old_graph)
+    BIND( IRI (CONCAT(STR(?graph), "-metadata")) AS ?new_graph)
+    GRAPH ?old_graph {
+        ?dataset a pmdds:Dataset .
+        
+        ?dataset dcterms:modified ?modified ;
+            dcterms:issued ?issued ;
+            dcterms:creator ?creator ;
+            dcterms:title ?title ;
+            dcterms:license ?license ;
+            rdfs:label ?lbl ;
+            rdfs:comment ?comment ;
+            pmdds:contactEmail ?contact ;
+            pmdds:graph ?data_graph .
+        
+        OPTIONAL {
+            ?dataset dcterms:references ?refs .
+        }
+
+        BIND( IRI (CONCAT(STR(?dataset), "-catalog-record")) AS ?record)
+        BIND( CONCAT(?lbl, " Catalog Record") AS ?record_lbl)
+    }
+}

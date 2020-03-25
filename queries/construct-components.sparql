@@ -1,0 +1,40 @@
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX qb:      <http://purl.org/linked-data/cube#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat:    <http://www.w3.org/ns/dcat#>
+PREFIX pmdds:   <http://publishmydata.com/def/dataset#>   
+PREFIX pmdcat:  <http://publishmydata.com/pmdcat#>
+
+CONSTRUCT {
+    GRAPH <http://gss-data.org.uk/graph/components> {
+        # details of dimensions, measures and attrs.
+        ?dim ?dim_p ?dim_o .
+        ?meas ?meas_p ?meas_o .
+        ?attr ?attr_p ?attr_o .
+    }
+}
+{
+    # BIND(<http://gss-data.org.uk/data/ons-pink-book-chapter-3> AS ?cube)
+        {
+            ?cube a qb:DataSet .
+            ?cube qb:structure/qb:component ?comp_spec .
+            ?comp_spec ?comp_spec_p ?comp_spec_o .
+        }
+        UNION {
+            ?cube qb:structure/qb:component/qb:dimension ?dim .
+            ?dim ?dim_p ?dim_o .
+        }
+        UNION {
+            ?cube qb:structure/qb:component/qb:measure ?meas .
+            ?meas ?meas_p ?meas_o .
+        }
+        UNION {
+            ?cube qb:structure/qb:component/qb:attribute ?attr.
+            ?attr ?attr_p ?attr_o .
+        }
+}

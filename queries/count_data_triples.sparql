@@ -1,0 +1,7 @@
+SELECT (COUNT(?s) AS ?data_count) {
+    # BIND(<http://gss-data.org.uk/graph/ons-pink-book-chapter-3> AS ?graph)
+    BIND( IRI (CONCAT(STR(?graph), "/metadata")) AS ?old_graph)
+    GRAPH ?graph {
+        ?s ?p ?o
+    }
+}

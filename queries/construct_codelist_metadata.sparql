@@ -1,0 +1,67 @@
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX qb:      <http://purl.org/linked-data/cube#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat:    <http://www.w3.org/ns/dcat#>
+PREFIX pmdds:   <http://publishmydata.com/def/dataset#>   
+PREFIX pmdcat:  <http://publishmydata.com/pmdcat#>
+
+
+CONSTRUCT {
+   GRAPH ?metadata_graph {
+
+        ?concept_scheme a pmdcat:ConceptScheme .
+
+        ?record a dcat:CatalogRecord ;
+                rdfs:label ?record_lbl ;
+                dcterms:issued ?now ;
+                dcterms:modified ?now ;
+                foaf:primaryTopic ?catalog_id ;
+                pmdcat:metadataGraph ?metadata_graph .
+
+        ?catalog_id a pmdcat:Dataset ;
+                rdfs:label ?lbl ;
+                dcterms:title ?title ;
+                dcterms:created ?now ;                 
+                dcterms:modified ?now ;
+                dcterms:issued ?now ;
+                pmdcat:graph ?concept_graph ;
+                pmdcat:datasetContents ?concept_scheme .
+
+                # dcat:keyword
+                    # dcterms:license
+                    # dcterms:creator ;
+                    # dcterms:publisher ;
+                    # dcterms:contributor ;
+                    # dcat:contactPoint ?contact ;
+
+        ?catalog dcat:record ?record .        
+   }
+}
+{
+    # bind ?concept_scheme when running query
+    # BIND(<http://gss-data.org.uk/def/concept-scheme/flow-directions> AS ?concept_scheme) 
+    # note: alpha DB graph URI structure did not contain "/vocab/" segment (so don't restrict query to this)
+    BIND(<http://gss-data.org.uk/catalog/vocabularies> AS ?catalog)
+    
+    BIND( IRI ( REPLACE ( STR(?concept_scheme), "/def/concept-scheme/", "/vocabs/")) AS ?catalog_id)
+    BIND( IRI ( CONCAT(STR(?catalog_id), "-catalog-record")) AS ?record)
+
+    BIND( IRI ( REPLACE ( STR(?concept_scheme), "/def/concept-scheme/", "/graph/vocab/")) AS ?concept_graph)
+    BIND( IRI ( CONCAT(STR(?concept_graph), "-metadata")) AS ?metadata_graph)
+    
+    BIND( CONCAT(?lbl, " Catalog Record") AS ?record_lbl)
+    BIND(NOW() AS ?now)
+    
+
+    ?concept_scheme 
+        dcterms:title ?title ;
+        rdfs:label ?lbl .
+            
+   
+}
+ 

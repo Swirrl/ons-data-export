@@ -1,0 +1,27 @@
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX qb:      <http://purl.org/linked-data/cube#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat:    <http://www.w3.org/ns/dcat#>
+PREFIX pmdds:   <http://publishmydata.com/def/dataset#>   
+PREFIX pmdcat:  <http://publishmydata.com/pmdcat#>
+
+
+CONSTRUCT {
+    GRAPH ?new_graph {
+        ?s ?p ?o .
+    }
+}
+{
+   	# BIND(<http://gss-data.org.uk/graph/flow-directions> AS ?graph)  
+    BIND( IRI ( REPLACE ( STR(?graph), "/graph/", "/graph/vocab/")) AS ?new_graph)      
+   
+   GRAPH ?graph {
+        ?s ?p ?o 
+   }
+}
+ 
