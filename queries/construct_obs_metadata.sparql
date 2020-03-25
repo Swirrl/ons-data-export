@@ -1,3 +1,4 @@
+
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
@@ -49,28 +50,38 @@ CONSTRUCT {
     }
 }
 {
-    # BIND(<http://gss-data.org.uk/graph/gss_data/trade/ons-fdi> AS ?graph)
+    # BIND(<http://gss-data.org.uk/graph/gss_data/trade/hmrc-rts-small-area> AS ?graph)
     BIND(<http://gss-data.org.uk/catalog/datasets> AS ?catalog)
     BIND( IRI (CONCAT(STR(?graph), "/metadata")) AS ?old_graph)
     BIND( IRI (CONCAT(STR(?graph), "-metadata")) AS ?new_graph)
     GRAPH ?old_graph {
         ?dataset a pmdds:Dataset .
         
-        ?dataset dcterms:modified ?modified ;
+        ?dataset rdfs:label ?lbl ;
+            dcterms:title ?title ;
+            dcterms:modified ?modified ;
             dcterms:issued ?issued ;
             dcterms:creator ?creator ;
-            dcterms:title ?title ;
-            dcterms:license ?license ;
-            rdfs:label ?lbl ;
-            rdfs:comment ?comment ;
-            pmdds:contactEmail ?contact ;
             pmdds:graph ?data_graph .
-        
-        OPTIONAL {
-            ?dataset dcterms:references ?refs .
-        }
+            
+            OPTIONAL {
+                ?dataset pmdds:contactEmail ?contact .
+            }
+            OPTIONAL {
+                ?dataset dcterms:references ?refs .
+            }
+            OPTIONAL {
+                ?dataset rdfs:comment ?comment .
+            }
+            OPTIONAL {
+                ?dataset dcterms:license ?license .
+            }
 
         BIND( IRI (CONCAT(STR(?dataset), "-catalog-record")) AS ?record)
         BIND( CONCAT(?lbl, " Catalog Record") AS ?record_lbl)
     }
 }
+# Overrides by the API: 
+# PARAMETERS ( ?graph ) {
+# <http://gss-data.org.uk/graph/gss_data/trade/hmrc-rts-small-area>
+# }
