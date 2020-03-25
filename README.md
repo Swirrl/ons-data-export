@@ -62,3 +62,17 @@ The script `/scripts/export-all.sh` will look at the contents of `/datasets_to_e
 ```
 
 Note: if there is a local STARDOG_HOME set on dev computer, this may interfere with the environment variables set by `direnv` in muttnik, so if the data produced is sometimes blank, try running the import command from within the muttnik directory before troubleshooting further.
+
+
+### Loading in muttnik
+
+Once the data is in a stardog db, muttnik can have a new project added to it using a new `edn` file similar to this gist: https://gist.github.com/jennet/efe2e999d95d287a058f24076789c8ad
+
+The only config that needs adjusting are the endpoints:
+
+```
+ :mut.endpoint/raw-query "http://localhost:5820/gss_export/query"
+ :mut.endpoint/raw-update "http://localhost:5820/gss_export/update"
+```
+
+Start muttnik and use `(go :gss-export)`, the loader will create any additional graphs required by muttnik to work and then it can be viewed in a browser at `http://localhost:3000`. If you've not set up muttnik before, be sure to follow the README to install all necessary prerequisites to get muttnik working on your machine.
