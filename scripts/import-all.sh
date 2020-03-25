@@ -23,15 +23,6 @@ if [[ -n "$DATASET_SLUG" &&
 		echo
 	done
 
-	for gzip in $OUTPUT_DIR/*.gz; do
-		 [ -e "$gzip" ] || continue
-		echo 
-	    CMD_GZ="stardog data add --compression GZIP --format TRIG $DB_TO $gzip"
-	    echo $CMD_GZ
-	    eval $CMD_GZ
-	    echo
-	done
-
 	for ttl in $OUTPUT_DIR/drafter-*.ttl; do
 		 [ -e "$ttl" ] || continue
 		echo
@@ -41,6 +32,14 @@ if [[ -n "$DATASET_SLUG" &&
 		echo
 	done
 
+	for gzip in $OUTPUT_DIR/*.gz; do
+		 [ -e "$gzip" ] || continue
+		echo 
+	    CMD_GZ="stardog data add --compression GZIP --format TRIG $DB_TO $gzip"
+	    echo $CMD_GZ
+	    eval $CMD_GZ
+	    echo
+	done
 
 else
     echo script error: There appears to be an error a required variable was not set.    
