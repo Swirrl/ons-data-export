@@ -20,10 +20,13 @@
 ```
 
 ```
-/Users/jenw/Documents/Projects/muttnik/data/export/scripts/import-all.sh gss_export ons-fdi
-/Users/jenw/Documents/Projects/muttnik/data/export/scripts/import-all.sh gss_export ons-international-trade-in-services
-/Users/jenw/Documents/Projects/muttnik/data/export/scripts/import-all.sh gss_export ons-uk-sa-trade-in-goods
-/Users/jenw/Documents/Projects/muttnik/data/export/scripts/import-all.sh gss_export ons-uk-total-trade
+~/Documents/GitHub/ons-data-export/scripts/import-all.sh gss_export ons-fdi
+~/Documents/GitHub/ons-data-export/scripts/import-all.sh gss_export ons-international-trade-in-services
+~/Documents/GitHub/ons-data-export/scripts/import-all.sh gss_export hmrc-rts-small-area
+~/Documents/GitHub/ons-data-export/scripts/import-all.sh gss_export ons-uk-sa-trade-in-goods
+BIGUN ~/Documents/GitHub/ons-data-export/scripts/import-all.sh gss_export ons-uk-total-trade
+~/Documents/GitHub/ons-data-export/scripts/import-all.sh gss_export ons-uk-trade-in-goods-by-industry-country-and-commodity
+~/Documents/GitHub/ons-data-export/scripts/import-all.sh gss_export ons-uk-trade-in-services
 ```
 
 ## TODO
