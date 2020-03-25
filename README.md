@@ -63,6 +63,14 @@ The script `/scripts/export-all.sh` will look at the contents of `/datasets_to_e
 
 Note: if there is a local STARDOG_HOME set on dev computer, this may interfere with the environment variables set by `direnv` in muttnik, so if the data produced is sometimes blank, try running the import command from within the muttnik directory before troubleshooting further.
 
+### Validating
+
+Run validations on the imported RDF using 
+
+`./script/validate.sh`
+
+This will take a little while to run if the DB has large / a lot of datasets
+
 
 ### Loading in muttnik
 
