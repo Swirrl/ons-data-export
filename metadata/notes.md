@@ -44,19 +44,21 @@ what properties, what URIs, range/ type of value, whether to display in main col
 
 Based on the info that is provided in these two page Word docs
 
+`@prefix gss: <http://gss-data.org.uk/def/metadata/> .`
+
 | Item       | Predicate          | Example               |
 |------------|--------------------|-----------------------|
-|Source      |  pmdcat:source     | 'Mainly Annual Foreign Direct Investment Survey (inward and outward)' |      
-|Status      |  pmdcat:status     | 'National Statistics' or 'Official Statistics'                        |
-|Recommended Usage |   pmdcat:recommendedUsage           | a paragraph or two of markdown text, maybe with bullets. |
-|Strengths |    pmdcat:strengths              | a few bullet points of text  |
-|Weaknesses | pmdcat:weaknessses                 | a few bullet points of text  |
+|Source      |  gss:source     | 'Mainly Annual Foreign Direct Investment Survey (inward and outward)' |      
+|Status      |  gss:status     | 'National Statistics' or 'Official Statistics'                        |
+|Recommended Usage |   gss:recommendedUsage           | a paragraph or two of markdown text, maybe with bullets. |
+|Strengths |    gss:strengths              | a few bullet points of text  |
+|Weaknesses | gss:weaknessses                 | a few bullet points of text  |
 
 Of these, suggest Source and Status are added to the right sidebar as will ahve short values.  The others should go in the wider column, below the description
 
 Other notes:
 
-For 'Source' it would be nice to use prov:wasGeneratedBy, part of PROV-O and recommended by DCAT2.  Downside of that is that the range is a prov:Activity, and we only have a rough text description available, so would have to coin a URI for the Activity, then give it a label. All a lot of hassle which doesn't add much value until there is a systematic way of identifying the various surveys etc.  Soe of the 
+For 'Source' it would be nice to use prov:wasGeneratedBy, part of PROV-O and recommended by DCAT2.  Downside of that is that the range is a prov:Activity, and we only have a rough text description available, so would have to coin a URI for the Activity, then give it a label. All a lot of hassle which doesn't add much value until there is a systematic way of identifying the various surveys etc.  So for now, will just keep it vague and use a newly coined term
 
 ### Metadata sources - Word files from DIT
 
