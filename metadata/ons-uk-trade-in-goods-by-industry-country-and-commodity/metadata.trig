@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gss: <http://gss-data.org.uk/def/metadata/> .
+
+<http://gss-data.org.uk/graph/gss_data/trade/ons-uk-trade-in-goods-by-industry-country-and-commodity-metadata> {
+
+<http://gss-data.org.uk/data/gss_data/trade/ons-uk-trade-in-goods-by-industry-country-and-commodity-catalog-entry> 
+  <http://publishmydata.com/pmdcat#markdownDescription> """
+
+This publication includes
+
+* Bulletin – with description of industry allocation methodology as well as annual trends on an industry basis
+* Publication tables – with annual data for trade in goods by industry, country and commodity, imports and exports
+
+Data are compiled using data from HM Revenue and Customs (HMRC) and the Inter-Departmental Business Register (IDBR), the latter of which is used to determine the industry (SIC) of the businesses reporting to HMRC.
+
+Goods data are collated mainly using data from HMRC, with additional sources used to convert the data from a “movement of goods” basis (the basis upon which HMRC publish their Overseas Trade Statistics) to an “economic ownership”, or balance of payments, basis, that is, to include goods which change economic ownership but which don’t cross borders, and to exclude goods that have crossed the border but without a change in economic ownership. These sources include the ONS’ International Trade in Services (ITIS) survey and surveys conducted by the Bank of England.
+
+This is the only ONS UK trade release which can be used to investigate trade in goods by industry, showing not just the commodity being traded, but by which 2-digit SIC industry
+
+
+**Aggregation**
+
+Industry by Commodity, by geographic region 
+
+Industry by Commodity total, by individual country
+
+
+**Classification**
+
+Commodity – SITC 2 digit
+
+Industry – SIC07 2 digit
+
+
+**Geographical coverage**
+
+
+
+**Time period coverage**
+
+Annually since 2008.
+
+
+**Related information**
+
+A separate release is published for [Trade in services by industry](https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/uktradeinservicesbyindustrycountryandservicetype/previousReleases) 
+
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>;
+
+
+
+  gss:source "Mix of admin and survey data" ;
+  gss:status "Experimental Statistics" ;
+  gss:recommendedUsage """
+Traditional trade statistics are broken down by commodity, showing which goods are being exported and imported. In contrast, these data provide an additional breakdown by industry, and can be used to show that goods may be traded by typically “unrelated” industries, for example by services industries.
+
+Data are on a Balance of Payments basis and differs to HMRC trade statistics which is based on cross border trade. Data in this release may differ to other ONS Trade publications as this release is produced on a less frequent basis and data may have been revised since publication.
+
+  
+  """ ;
+  gss:strengths """
+Trade in goods data are provided at a level of granularity, by industry, not previously available.
+
+The only ONS UK trade release which can be used to investigate trade in goods by industry, showing not just the commodity being traded, but by which 2-digit SIC industry
+
+
+
+  """ ;
+  gss:weaknesses """
+A full three-dimensional breakdown by industry, commodity and country/geographic region is not available due to disclosure control limitations.
+
+Due to the granularity of the data, many cells have been suppressed to protect individual trader confidentiality, which limits the availability of breakdowns.
+
+Data are available on an annual basis.
+
+  
+  """ ;
+ <http://www.w3.org/ns/dcat#keyword> "business", "industry", "trade" .
+}
