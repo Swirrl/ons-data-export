@@ -3,3 +3,5 @@ stardog.log
 debug
 notes
 rdf-validator-0.3.0-SNAPSHOT-standalone.jar
+gss_export.gzip
+gss_export
