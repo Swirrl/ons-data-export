@@ -2,7 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix gss: <http://gss-data.org.uk/def/metadata/> .
 
-<http://gss-data.org.uk/graph/gss_data/trade/ons-uk-sa-trade-in-goods> {
+<http://gss-data.org.uk/graph/gss_data/trade/ons-uk-sa-trade-in-goods-metadata> {
 
 <http://gss-data.org.uk/data/gss_data/trade/ons-uk-sa-trade-in-goods-catalog-entry> <http://publishmydata.com/pmdcat#markdownDescription> """
 

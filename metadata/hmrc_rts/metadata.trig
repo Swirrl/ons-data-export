@@ -1,0 +1,101 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gss: <http://gss-data.org.uk/def/metadata/> .
+
+<http://gss-data.org.uk/graph/gss_data/trade/hmrc_rts-metadata> {
+
+<http://gss-data.org.uk/data/gss_data/trade/hmrc_rts-catalog-entry> 
+  <http://publishmydata.com/pmdcat#markdownDescription> """
+
+HM Revenue & Customs (HMRC) introduced the Regional Trade Statistics (RTS) series in January 1999 to support the economic decision-making of the devolved administrations and other regional bodies within the UK. 
+
+These statistics provide a useful breakdown of the flows of imports and exports between regions of the UK and other countries. RTS was designed to provide a meaningful breakdown of the UK’s Overseas Trade Statistics (OTS).
+
+Interactive data tables are available on the uktradeinfo website. 
+
+Access to non-suppressed microdata or customised analysis can be requested to uktradeinfo@hmrc.gov.uk. However, HMRC can only provide information externally in the circumstances allowed by legislation.
+ 
+Further information on the methodology can be found [here](https://www.uktradeinfo.com/Statistics/OverseasTradeStatistics/AboutOverseastradeStatistics/Documents/RTS_Methodology_Revision.pdf).
+
+
+**Aggregation**
+
+NUTS1 (UK regions), Quarterly, 100 pre-selected Partner Countries
+
+**Classification**
+
+SITC division (2-digit)
+
+**Geographical coverage**
+
+Broken down by the 9 English regions, plus Scotland, Wales and Northern Irelamd.  Broken down by trade partner - individual countries and aggregation into regions.
+
+**Time period coverage**
+
+Quarterly from 2013 to 2017.
+
+
+**Related information**
+
+Interactive data tables are available on the [uktradeinfo](https://www.uktradeinfo.com/Statistics/BuildYourOwnTables/Pages/Home.aspx) website.
+
+The data is derived from Overseas Trade in
+Goods Statistics. An Experimental Statistics is also produced that breaks RTS into [smaller UK areas](/hmrc-rts-small-area-catalog-entry) (NUTS2 and NUTS3).
+
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>;
+
+
+
+  gss:source "Both Admin / Survey data" ;
+  gss:status "National Statistics" ;
+  gss:recommendedUsage """
+This data can be used to analyse UK trade in goods exported and imported other countries by UK Region, including commodity and country breakdowns.
+
+Common misconceptions about the data include:
+
+* Often wrongly assumed trade is allocated based on the region it enters or leaves the UK
+* Assumption that it is seasonally adjusted
+* Assumption it includes trade in services
+
+RTS data is not available for all partner countries. In the current methodology, data is available for a country if the country’s total trade (Imports and Exports combined) exceeded one per cent of the total trade of that country’s World Region (based on a historical baseline). However, this suppression policy does not apply to EU countries where data for all member states is available.
+ 
+Data is taken primarily from Customs systems (for non-EU trade) and the Intrastat survey (for EU trade). HMRC does not receive information in respect of goods that move wholly within the UK, nor in intangibles and services such as banking or tourism. Trade is mainly allocated to a region by the postcode associated with a company’s VAT registration.
+
+  
+  """ ;
+  gss:strengths """
+Further regional breakdowns from OTS Statistics
+
+Harmonised allocation methodology, consistent with other GSS regional products
+
+Robust data based on administrative sources (customs declarations for Non-EU) and Intrastat survey (which covers >90% of exports/imports) 
+
+Data available on both counts of businesses trading internationally and values (£) of trade  
+
+Rich geographic and product breakdowns. RTS data also contain regional breakdowns by SITC2 and EU/Non-EU. There is also experimental data disaggregating RTS by smaller geographical areas at the NUTS2 and NUTS3 level 
+
+Long time-series (1996-2018), though discontinuities post-2013 due to changes in methodology (see weaknesses section) 
+
+Data on counts of businesses cover the whole of the UK and all sectors (unlike for example ABS which covers businesses in the GB Non-Financial Business economy only)
+
+
+  """ ;
+  gss:weaknesses """
+Data covers businesses trading goods only (no services).
+
+Not all trade can be assigned to one of the 9 English Regions, Wales, Scotland and Northern Ireland. This is referred as  ‘Unallocated Trade’
+
+Estimates only cover VAT-registered businesses i.e. miss very small businesses (those below the VAT threshold).
+
+The RTS does not include estimates for non-response or estimates for the missing EU Imports associated with Missing Trader Intra-Community VAT Fraud (MTIC Fraud). 
+
+RTS also excludes trade in non-monetary gold.
+
+Change in Methodology in 2016. Break in Time Series from start of 2013
+
+Northern Ireland figures are different to those published by NISRA from their BESES survey. This is due to known methodological differences
+
+  
+  """ ;
+ <http://www.w3.org/ns/dcat#keyword> "business", "industry", "trade" .
+}
