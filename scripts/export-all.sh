@@ -14,7 +14,7 @@ if [[ -n "$DB_FROM" ]]; then
   	cd $WORKING_DIR
 
     # pass this through as a CLI option
-    DATASET_FILE="${WORKING_DIR}/datasets_to_export_alex.csv"
+    DATASET_FILE="${WORKING_DIR}/datasets_to_export.csv"
     
     echo "Looking up dataset details from $DATASET_FILE"
     echo
