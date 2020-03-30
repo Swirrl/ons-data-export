@@ -48,13 +48,13 @@ Based on the info that is provided in these two page Word docs
 
 | Item       | Predicate          | Example               |
 |------------|--------------------|-----------------------|
-|Source      |  gss:source     | 'Mainly Annual Foreign Direct Investment Survey (inward and outward)' |      
+|Source      |  gss:source     | maybe a sentence of text |      
 |Status      |  gss:status     | 'National Statistics' or 'Official Statistics'                        |
 |Recommended Usage |   gss:recommendedUsage           | a paragraph or two of markdown text, maybe with bullets. |
 |Strengths |    gss:strengths              | a few bullet points of text  |
 |Weaknesses | gss:weaknessses                 | a few bullet points of text  |
 
-Of these, suggest Source and Status are added to the right sidebar as will ahve short values.  The others should go in the wider column, below the description
+Of these, suggest Status is added to the right sidebar as will have short values.  The others should go in the wider column, below the description
 
 Other notes:
 

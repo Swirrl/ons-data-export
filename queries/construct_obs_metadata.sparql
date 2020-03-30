@@ -14,7 +14,9 @@ PREFIX pmdcat:  <http://publishmydata.com/pmdcat#>
 
 CONSTRUCT {
     GRAPH ?new_graph {
-        ?dataset 
+        
+        # The PMD catalog entry
+        ?entry 
             dcterms:modified ?modified ;
             dcterms:issued ?issued ;
             dcterms:creator ?creator ;
@@ -25,32 +27,33 @@ CONSTRUCT {
             rdfs:comment ?comment ;
             dcat:contactPoint ?contact ;
             pmdcat:graph ?data_graph .
-        # Additional muttnik data:
-        ?dataset a pmdcat:Dataset ;
+        ?entry a pmdcat:Dataset ;
                  dcterms:contributor ?contact ;
                  dcterms:publisher ?contact .
                 # pmdcat:markdownDescription 
                 # dcat:keyword
-
-        # DataCube does not have to be the same URI as the Dataset, but am doing that here
-        ?dataset a pmdcat:DataCube . 
-        ?dataset pmdcat:datasetContents ?dataset .
         
-        # Catalog record data
+        # The PMD Catalog entry's contents is the RDF data cube (and is given a type to display it as such)   
+        ?entry pmdcat:datasetContents ?dataset .
+        ?dataset a pmdcat:DataCube . 
+        
+        
+        # The PMD catalog record
         ?record 
                 a dcat:CatalogRecord ;
-                foaf:primaryTopic ?dataset ;
+                foaf:primaryTopic ?entry ;
                 pmdcat:metadataGraph ?new_graph ;
                 dcterms:issued ?issued ;
                 dcterms:modified ?modified ;
                 rdfs:label ?record_lbl .
         
+        # The PMD catalog 
         ?catalog dcat:record ?record .
         
     }
 }
 {
-    # BIND(<http://gss-data.org.uk/graph/gss_data/trade/hmrc-rts-small-area> AS ?graph)
+    # BIND(<http://gss-data.org.uk/graph/gss_data/trade/ons-fdi> AS ?graph)
     BIND(<http://gss-data.org.uk/catalog/datasets> AS ?catalog)
     BIND( IRI (CONCAT(STR(?graph), "/metadata")) AS ?old_graph)
     BIND( IRI (CONCAT(STR(?graph), "-metadata")) AS ?new_graph)
@@ -78,10 +81,7 @@ CONSTRUCT {
             }
 
         BIND( IRI (CONCAT(STR(?dataset), "-catalog-record")) AS ?record)
+        BIND( IRI (CONCAT(STR(?dataset), "-catalog-entry")) AS ?entry)
         BIND( CONCAT(?lbl, " Catalog Record") AS ?record_lbl)
     }
 }
-# Overrides by the API: 
-# PARAMETERS ( ?graph ) {
-# <http://gss-data.org.uk/graph/gss_data/trade/hmrc-rts-small-area>
-# }

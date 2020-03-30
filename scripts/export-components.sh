@@ -6,7 +6,7 @@ DB_FROM=$1
 DATASET_URI=$2
 DATASET_SLUG=$3
 
-export WORKING_DIR=/Users/jenw/Documents/Projects/muttnik/data/export
+export WORKING_DIR=/Users/jenw/Documents/GitHub/ons-data-export
 export OUTPUT_DIR=${WORKING_DIR}/export/${DATASET_SLUG}
 export MUTTNIK_DIR=/Users/jenw/Documents/GitHub/muttnik
 

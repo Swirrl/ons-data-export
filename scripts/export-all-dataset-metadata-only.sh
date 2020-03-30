@@ -14,7 +14,7 @@ if [[ -n "$DB_FROM" ]]; then
   	cd $WORKING_DIR
 
     # pass this through as a CLI option
-    DATASET_FILE="${WORKING_DIR}/datasets_to_export_alex.csv"
+    DATASET_FILE="${WORKING_DIR}/datasets_to_export.csv"
     
     echo "Looking up dataset details from $DATASET_FILE"
     echo
@@ -39,22 +39,10 @@ if [[ -n "$DB_FROM" ]]; then
        if [[ $CLEAN_SLUG != "dataset_slug" ]] 
       then
 
-#       ./scripts/export-data.sh http://localhost:9820/gss_alpha http://gss-data.org.uk/graph/gss_data/trade/ons-fdi ons-fdi
-# ./scripts/export-components.sh http://localhost:9820/gss_alpha http://gss-data.org.uk/data/gss_data/trade/ons-fdi ons-fdi
-# ./scripts/export-codelists.sh http://localhost:9820/gss_alpha http://gss-data.org.uk/data/gss_data/trade/ons-fdi ons-fdi
-
-
-        CMD_DATA_EXPORT="./scripts/export-data.sh ${DB_FROM} ${CLEAN_GRAPH} ${CLEAN_SLUG}"
+        CMD_DATA_EXPORT="./scripts/export-data.sh ${DB_FROM} ${CLEAN_GRAPH} ${CLEAN_SLUG} metadata-only"
         echo $CMD_DATA_EXPORT
         eval $CMD_DATA_EXPORT
 
-        # CMD_COMP_EXPORT="./scripts/export-components.sh ${DB_FROM} ${CLEAN_DS} ${CLEAN_SLUG}"
-        # echo $CMD_COMP_EXPORT
-        # eval $CMD_COMP_EXPORT
-
-        # CMD_CODELIST_EXPORT="./scripts/export-codelists.sh ${DB_FROM} ${CLEAN_DS} ${CLEAN_SLUG}"
-        # echo $CMD_CODELIST_EXPORT
-        # eval $CMD_CODELIST_EXPORT
       fi
 
       

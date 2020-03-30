@@ -7,7 +7,7 @@ DATASET_SLUG=$2
 if [[ -n "$DATASET_SLUG" && 
   -n "$DB_TO" ]]; then
 
-  	export WORKING_DIR=/Users/jenw/Documents/Projects/muttnik/data/export
+  	export WORKING_DIR=/Users/jenw/Documents/GitHub/ons-data-export
 	export OUTPUT_DIR=${WORKING_DIR}/export/${DATASET_SLUG}
 	export MUTTNIK_DIR=/Users/jenw/Documents/GitHub/muttnik
 
