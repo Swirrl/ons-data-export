@@ -9,6 +9,7 @@ if [[ -n "$DATASET_SLUG" &&
 
   	export WORKING_DIR=/Users/jenw/Documents/GitHub/ons-data-export
 	export OUTPUT_DIR=${WORKING_DIR}/export/${DATASET_SLUG}
+	export EXTRA_METADATA_FILE=${WORKING_DIR}/metadata/${DATASET_SLUG}/metadata.trig
 	export MUTTNIK_DIR=/Users/jenw/Documents/GitHub/muttnik
 
 	cd $MUTTNIK_DIR
@@ -22,6 +23,17 @@ if [[ -n "$DATASET_SLUG" &&
 		eval $CMD_TRIG
 		echo
 	done
+
+	if [[ -f "$EXTRA_METADATA_FILE" ]]; then
+	    echo
+	    echo "Additional metadata found for $DATASET_SLUG"
+		CMD_DRAFTER="stardog data add $DB_TO $EXTRA_METADATA_FILE"
+		echo $CMD_DRAFTER
+		eval $CMD_DRAFTER
+		echo
+	else 
+		echo "No additional metadata found for $DATASET_SLUG"
+	fi
 
 	for ttl in $OUTPUT_DIR/drafter-*.ttl; do
 		 [ -e "$ttl" ] || continue
@@ -40,6 +52,7 @@ if [[ -n "$DATASET_SLUG" &&
 	    eval $CMD_GZ
 	    echo
 	done
+
 
 else
     echo script error: There appears to be an error a required variable was not set.    
