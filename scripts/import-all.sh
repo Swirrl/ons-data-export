@@ -49,13 +49,13 @@ if [[ -n "$DB_TO" ]]; then
 
 		if [[ -f "$EXTRA_METADATA_FILE" ]]; then
 		    echo
-		    echo "Additional metadata found for $DATASET_SLUG"
+		    echo "Additional metadata found for $CLEAN_SLUG"
 			CMD_DRAFTER="stardog data add $DB_TO $EXTRA_METADATA_FILE"
 			echo $CMD_DRAFTER
 			eval $CMD_DRAFTER
 			echo
 		else 
-			echo "No additional metadata found for $DATASET_SLUG"
+			echo "No additional metadata found for $CLEAN_SLUG"
 		fi
 
 		for ttl in $OUTPUT_DIR/drafter-*.ttl; do
@@ -81,7 +81,17 @@ if [[ -n "$DB_TO" ]]; then
     done < $DATASET_FILE
     IFS=$OLDIFS
 
-    
+    echo "Importing extra reference data"
+    export REFS_DIR=${WORKING_DIR}/export/ref
+	for refrdf in $REFS_DIR/*.trig; do
+		 [ -e "$refrdfv" ] || continue
+		echo
+		CMD_TRIG="stardog data add $DB_TO $refrdf"
+		echo $CMD_TRIG
+		eval $CMD_TRIG
+		echo
+	done
+
 
   	echo
   	echo "FINISHED ALL DATASETS"
