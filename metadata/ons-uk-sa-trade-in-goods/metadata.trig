@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gss: <http://gss-data.org.uk/def/metadata/> .
+
+<http://gss-data.org.uk/graph/gss_data/trade/ons-uk-sa-trade-in-goods> {
+
+<http://gss-data.org.uk/data/gss_data/trade/ons-uk-sa-trade-in-goods-catalog-entry> <http://publishmydata.com/pmdcat#markdownDescription> """
+
+* Trade in goods by country shows exports and imports split by country.
+* Data are shown monthly and annually from 1998.
+* Goods data are collated mainly using data from HMRC, with additional sources used to convert the data from a “movement of goods” basis (the basis upon which HMRC publish their Overseas Trade Statistics) to an “economic ownership”, or balance of payments, basis, that is, to include goods which change economic ownership but which don’t cross borders, and to exclude goods that have crossed the border but without a change in economic ownership. These sources include the ONS’ International Trade in Services (ITIS) survey and surveys conducted by the Bank of England.
+
+
+**Aggregation**
+
+234 countries and EU/non-EU country groups
+
+**Classification**
+
+Balance of Payments country classification
+
+**Geographical coverage**
+
+Worldwide, broken down by individual country
+
+**Time period coverage**
+
+By month and year since January 1998. (Data has approximately 6-week lag)
+
+**Data quality**
+
+
+**Related information**
+
+Other UK Trade data are also available:
+
+* "UK Trade - Trade in Goods by Country" is one dataset available as part of the monthly bulletin, however, further breakdowns are also available, for example by commodity.
+
+* Other ONS UK Trade releases such as [trade in goods by CPA](/ons_cpa-catalog-entry), [trade in goods by industry](/ons-uk-trade-in-goods-by-industry-country-and-commodity-catalog-entry) and [trade in services by industry](/ons-international-trade-in-services=catalog-entry). It is worth noting here that revision periods between different Trade releases may differ.
+
+* [HMRC OTS](https://www.uktradeinfo.com/Statistics/OverseasTradeStatistics/Pages/OTS.aspx) data, published on the same day as UK Trade. Data here are not on a Balance of Payments basis nor is it seasonally adjusted
+
+
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>;
+
+
+  
+  gss:source "Mix of admin and survey" ;
+  gss:status "Official Statistics" ;
+  gss:recommendedUsage """
+This is the most up to date and detailed view of granular trade in goods on a balance of payments basis. 
+
+Key* features of the data:
+* Data are seasonally adjusted
+* It is on an economic ownership basis
+* Data does not match the HMRC OTS data
+* Data aligns to other ONS National Account Outputs and aligns to total trade in goods within the UK Trade monthly release (note that this may differ where the revision periods differ and additional data has been taken on at a later stage) 
+* The revision periods differ by release and align to the National Accounts revision timetable. 
+
+  """ ;
+  gss:strengths """
+Data are seasonally adjusted when the country and commodity dataset is not. This is the best source for trade in goods data by a specific country.
+  """ ;
+  gss:weaknesses """
+Data does not include any product information. Data does not include services
+  """ ;
+  <http://www.w3.org/ns/dcat#keyword> "business", "trade" .
+
+}
