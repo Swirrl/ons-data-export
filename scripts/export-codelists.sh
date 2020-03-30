@@ -8,7 +8,7 @@ DATASET_SLUG=$3
 export GRAPH_PREFIX=http://gss-data.org.uk/graph
 export CUBE_PREFIX=http://gss-data.org.uk/data
 
-export WORKING_DIR=/Users/jenw/Documents/Projects/muttnik/data/export
+export WORKING_DIR=/Users/jenw/Documents/GitHub/ons-data-export
 export OUTPUT_DIR=${WORKING_DIR}/export/${DATASET_SLUG}
 export MUTTNIK_DIR=/Users/jenw/Documents/GitHub/muttnik
 
