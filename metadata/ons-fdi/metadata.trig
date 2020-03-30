@@ -2,6 +2,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix gss: <http://gss-data.org.uk/def/metadata/> .
 
+<http://gss-data.org.uk/graph/gss_data/trade/ons-fdi-metadata> {
+
 <http://gss-data.org.uk/data/gss_data/trade/ons-fdi-catalog-entry> a <http://publishmydata.com/pmdcat#Dataset>;
   <http://publishmydata.com/pmdcat#datasetContents> <http://gss-data.org.uk/data/gss_data/trade/ons-fdi>;
   <http://publishmydata.com/pmdcat#graph> <http://gss-data.org.uk/graph/data/ons-fdi>;
@@ -83,3 +85,4 @@ Please see the ONS website for information on [data quality](https://www.ons.gov
   
   """ .
 <http://gss-data.org.uk/data/gss_data/trade/ons-fdi> a <http://publishmydata.com/pmdcat#DataCube> .
+}
