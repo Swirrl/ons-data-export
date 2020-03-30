@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gss: <http://gss-data.org.uk/def/metadata/> .
+
+<http://gss-data.org.uk/data/gss_data/trade/ons-fdi-catalog-entry> a <http://publishmydata.com/pmdcat#Dataset>;
+  <http://publishmydata.com/pmdcat#datasetContents> <http://gss-data.org.uk/data/gss_data/trade/ons-fdi>;
+  <http://publishmydata.com/pmdcat#graph> <http://gss-data.org.uk/graph/data/ons-fdi>;
+  <http://publishmydata.com/pmdcat#markdownDescription> """Foreign Direct Investment (FDI) is cross-border investment made with the objective of establishing a lasting interest in the host economy. FDI is also defined by control relationships, where the direct investor (parent company) controls at least 10% of the voting power (ordinary shares) of the direct investment enterprise. These relationships can be measured in two directions:
+
+* outward: the direct investments of UK-resident companies in other countries
+* inward: the direct investments in the UK from non-resident companies
+
+This dataset covers:
+
+* Investment of UK companies abroad (outward) and foreign companies into the UK (inward), including investment flows, positions and earnings, by country, component and industry.
+* Detailed inward and outward statistical tables are published with this bulletin.
+* These statistics are presented using the directional principle, as opposed to the asset and liability principle. Further information on the differences between these principles can be found here.
+* Estimates are net values from the perspective of the parent company (ie. the value of loans provided to the subsidiary by the parent, minus the value of loans provided to the parent by the subsidiary).
+* Statistics also report on the immediate investment rather than the ultimate controlling parent company or ultimate host country.
+
+
+**Aggregation**
+
+Industry, geography and components
+
+**Classification**
+
+Compiled according to [OECD Benchmark Definition of Foreign Direct Investment](https://www.oecd.org/daf/inv/investmentstatisticsandanalysis/40193734.pdf).
+
+**Geographical coverage**
+
+Worldwide, broken down by individual country
+
+**Time period coverage**
+
+Yearly data from 2009 - 2018
+
+**Data quality**
+
+Please see the ONS website for information on [data quality](https://www.ons.gov.uk/businessindustryandtrade/business/businessinnovation/methodologies/foreigndirectinvestmentfdiqmi)
+
+
+**Related information**
+
+* An [ad hoc data](https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/adhocs/009763foreigndirectinvestmentfditotalsforinwardandoutwardflowspositionsandearnings2016to2017) request provides more detail on FDI by country for 2016 and 2017
+* These statistics have been used in some of our ongoing analysis of FDI statistics: [UK Foreign direct investment, trends and analysis](https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/ukforeigndirectinvestmenttrendsandanalysis/previousReleases)
+* Equivalent tables using the [asset and liability principle](https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/foreigndirectinvestmentinvolvingukcompaniesassetandliability/previousReleases) are available in a separate statistical bulletin.
+* We have also completed some [international comparisons](https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/internationalperspectiveonukforeigndirectinvestmentfdi/previousReleases) of FDI results using [OECD statistics](https://stats.oecd.org/).
+* The asset and liability and directional measurement principles use the same FDI data to calculate those statistics; [an explanation of these calculations](https://www.slideshare.net/statisticsONS/foreign-direct-investment-measurement-principles-explained) is available.
+
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>;
+
+
+  <http://purl.org/dc/terms/contributor> <https://www.gov.uk/government/organisations/office-for-national-statistics>;
+  <http://purl.org/dc/terms/creator> <https://www.gov.uk/government/organisations/office-for-national-statistics>;
+ 
+  <http://purl.org/dc/terms/issued> "2019-11-19T09:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://purl.org/dc/terms/license> <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/>;
+  <http://purl.org/dc/terms/modified> "2019-11-19T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://purl.org/dc/terms/publisher> <https://www.gov.uk/government/organisations/office-for-national-statistics>;
+  <http://purl.org/dc/terms/title> "Foreign direct investment involving UK companies";
+  rdfs:comment "Inward and outward foreign direct investment, broken down by country, industry, time period and FDI component";
+  rdfs:label "Foreign direct investment involving UK companies";
+  <http://www.w3.org/ns/dcat#contactPoint> <mailto:fdi@ons.gov.uk>;
+  <http://www.w3.org/ns/dcat#keyword> "business", "industry", "trade", "trade and energy" ;
+  gss:source "The main source of information for UK foreign direct investment (FDI) statistics is the Annual FDI Survey; separate surveys are used to collect data on inward and outward FDI. This is combined with data from the Bank of England for all monetary financial institutions – such as banks – and other sources for property and public corporations in FDI. Survey responses are used to estimate or impute FDI values for every company in the UK’s inward and outward FDI populations. The statistics in this bulletin are compiled using the directional measurement principle." ;
+  gss:status "National Statistics" ;
+  gss:recommendedUsage """
+* Directional FDI statistics show the cross-border transactions of UK companies with their overseas affiliates (outward) or between UK-based affiliates and their overseas parent company (inward).
+* These statistics should be used when transactions with the parent company are of interest.
+* Directional FDI statistics are more useful for studying the nature and motivations of foreign direction investment. For example, for investigating the source countries of direct investment in a particular country or for assessing the access to specific foreign markets by direct investors in that country (further information from the OECD is available here). Whereas asset/liability-based statistics are more appropriate for macroeconomic analyses.
+  
+  """ ;
+  gss:strengths """
+* Provides information on the country and industry of FDI involving UK companies.
+* Components for FDI flows, earning and positions are also available
+* Provides detail on cross-border investments involving UK companies.
+
+  """ ;
+  gss:weaknesses """
+* These statistics are not comparable with Balance of Payments or our separate mergers and acquisitions (M&A) bulletins
+* Some values are suppressed to mitigate disclosure.
+  
+  """ .
+<http://gss-data.org.uk/data/gss_data/trade/ons-fdi> a <http://publishmydata.com/pmdcat#DataCube> .
