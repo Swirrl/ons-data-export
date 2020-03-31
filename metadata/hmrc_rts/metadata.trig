@@ -46,7 +46,7 @@ Goods Statistics. An Experimental Statistics is also produced that breaks RTS in
 
 
 
-  gss:source "Both Admin / Survey data" ;
+  gss:source "Both Admin / Survey data"^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:status "National Statistics" ;
   gss:recommendedUsage """
 This data can be used to analyse UK trade in goods exported and imported other countries by UK Region, including commodity and country breakdowns.
@@ -62,7 +62,7 @@ RTS data is not available for all partner countries. In the current methodology,
 Data is taken primarily from Customs systems (for non-EU trade) and the Intrastat survey (for EU trade). HMRC does not receive information in respect of goods that move wholly within the UK, nor in intangibles and services such as banking or tourism. Trade is mainly allocated to a region by the postcode associated with a company’s VAT registration.
 
   
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:strengths """
 Further regional breakdowns from OTS Statistics
 
@@ -79,7 +79,7 @@ Long time-series (1996-2018), though discontinuities post-2013 due to changes in
 Data on counts of businesses cover the whole of the UK and all sectors (unlike for example ABS which covers businesses in the GB Non-Financial Business economy only)
 
 
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:weaknesses """
 Data covers businesses trading goods only (no services).
 
@@ -96,6 +96,6 @@ Change in Methodology in 2016. Break in Time Series from start of 2013
 Northern Ireland figures are different to those published by NISRA from their BESES survey. This is due to known methodological differences
 
   
-  """ ;
+  ""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>" ;
  <http://www.w3.org/ns/dcat#keyword> "business", "industry", "trade" .
 }

@@ -40,7 +40,7 @@ Separate releases for detailed trade in goods data are published as part of the 
 
 
   
-  gss:source "Mix of admin and survey" ;
+  gss:source "Mix of admin and survey"^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:status "Experimental Statistics" ;
   gss:recommendedUsage """
 Key features of the data:
@@ -49,13 +49,13 @@ Key features of the data:
 * Data are on an economic ownership basis
 * Data aligns to other ONS National Account Outputs (note that this may differ where the revision periods differ and additional data has been taken on at a later stage) 
 * Data are only shown on a quarterly and annual basis
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:strengths """
 Most timely data of granular trade in services data.
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:weaknesses """
 Data are only available from 2016 onwards and is non-seasonally adjusted only. Unlike trade in goods by country and commodity, not all countries are shown separately. Data are only available quarterly and annually.
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   <http://www.w3.org/ns/dcat#keyword> "business", "trade" .
 
 }

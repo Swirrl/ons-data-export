@@ -50,7 +50,7 @@ A separate release is published for [Trade in services by industry](https://www.
 
 
 
-  gss:source "Mix of admin and survey data" ;
+  gss:source "Mix of admin and survey data"^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:status "Experimental Statistics" ;
   gss:recommendedUsage """
 Traditional trade statistics are broken down by commodity, showing which goods are being exported and imported. In contrast, these data provide an additional breakdown by industry, and can be used to show that goods may be traded by typically “unrelated” industries, for example by services industries.
@@ -58,7 +58,7 @@ Traditional trade statistics are broken down by commodity, showing which goods a
 Data are on a Balance of Payments basis and differs to HMRC trade statistics which is based on cross border trade. Data in this release may differ to other ONS Trade publications as this release is produced on a less frequent basis and data may have been revised since publication.
 
   
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:strengths """
 Trade in goods data are provided at a level of granularity, by industry, not previously available.
 
@@ -66,7 +66,7 @@ The only ONS UK trade release which can be used to investigate trade in goods by
 
 
 
-  """ ;
+  ""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>" ;
   gss:weaknesses """
 A full three-dimensional breakdown by industry, commodity and country/geographic region is not available due to disclosure control limitations.
 
@@ -75,6 +75,6 @@ Due to the granularity of the data, many cells have been suppressed to protect i
 Data are available on an annual basis.
 
   
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
  <http://www.w3.org/ns/dcat#keyword> "business", "industry", "trade" .
 }

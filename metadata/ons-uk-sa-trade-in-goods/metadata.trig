@@ -45,7 +45,7 @@ Other UK Trade data are also available:
 
 
   
-  gss:source "Mix of admin and survey" ;
+  gss:source "Mix of admin and survey"^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:status "Official Statistics" ;
   gss:recommendedUsage """
 This is the most up to date and detailed view of granular trade in goods on a balance of payments basis. 
@@ -57,13 +57,13 @@ Key* features of the data:
 * Data aligns to other ONS National Account Outputs and aligns to total trade in goods within the UK Trade monthly release (note that this may differ where the revision periods differ and additional data has been taken on at a later stage) 
 * The revision periods differ by release and align to the National Accounts revision timetable. 
 
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:strengths """
 Data are seasonally adjusted when the country and commodity dataset is not. This is the best source for trade in goods data by a specific country.
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:weaknesses """
 Data does not include any product information. Data does not include services
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   <http://www.w3.org/ns/dcat#keyword> "business", "trade" .
 
 }

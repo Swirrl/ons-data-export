@@ -52,24 +52,24 @@ Please see the ONS website for information on [data quality](https://www.ons.gov
 
 
 
-  gss:source "The main source of information for UK foreign direct investment (FDI) statistics is the Annual FDI Survey; separate surveys are used to collect data on inward and outward FDI. This is combined with data from the Bank of England for all monetary financial institutions – such as banks – and other sources for property and public corporations in FDI. Survey responses are used to estimate or impute FDI values for every company in the UK’s inward and outward FDI populations. The statistics in this bulletin are compiled using the directional measurement principle." ;
+  gss:source "The main source of information for UK foreign direct investment (FDI) statistics is the Annual FDI Survey; separate surveys are used to collect data on inward and outward FDI. This is combined with data from the Bank of England for all monetary financial institutions – such as banks – and other sources for property and public corporations in FDI. Survey responses are used to estimate or impute FDI values for every company in the UK’s inward and outward FDI populations. The statistics in this bulletin are compiled using the directional measurement principle."^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:status "National Statistics" ;
   gss:recommendedUsage """
 * Directional FDI statistics show the cross-border transactions of UK companies with their overseas affiliates (outward) or between UK-based affiliates and their overseas parent company (inward).
 * These statistics should be used when transactions with the parent company are of interest.
 * Directional FDI statistics are more useful for studying the nature and motivations of foreign direction investment. For example, for investigating the source countries of direct investment in a particular country or for assessing the access to specific foreign markets by direct investors in that country (further information from the OECD is available here). Whereas asset/liability-based statistics are more appropriate for macroeconomic analyses.
   
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:strengths """
 * Provides information on the country and industry of FDI involving UK companies.
 * Components for FDI flows, earning and positions are also available
 * Provides detail on cross-border investments involving UK companies.
 
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
   gss:weaknesses """
 * These statistics are not comparable with Balance of Payments or our separate mergers and acquisitions (M&A) bulletins
 * Some values are suppressed to mitigate disclosure.
   
-  """ ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
  <http://www.w3.org/ns/dcat#keyword> "business", "industry", "trade", "trade and energy" .
 }
