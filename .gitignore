@@ -5,3 +5,5 @@ notes
 rdf-validator-0.3.0-SNAPSHOT-standalone.jar
 gss_export.gzip
 gss_export
+backups
+datasets_to_export_alex.csv
