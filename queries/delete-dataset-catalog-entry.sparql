@@ -1,0 +1,11 @@
+PREFIX gss: <http://gss-data.org.uk/def/metadata/> 
+PREFIX pmdcat: <http://publishmydata.com/pmdcat#>
+
+DELETE { 
+        ?entry ?p ?o    
+}
+WHERE {     
+	BIND(<http://gss-data.org.uk/data/gss_data/trade/ons-fdi> AS ?ds)
+    ?entry ?p ?o .
+    ?entry pmdcat:datasetContents ds .
+    }
