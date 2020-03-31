@@ -63,10 +63,12 @@ CONSTRUCT {
         ?dataset rdfs:label ?lbl ;
             dcterms:title ?title ;
             dcterms:modified ?modified ;
-            dcterms:issued ?issued ;
             dcterms:creator ?creator ;
             pmdds:graph ?data_graph .
             
+            OPTIONAL {
+                ?dataset dcterms:issued ?issued ;
+            }
             OPTIONAL {
                 ?dataset pmdds:contactEmail ?contact .
             }
