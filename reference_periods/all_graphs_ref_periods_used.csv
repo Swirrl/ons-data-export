@@ -1,4 +1,4 @@
-g,slug_segment,count
+g,slug_segment,number_of_usages
 http://gss-data.org.uk/graph/gss_data/health/hmrc_alcohol_bulletin,day/,544
 http://gss-data.org.uk/graph/gss_data/health/hmrc_alcohol_bulletin,gregorian-interval/,749
 http://gss-data.org.uk/graph/gss_data/health/hmrc_alcohol_bulletin,month/,8436
