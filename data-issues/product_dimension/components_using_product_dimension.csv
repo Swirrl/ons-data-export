@@ -1,0 +1,15 @@
+dim,comp
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/hmrc-rts-small-area/component/sitc4
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/hmrc_rts/component/sitc4
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/hmrc_trade/component/hmrc_industry
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services/component/itis_service
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/ons-reuk-service/component/ons_func_category
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/ons-trade-in-goods/component/cord_sitc
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/ons-uk-total-trade/component/ons_abs_trades
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/ons-uk-trade-in-goods-by-industry-country-and-commodity/component/cord_sitc
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/ons-uk-trade-in-services/component/pink_book_services
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/ons_abs/component/ons_abs_trades
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/ons_bop/component/bop_services
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/ons_cpa/component/cpa2008
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/gss_data/trade/ons_mrets/component/cord_sitc
+http://gss-data.org.uk/def/dimension/product,http://gss-data.org.uk/data/ons-pink-book-chapter-3/component/pink_book_services
