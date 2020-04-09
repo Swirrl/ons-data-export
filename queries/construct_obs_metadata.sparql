@@ -10,33 +10,37 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dcat:    <http://www.w3.org/ns/dcat#>
 PREFIX pmdds:   <http://publishmydata.com/def/dataset#>   
 PREFIX pmdcat:  <http://publishmydata.com/pmdcat#>
-
+PREFIX gdp:     <http://gss-data.org.uk/def/gdp#>
+PREFIX void:    <http://rdfs.org/ns/void#>
 
 CONSTRUCT {
     GRAPH ?new_graph {
-        
+
+         # The PMD Catalog entry's contents is the RDF data cube (and is given a type to display it as such)   
+        ?dataset a pmdcat:DataCube . 
+
         # The PMD catalog entry
-        ?entry 
+        ?entry a pmdcat:Dataset ;
+            pmdcat:datasetContents ?dataset ;
+            pmdcat:graph ?data_graph ;
+            rdfs:label ?lbl ;
+            rdfs:comment ?comment ;
+            dcat:contactPoint ?contactPoint ;
+            dcat:keyword ?keyword ;
+            dcat:landingPage ?landingPage ;
+            dcat:theme ?theme ;
+            dcat:distribution ?dist ;
             dcterms:modified ?modified ;
             dcterms:issued ?issued ;
             dcterms:creator ?creator ;
+            dcterms:publisher ?publisher ;
             dcterms:title ?title ;
             dcterms:references ?refs ;
             dcterms:license ?license ;
-            rdfs:label ?lbl ;
-            rdfs:comment ?comment ;
-            dcat:contactPoint ?contact ;
-            pmdcat:graph ?data_graph .
-        ?entry a pmdcat:Dataset ;
-                 dcterms:contributor ?contact ;
-                 dcterms:publisher ?contact .
-                # pmdcat:markdownDescription 
-                # dcat:keyword
-        
-        # The PMD Catalog entry's contents is the RDF data cube (and is given a type to display it as such)   
-        ?entry pmdcat:datasetContents ?dataset .
-        ?dataset a pmdcat:DataCube . 
-        
+            dcterms:contributor ?contributor ;
+            dcterms:description ?description ;
+            gdp:family ?family ;
+            void:sparqlEndpoint ?endpoint .
         
         # The PMD catalog record
         ?record 
@@ -60,27 +64,63 @@ CONSTRUCT {
     GRAPH ?old_graph {
         ?dataset a pmdds:Dataset .
         
-        ?dataset rdfs:label ?lbl ;
-            dcterms:title ?title ;
-            dcterms:modified ?modified ;
-            dcterms:creator ?creator ;
-            pmdds:graph ?data_graph .
-            
-            OPTIONAL {
-                ?dataset dcterms:issued ?issued ;
-            }
-            OPTIONAL {
-                ?dataset pmdds:contactEmail ?contact .
-            }
-            OPTIONAL {
-                ?dataset dcterms:references ?refs .
-            }
-            OPTIONAL {
-                ?dataset rdfs:comment ?comment .
-            }
-            OPTIONAL {
-                ?dataset dcterms:license ?license .
-            }
+        {
+            ?dataset rdfs:label ?lbl ;
+                dcterms:title ?title ;
+                dcterms:creator ?creator ;
+                pmdds:graph ?data_graph .
+        }
+        UNION {
+            ?dataset dcterms:modified ?modified . 
+        }
+        UNION {
+            ?dataset dcterms:publisher ?publisher .  
+        }
+        UNION {
+            ?dataset dcterms:description ?description .  
+        }
+        UNION {
+            ?dataset dcterms:contributor ?contributor .  
+        }
+        UNION {
+            ?dataset dcterms:issued ?issued .   
+        }
+        UNION {
+            ?dataset dcterms:license ?license .
+        }
+        UNION {
+            ?dataset dcterms:references ?refs .
+        }
+        UNION {
+            ?dataset rdfs:comment ?comment .
+        }
+        UNION {
+            ?dataset gdp:family ?family .
+        }
+        UNION {
+            ?dataset void:sparqlEndpoint ?endpoint .
+        }
+        UNION {
+            ?dataset dcat:keyword ?keyword .
+        }
+        UNION {
+            ?dataset dcat:landingPage ?landingPage .
+        }
+        UNION {
+            ?dataset dcat:theme ?theme .
+        }
+        UNION {
+            ?dataset dcat:distribution ?dist .
+        }
+
+        UNION {
+            ?dataset pmdds:contactEmail ?pmdContactEmail .
+        }
+        UNION {
+            ?dataset dcat:contactPoint ?dcatContactPoint .
+        }
+        BIND ( IF (BOUND (?dcatContactPoint), ?dcatContactPoint, ?pmdContactEmail )  as ?contactPoint  ) .
+
 
         BIND( IRI (CONCAT(STR(?dataset), "-catalog-record")) AS ?record)
         BIND( IRI (CONCAT(STR(?dataset), "-catalog-entry")) AS ?entry)
