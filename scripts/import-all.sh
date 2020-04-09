@@ -1,17 +1,18 @@
 #!/bin/bash
 
 DB_TO=$1
-DATASET_SLUG=$2
+FILENAME=$2
 
 
-if [[ -n "$DB_TO" ]]; then
+if [[ -n "$DB_TO" && 
+  -n "$FILENAME" ]]; then
 
   	export WORKING_DIR=/Users/jenw/Documents/GitHub/ons-data-export
 	export MUTTNIK_DIR=/Users/jenw/Documents/GitHub/muttnik
 
 	cd $MUTTNIK_DIR
 
-	DATASET_FILE="${WORKING_DIR}/datasets_to_export.csv"
+	DATASET_FILE="${WORKING_DIR}/${FILENAME}"
     
     echo "Looking up dataset details from $DATASET_FILE"
     echo
@@ -81,16 +82,16 @@ if [[ -n "$DB_TO" ]]; then
     done < $DATASET_FILE
     IFS=$OLDIFS
 
-    echo "Importing extra reference data"
-    export REFS_DIR=${WORKING_DIR}/export/ref
-	for refrdf in $REFS_DIR/*.trig; do
-		 [ -e "$refrdfv" ] || continue
-		echo
-		CMD_TRIG="stardog data add $DB_TO $refrdf"
-		echo $CMD_TRIG
-		eval $CMD_TRIG
-		echo
-	done
+ #    echo "Importing extra reference data"
+ #    export REFS_DIR=${WORKING_DIR}/export/ref
+	# for refrdf in $REFS_DIR/*.trig; do
+	# 	 [ -e "$refrdfv" ] || continue
+	# 	echo
+	# 	CMD_TRIG="stardog data add $DB_TO $refrdf"
+	# 	echo $CMD_TRIG
+	# 	eval $CMD_TRIG
+	# 	echo
+	# done
 
 
   	echo
@@ -104,7 +105,7 @@ if [[ -n "$DB_TO" ]]; then
 else
     echo script error: There appears to be an error a required variable was not set.    
     echo "usage:"
-    echo "import-all.sh <db-to>"
-    echo "e.g. ./import-all.sh cogs-staging"
+    echo "import-all.sh <db-to> <filename>"
+    echo "e.g. ./import-all.sh cogs-staging datasets_to_import.csv"
 
 fi
