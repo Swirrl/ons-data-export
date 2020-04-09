@@ -141,6 +141,11 @@ stardog data add --named-graph http://gss-data.org.uk/graph/vocab/bop-services g
 stardog data export --named-graph http://gss-data.org.uk/graph/export-and-import-activity  --format TURTLE http://localhost:9820/gss_alpha /Users/jenw/Documents/GitHub/ons-data-export/export/ref/export-and-import-activity.ttl
 stardog data add --named-graph http://gss-data.org.uk/graph/vocab/export-and-import-activity gss_export /Users/jenw/Documents/GitHub/ons-data-export/export/ref/export-and-import-activity.ttl
 
+### product
+stardog data export --named-graph http://gss-data.org.uk/graph/product  --format TURTLE http://localhost:7820/pmd-data /Users/jenw/Documents/GitHub/ons-data-export/export/ref/product.ttl
+stardog data add --named-graph http://gss-data.org.uk/graph/vocab/product  --format TURTLE cogs-staging /Users/jenw/Documents/GitHub/ons-data-export/export/ref/product.ttl
+
+
 
 
 
