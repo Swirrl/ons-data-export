@@ -2,9 +2,8 @@
 
 ### Prerequisites
 
-1. Connect to `jen-cogs-dev` staging server (in google console `swirrl-staging-servers` project): `ssh -L 9820:localhost:5820 {user}@34.89.101.197` . Note: IP is not fixed
-2. Set up a blank stardog db to hold your data locally `stardog-admin db create --name gss_export`
-3. Make a note of the dataset graph URI and slug you want to export, e.g. `http://gss-data.org.uk/data/gss_data/trade/ons-fdi`
+1. Tunnel to the server that hosts the db we are retrieving the data from
+2. Set up a blank stardog db to hold your data locally, ensure it uses the same properties as a muttnik db
 
 ### Exporting: Running the scripts
 
@@ -76,7 +75,7 @@ This will take a little while to run if the DB has large / a lot of datasets
 
 ### Loading in muttnik
 
-Once the data is in a stardog db, muttnik can have a new project added to it using a new `edn` file similar to this gist: https://gist.github.com/jennet/efe2e999d95d287a058f24076789c8ad
+Once the data is in a stardog db, muttnik can have a new project added to it using a new `edn` file 
 
 The only config that needs adjusting are the endpoints:
 

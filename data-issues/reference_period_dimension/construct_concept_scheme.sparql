@@ -1,0 +1,29 @@
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+CONSTRUCT {
+        GRAPH <http://gss-data.org.uk/graph/vocab/reference-times> {
+   ?s a skos:Concept ;
+      skos:notation ?lbl ;
+      rdfs:comment ?desc ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/reference-period> .
+
+    <http://gss-data.org.uk/def/concept-scheme/reference-period> a skos:ConceptScheme ;
+                                                                 rdfs:label "Reference Period"@en ;
+                                                                 dcterms:title "Reference Period"@en ;
+                                                                 skos:hasTopConcept ?s .
+}  }
+    {
+    GRAPH <http://gss-data.org.uk/graph/vocab/reference-times> {
+        ?s rdfs:label ?lbl  .
+        BIND( STR ( REPLACE ( STR(?s), "http://reference.data.gov.uk/id/", "")) AS ?slug)
+        BIND( STRAFTER( ?slug, "/") AS ?last)
+        BIND( STR ( REPLACE ( ?slug, CONCAT("/", ?last), "")) AS ?slug_segment)
+
+        BIND( CONCAT( "Reference period relating to ", ?slug_segment, " ", ?lbl) AS ?desc)
+        FILTER(STRSTARTS(STR(?s), "http://reference.data.gov.uk/id/"))
+    }
+}
+LIMIT 5000
+
+# total = 1685

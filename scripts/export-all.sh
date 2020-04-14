@@ -2,6 +2,7 @@
 # set -e #exit on error
 
 DB_FROM=$1
+FILENAME=$2
 
 export GRAPH_PREFIX=http://gss-data.org.uk/graph
 export CUBE_PREFIX=http://gss-data.org.uk/data
@@ -9,12 +10,11 @@ export CUBE_PREFIX=http://gss-data.org.uk/data
 export WORKING_DIR=/Users/jenw/Documents/GitHub/ons-data-export
 
 
-if [[ -n "$DB_FROM" ]]; then
+if [[ -n "$DB_FROM" && 
+  -n "$FILENAME" ]]; then
 
   	cd $WORKING_DIR
-
-    # pass this through as a CLI option
-    DATASET_FILE="${WORKING_DIR}/datasets_to_export.csv"
+    DATASET_FILE="${WORKING_DIR}/${FILENAME}"
     
     echo "Looking up dataset details from $DATASET_FILE"
     echo
@@ -39,22 +39,17 @@ if [[ -n "$DB_FROM" ]]; then
        if [[ $CLEAN_SLUG != "dataset_slug" ]] 
       then
 
-#       ./scripts/export-data.sh http://localhost:9820/gss_alpha http://gss-data.org.uk/graph/gss_data/trade/ons-fdi ons-fdi
-# ./scripts/export-components.sh http://localhost:9820/gss_alpha http://gss-data.org.uk/data/gss_data/trade/ons-fdi ons-fdi
-# ./scripts/export-codelists.sh http://localhost:9820/gss_alpha http://gss-data.org.uk/data/gss_data/trade/ons-fdi ons-fdi
-
-
         CMD_DATA_EXPORT="./scripts/export-data.sh ${DB_FROM} ${CLEAN_GRAPH} ${CLEAN_SLUG}"
         echo $CMD_DATA_EXPORT
         eval $CMD_DATA_EXPORT
 
-        # CMD_COMP_EXPORT="./scripts/export-components.sh ${DB_FROM} ${CLEAN_DS} ${CLEAN_SLUG}"
-        # echo $CMD_COMP_EXPORT
-        # eval $CMD_COMP_EXPORT
+        CMD_COMP_EXPORT="./scripts/export-components.sh ${DB_FROM} ${CLEAN_DS} ${CLEAN_SLUG}"
+        echo $CMD_COMP_EXPORT
+        eval $CMD_COMP_EXPORT
 
-        # CMD_CODELIST_EXPORT="./scripts/export-codelists.sh ${DB_FROM} ${CLEAN_DS} ${CLEAN_SLUG}"
-        # echo $CMD_CODELIST_EXPORT
-        # eval $CMD_CODELIST_EXPORT
+        CMD_CODELIST_EXPORT="./scripts/export-codelists.sh ${DB_FROM} ${CLEAN_DS} ${CLEAN_SLUG}"
+        echo $CMD_CODELIST_EXPORT
+        eval $CMD_CODELIST_EXPORT
       fi
 
       
@@ -71,6 +66,6 @@ else
     echo script error: There appears to be an error a required variable was not set.    
     echo "usage:"
     echo "http://localhost:9820/gss_alpha "
-     echo "export-all.sh <db-from>"
-    echo "e.g. ./export-all.sh http://localhost:9820/gss_alpha"
+     echo "export-all.sh <db-from> <filename>"
+    echo "e.g. ./export-all.sh http://localhost:9820/gss_alpha datasets_to_export.csv"
 fi
