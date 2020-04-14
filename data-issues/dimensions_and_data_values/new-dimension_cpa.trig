@@ -1,0 +1,13 @@
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix pmdqb: <http://publishmydata.com/def/qb/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://gss-data.org.uk/graph/components> {
+    <http://gss-data.org.uk/def/dimension/cpa> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , qb:DimensionProperty ;
+      <http://www.w3.org/2000/01/rdf-schema#label> "Product Classification"@en ;
+      <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://gss-data.org.uk/def/ontology/components> ;
+      <http://www.w3.org/2000/01/rdf-schema#range> <http://gss-data.org.uk/def/ProductClassification> ;
+      <http://purl.org/dc/terms/description> "Statistical Classification of Products by Activity in the European Economic Community, 2008 version" ;
+      skos:notation "http://stamina-project.org/codes/cpav2008/cpa" ;
+      qb:codeList <http://stamina-project.org/codes/cpav2008/cpa> .
+}

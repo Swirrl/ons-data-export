@@ -1,0 +1,18 @@
+@prefix : <http://api.stardog.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://gss-data.org.uk/graph/components> {
+	
+	<http://gss-data.org.uk/def/dimension/trade-reporter-geography> a rdf:Property , <http://purl.org/linked-data/cube#DimensionProperty> ;
+		rdfs:label "Trade Reporter Geography" ;
+		rdfs:isDefinedBy <http://gss-data.org.uk/def/ontology/components> ;
+		rdfs:range <http://gss-data.org.uk/def/TradeReporterGeography> ;
+		<http://purl.org/dc/terms/description> "Location of the trade reporter. Typically a domestic geography. The destination of imports or origin of exports." ;
+		<http://www.w3.org/2004/02/skos/core#notation> "trade-reporter-geography" ;
+		<http://purl.org/linked-data/cube#codeList> <http://gss-data.org.uk/def/concept-scheme/nuts-geography> .
+		
+}
