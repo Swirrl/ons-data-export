@@ -61,21 +61,14 @@ http://purl.org/linked-data/sdmx/2009/dimension#refArea
 Some of these look fairly straightforward to hook up with the concept schemes listed above, but this will still leave a number of concepts schemes in use in the dataset observation values 
 
 
-## Dimension Labels
+### Age of business
 
-If a subsequent data import gives a new label to an existing dimension, we end up with additional labels in the underlying data. It's unclear whether these should be separate dimensions in some cases, or whether it's simply a new label for a dimension
+Used in dataset: 
+- "Annual Business Survey exporters and importers"
 
-```
-http://purl.org/linked-data/cube#measureType	"Measure Type"@en
-http://purl.org/linked-data/cube#measureType	"measure type"@en
-http://purl.org/linked-data/sdmx/2009/dimension#refPeriod	"Period"@en
-http://purl.org/linked-data/sdmx/2009/dimension#refPeriod	"Reference Period"@en
-http://gss-data.org.uk/def/dimension/flow	"Flow"@en
-http://gss-data.org.uk/def/dimension/flow	"Flow"
-http://gss-data.org.uk/def/dimension/trade-partner-geography	"Trade Partner Geography"
-http://gss-data.org.uk/def/dimension/trade-partner-geography	"HMRC Partner Geography"@en
-http://gss-data.org.uk/def/dimension/product	"SITC 4"@en
-http://gss-data.org.uk/def/dimension/product	"Product"
-http://gss-data.org.uk/def/dimension/trade-reporter-geography	"Trade Reporter Geography"
-http://gss-data.org.uk/def/dimension/trade-reporter-geography	"HMRC Reporter Region"@en
-```
+### Export and Import Activity
+
+Used in dataset: 
+ - "Annual Business Survey exporters and importers"
+ - "UK Trade in Goods by Business Characteristics - Experimental Statistics"
+
