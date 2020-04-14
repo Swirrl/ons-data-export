@@ -4,6 +4,8 @@
 
 <http://gss-data.org.uk/graph/components> {
 
+	<http://purl.org/linked-data/cube#measureType> rdfs:label "Measure Type"@en .
+
 	<http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> rdfs:label "Reference Period"@en .
 
 	<http://gss-data.org.uk/def/dimension/flow> rdfs:label "Flow"@en .
