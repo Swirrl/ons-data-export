@@ -14,6 +14,8 @@
 
 	<http://gss-data.org.uk/def/dimension/product> rdfs:label "Product"@en .
 
+	<http://gss-data.org.uk/def/dimension/sitc-4> rdfs:label "SITC 4"@en .
+
 	<http://gss-data.org.uk/def/dimension/trade-reporter-geography> rdfs:label "HMRC Reporter Region"@en .
 	
 }
