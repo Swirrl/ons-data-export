@@ -1,0 +1,15 @@
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix pmdqb: <http://publishmydata.com/def/qb/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://gss-data.org.uk/data/gss_data/trade/ons_bop/component/bop_services> qb:dimension <http://gss-data.org.uk/def/dimension/bop-services> .
+<http://gss-data.org.uk/data/gss_data/trade/hmrc_trade/component/hmrc_industry> qb:dimension <http://gss-data.org.uk/def/dimension/hmrc-industry-groups> .
+<http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services/component/itis_service> qb:dimension <http://gss-data.org.uk/def/dimension/itis-services> .
+<http://gss-data.org.uk/data/gss_data/trade/ons-uk-total-trade/component/ons_abs_trades> qb:dimension <http://gss-data.org.uk/def/dimension/ons-abs-trades> .
+<http://gss-data.org.uk/data/gss_data/trade/ons_abs/component/ons_abs_trades> qb:dimension <http://gss-data.org.uk/def/dimension/ons-abs-trades> .
+<http://gss-data.org.uk/data/gss_data/trade/ons-reuk-service/component/ons_func_category> qb:dimension <http://gss-data.org.uk/def/dimension/ons-functional-category> .
+<http://gss-data.org.uk/data/ons-pink-book-chapter-3/component/pink_book_services> qb:dimension <http://gss-data.org.uk/def/dimension/pink-book-services> .
+<http://gss-data.org.uk/data/gss_data/trade/ons-uk-trade-in-services/component/pink_book_services> qb:dimension <http://gss-data.org.uk/def/dimension/pink-book-services> .
+<http://gss-data.org.uk/data/gss_data/trade/hmrc-rts-small-area/component/sitc4> qb:dimension <http://gss-data.org.uk/def/dimension/sitc-4> .
+<http://gss-data.org.uk/data/gss_data/trade/ons-trade-in-goods/component/cord_sitc> qb:dimension <http://gss-data.org.uk/def/dimension/cord-sitc> .
+<http://gss-data.org.uk/data/gss_data/trade/ons-uk-trade-in-goods-by-industry-country-and-commodity/component/cord_sitc> qb:dimension <http://gss-data.org.uk/def/dimension/cord-sitc> .

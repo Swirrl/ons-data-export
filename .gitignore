@@ -8,3 +8,7 @@ gss_export
 backups
 datasets_to_export_alex.csv
 local
+datasets_to_import.csv
+quarterly_national_accounts.csv
+data-issues/dimensions_and_data_values/product_dimension_replacements
+metadata/DIT-word-files/trade info metadata

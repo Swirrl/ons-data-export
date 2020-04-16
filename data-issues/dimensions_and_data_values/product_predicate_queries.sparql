@@ -1,0 +1,44 @@
+# Construct new triples using the new dimension
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+CONSTRUCT {
+    GRAPH ?g {
+        ?obs ?new_dim ?dim_val 
+    }
+}
+# SELECT (COUNT(?dim_val) AS ?count)
+WHERE {
+    BIND( <http://gss-data.org.uk/graph/gss_data/trade/ons-trade-in-goods> AS ?g )
+    BIND( <http://gss-data.org.uk/def/dimension/product> AS ?dim )
+    BIND( <http://gss-data.org.uk/def/dimension/cord-sitc> AS ?new_dim )
+    GRAPH ?g {
+        ?obs ?dim ?dim_val .
+    }
+    ?dim a qb:DimensionProperty .
+}
+
+
+# Delete old triples
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+DELETE {
+    GRAPH ?g {
+        ?obs ?dim ?dim_val 
+    }
+}
+WHERE {
+    BIND( <http://gss-data.org.uk/graph/gss_data/trade/ons-international-trade-in-services> AS ?g )
+    BIND( <http://gss-data.org.uk/def/dimension/product> AS ?dim )
+    GRAPH ?g {
+        ?obs ?dim ?dim_val .
+    }
+    ?dim a qb:DimensionProperty .
+}
