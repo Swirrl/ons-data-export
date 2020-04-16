@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gss: <http://gss-data.org.uk/def/metadata/> .
+
+<http://gss-data.org.uk/graph/gss_data/trade/ons_abs-metadata> {
+
+<http://gss-data.org.uk/data/gss_data/trade/ons_abs-catalog-entry> 
+
+	<http://publishmydata.com/pmdcat#markdownDescription> """The ABS is a sample survey of 62,000 businesses in Great Britain (GB) and 11,000 businesses in Northern Ireland (NI) each year. Completion of the survey is mandatory under the Statistics of Trade Act 1947 and is a paper questionnaire. The sample is selected from the Inter-Departmental Business Register (IDBR) using stratified random sampling with a census taken of large businesses (those with 250 or more people in employment) due to the importance of these businesses to the economy. The exporters and importers estimates do not cover all businesses. They cover registered business in the Great Britain Non-Financial Business Economy (excluding Northern Ireland) which accounts for around two-thirds of the economy in terms of gross value added.
+
+The tables produced show which businesses import and export by employment size (based on IDBR employment), industry (section and division, industry taken at the reporting unit level), ownership (where a business has a majority share, and therefore control – foreign ownership refers to those businesses that are owned/controlled outside of the UK), region (created by apportioning the trade status of a business to all their local units), turnover (based on the data from the turnover question on the ABS questionnaire), and age (defined using the birth date of the business). The proportions presented at a GB level are based on the proportion of businesses trading in relation to the total number of businesses within the specific category. The proportions presented at a regional level will be the proportion of businesses trading in the region in relation to the total number of businesses trading in GB.  The commentary published with the tables focuses on participation in international trade, the breakdown by direction of trade (exporting or importing) and by goods and/or services being traded.
+
+**Aggregation**
+Employment Size, Ownership, Turnover, Age, Industry (Sector/Division), Region
+
+**Classification**
+
+Industry - SIC07
+
+**Related information**
+
+There are a number of sources which provide estimates for the number of businesses exporting and importing, that use differing methodologies and have differing sample sizes/collection methods:
+
+- Small Business Survey (BEIS) 
+- UK trade in goods by business characteristics (HMRC)
+- Regional Trade Statistics (HMRC)
+- UK Importer and Exporter Population (HMRC)
+- International trade in goods by enterprise characteristics (Eurostat)
+- DIT national survey of registered businesses’ exporting behaviors, attitudes and needs (NSRB)
+- UK Innovation Survey (BEIS)
+
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>;
+
+	gss:recommendedUsage """There are a range of sources which provide information on business exporting or importing behavior. However, these tend to focus exclusively on goods or services rather than providing information on both. Discussions with users identified a need for a source to supply comprehensive information on business trading behavior for both goods and services to provide answers to questions such as:
+
+- what share of businesses export goods and/ or services?
+- what share of businesses import goods and/ or services?
+- are importing businesses also those that export or do some businesses only import or export?
+
+The ABS, as an established survey with large sample size, was identified as the preferred source for collecting this information for reasons stated earlier in the description.
+
+The ABS exporters and importers release only produces estimates of the number of businesses in Great Britain importing or exporting. It does not produce any data on the value or the destination. *ONS UK trade data should be used when interested in the value of trade, broken down by product, country and/or industry.*
+
+Additionally, due to sample design, the ABS advise against using ABS data for time series analysis as it is instead primarily used for cross-section analysis (although businesses with employment greater than 250 are fully enumerated). The data do not contain a split of the number of traders by EU/Non-EU or by trade partner.
+
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+  
+  gss:strengths """
+ - Large sample size, mandatory postal survey and established methodology
+ - Data covers businesses trading both goods and services
+ - Contains estimates on both counts and proportions of businesses trading internationally
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+  gss:weaknesses """
+- Experimental Statistics
+- Data are for GB only
+- Estimates do not cover all businesses or SICs
+- Does not produce any data on the value or the destination
+- No breakdowns by partner country
+- Cross-sectional analysis – additional breaks in time series due to methodological improvements
+- Improvements to Annual Business Survey main release (including PAYE only businesses and re-optimisation exercise) have impacted the exporters and importers experimental release, collectively leading to an increase in sampling weights for smaller businesses. This has led to increased volatility between revisions and increased standard errors for the proportions of headline estimates
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+  gss:source "Survey data" ;
+  gss:status "Experimental Statistics" ;
+  <http://www.w3.org/ns/dcat#keyword> "business", "trade" .
+
+}

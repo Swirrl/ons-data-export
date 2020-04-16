@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gss: <http://gss-data.org.uk/def/metadata/> .
+
+<http://gss-data.org.uk/graph/ons-pink-book-chapter-3-metadata> {
+
+<http://gss-data.org.uk/data/ons-pink-book-chapter-3-catalog-entry> 
+
+	<http://publishmydata.com/pmdcat#markdownDescription> """
+	- The UK Balance of Payments measures economic transactions between economic entities resident in the UK and the rest of the world. It also draws a series of balances between inward and outward transactions, provides a net flow of transactions between UK residents and the rest of the world, and reports how that flow is funded.
+ - The Pink Book summarises the economic transactions of the UK with the rest of the world over time. It can be broken into three components: the current account, the capital account and the financial account.
+ - The current account shows the flows of goods and services that comprise international trade, the cross-border income flows associated with the international ownership of financial assets, and current transfers between residents and non-residents. The sum of the balances on these accounts is known as the current account balance.  The capital account consists of capital transfers and the acquisition or disposal of non-produced, non-financial assets.
+ - The sum of the current account balance and capital account balance indicates whether the economy is a net lender to the rest of the world (in surplus) or a net borrower from the rest of the world (in deficit).
+ - The financial account shows the net acquisition or net incurrence of financial assets and liabilities and is the counterpart to the current account and capital account. It records how the country is financing its borrowing from, or lending to, the rest of the world.
+ - The international investment position (IIP) records the stock position of these financial investments. It shows at the end of the period the value of the stock of financial assets of residents of an economy that are claims on non-residents and the value of the stock of financial liabilities of residents of an economy to non-residents. The difference between the assets and liabilities in the IIP represents either a net claim on, or a net liability to, the rest of the world.
+
+Further information about these sources can be found in the Balance of payments [release](https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/unitedkingdombalanceofpaymentsthepinkbook/2019) and in the [Balance of payments Quality and Methodology Information report](https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/methodologies/balanceofpaymentsqmi).
+
+**Aggregation**
+Country, region (EU and non-EU).
+
+**Classification**
+EBOPS (Extended Balance of Payments Services Classification)
+
+Financial instruments – SNA 2008, Chapter 11 The Financial Account, and Chapter 113, The Balance Sheet
+
+**Related information**
+
+[Balance of Payments](https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/datasets/balanceofpaymentsstatisticalbulletintables)
+
+[Trade statistics](https://www.ons.gov.uk/businessindustryandtrade/internationaltrade)
+
+[UK sector accounts](https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts)
+
+[Foreign Direct Investment](https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/foreigndirectinvestmentinvolvingukcompanies/previousReleases)
+
+
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>;
+
+	gss:recommendedUsage """
+	The UK Balance of Payments Pink Book provides detailed annual data on:
+ - trade in goods and services;
+ - investment income on foreign assets and liabilities
+ - cross-border transfers
+ - the acquisition and incurrence of foreign financial assets and liabilities
+ - the stock positions of foreign assets and liabilities
+ - The Pink Book includes geographic data on major trading partners for the current account and international investment position.
+ - The Pink Book also summarises official transactions with the European Union.
+
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+  
+  gss:strengths """Estimates are based on data collected directly from businesses
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+  gss:weaknesses """Detailed geographic data are only available annually
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+  gss:source "Overseas Trade Statistics (HM Revenue and Customs (HMRC))" ;
+	gss:source "International Trade in Services Survey (Office for National Statistics (ONS))" ;
+	gss:source "International Passenger Survey (ONS)" ;
+	gss:source "Foreign Direct Investment Survey (ONS and Bank of England (BoE))" ;
+	gss:source "Various financial inquiries (ONS and BoE)" ;
+	gss:source "Ownership of UK Quoted Shares Survey (ONS)" ;
+
+  gss:status "National Statistics" ;
+
+  <http://www.w3.org/ns/dcat#keyword> "business", "trade" .
+
+}
