@@ -96,6 +96,6 @@ Change in Methodology in 2016. Break in Time Series from start of 2013
 Northern Ireland figures are different to those published by NISRA from their BESES survey. This is due to known methodological differences
 
   
-  ""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>" ;
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
  <http://www.w3.org/ns/dcat#keyword> "business", "industry", "trade" .
 }
