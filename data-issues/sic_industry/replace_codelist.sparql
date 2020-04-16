@@ -1,0 +1,10 @@
+PREFIX qb:      <http://purl.org/linked-data/cube#>
+
+WITH <http://gss-data.org.uk/graph/components>
+DELETE { 
+    <http://gss-data.org.uk/def/dimension/sic-industry> qb:codeList <http://gss-data.org.uk/def/concept-scheme/sic-industry> }
+INSERT { 
+    <http://gss-data.org.uk/def/dimension/sic-industry> qb:codeList <http://business.data.gov.uk/companies/def/sic-2007/scheme> }
+WHERE{ 
+    <http://gss-data.org.uk/def/dimension/sic-industry> qb:codeList <http://gss-data.org.uk/def/concept-scheme/sic-industry> 
+  } 
