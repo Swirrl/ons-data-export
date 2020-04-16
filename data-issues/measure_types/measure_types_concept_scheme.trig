@@ -1,0 +1,101 @@
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix pmdcat: <http://publishmydata.com/pmdcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pmdds: <http://publishmydata.com/def/dataset#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://gss-data.org.uk/graph/vocab/measure-types> {
+    <http://gss-data.org.uk/def/measure/gbp-total> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> a skos:ConceptScheme ;
+      rdfs:label "Measure Types"@en ;
+      dcterms:title "Measure Types"@en ;
+      skos:hasTopConcept <http://gss-data.org.uk/def/measure/gbp-total> .
+    <http://gss-data.org.uk/def/measure/count-of-businesses> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/count-of-businesses> .
+    <http://gss-data.org.uk/def/measure/total-turnover> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/total-turnover> .
+    <http://gss-data.org.uk/def/measure/count-of-employees> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/count-of-employees> .
+    <http://gss-data.org.uk/def/measure/net-mass> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/net-mass> .
+    <http://gss-data.org.uk/def/measure/count> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/count> .
+    <http://gss-data.org.uk/def/measure/proportion-of-all-business> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/proportion-of-all-business> .
+    <http://gss-data.org.uk/def/measure/quantities-released-for-consumption> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/quantities-released-for-consumption> .
+    <http://gss-data.org.uk/def/measure/revenue> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/revenue> .
+    <http://gss-data.org.uk/def/measure/production-of-potable-spirits> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/production-of-potable-spirits> .
+    <http://gss-data.org.uk/def/measure/net-quantities-of-spirits-charged-with-duty> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/net-quantities-of-spirits-charged-with-duty> .
+    <http://gss-data.org.uk/def/measure/uk-beer-production> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/uk-beer-production> .
+    <http://gss-data.org.uk/def/measure/beer-clearances> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/beer-clearances> .
+    <http://gss-data.org.uk/def/measure/cider-clearances> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/cider-clearances> .
+    <http://gss-data.org.uk/def/measure/rates-of-duty> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/rates-of-duty> .
+    <http://gss-data.org.uk/def/measure/alcohol-clearances> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/alcohol-clearances> .
+    <http://gss-data.org.uk/def/measure/gbp-million> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/gbp-million> .
+    <http://gss-data.org.uk/def/measure/4q-gr> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/4q-gr> .
+    <http://gss-data.org.uk/def/measure/1q-gr> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/1q-gr> .
+    <http://gss-data.org.uk/def/measure/1y-gr> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/1y-gr> .
+    <http://gss-data.org.uk/def/measure/index> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/index> .
+    <http://gss-data.org.uk/def/measure/1y-deflator-gr> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/1y-deflator-gr> .
+    <http://gss-data.org.uk/def/measure/4q-deflator-gr> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/4q-deflator-gr> .
+    <http://gss-data.org.uk/def/measure/index-deflator-series> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/index-deflator-series> .
+    <http://gss-data.org.uk/def/measure/1q-deflator-gr> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/1q-deflator-gr> .
+    <http://gss-data.org.uk/def/measure/index-series> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/index-series> .
+    <http://gss-data.org.uk/def/measure/implied-deflator> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/implied-deflator> .
+    <http://gss-data.org.uk/def/measure/chained-volume-measure> a skos:Concept ;
+      skos:inScheme <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> skos:hasTopConcept <http://gss-data.org.uk/def/measure/chained-volume-measure> .
+}
