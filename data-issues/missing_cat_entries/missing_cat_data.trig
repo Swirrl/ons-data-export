@@ -297,3 +297,21 @@
     <http://gss-data.org.uk/def/concept-scheme/product> a pmdcat:ConceptScheme .
     <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/product-catalog-record> .
 }
+
+<http://gss-data.org.uk/graph/vocab/revisions-metadata> {
+    <http://gss-data.org.uk/vocabs/revisions-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Revisions Catalog Record" ;
+      dcterms:issued "2020-04-21T15:14:54.679+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T15:14:54.679+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/revisions-metadata> .
+    <http://gss-data.org.uk/vocabs/revisions> a pmdcat:Dataset ;
+      rdfs:label "Revisions"@en ;
+      dcterms:title "Revisions"@en ;
+      dcterms:created "2020-04-21T15:14:54.679+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T15:14:54.679+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T15:14:54.679+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/revisions> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/revisions> .
+    <http://gss-data.org.uk/def/concept-scheme/revisions> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/revisions-catalog-record> .
+}
