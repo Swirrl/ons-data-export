@@ -1,0 +1,299 @@
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix pmdcat: <http://publishmydata.com/pmdcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pmdds: <http://publishmydata.com/def/dataset#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://gss-data.org.uk/graph/vocab/age-of-business-metadata> {
+    <http://gss-data.org.uk/vocabs/age-of-business-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Age of Business Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/age-of-business-metadata> .
+    <http://gss-data.org.uk/vocabs/age-of-business> a pmdcat:Dataset ;
+      rdfs:label "Age of Business"@en ;
+      dcterms:title "Age of Business"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/age-of-business> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/age-of-business> .
+    <http://gss-data.org.uk/def/concept-scheme/age-of-business> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/age-of-business-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/bop-services-metadata> {
+    <http://gss-data.org.uk/vocabs/bop-services-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "BOP Services Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/bop-services-metadata> .
+    <http://gss-data.org.uk/vocabs/bop-services> a pmdcat:Dataset ;
+      rdfs:label "BOP Services"@en ;
+      dcterms:title "BOP Services"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/bop-services> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/bop-services> .
+    <http://gss-data.org.uk/def/concept-scheme/bop-services> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/bop-services-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/cpav2008-metadata> {
+    <http://stamina-project.org/codes/cpav2008/cpa-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Statistical Classification of Products by Activity in the European Economic Community, 2008 version Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/cpav2008-metadata> .
+    <http://stamina-project.org/codes/cpav2008/cpa> a pmdcat:Dataset ;
+      rdfs:label "Statistical Classification of Products by Activity in the European Economic Community, 2008 version"@en ;
+      dcterms:title "Statistical Classification of Products by Activity in the European Economic Community, 2008 version"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/cpav2008> ;
+      pmdcat:datasetContents <http://stamina-project.org/codes/cpav2008/cpa> ;
+      a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://stamina-project.org/codes/cpav2008/cpa-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/export-and-import-activity-metadata> {
+    <http://gss-data.org.uk/vocabs/export-and-import-activity-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Export and Import Activity Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/export-and-import-activity-metadata> .
+    <http://gss-data.org.uk/vocabs/export-and-import-activity> a pmdcat:Dataset ;
+      rdfs:label "Export and Import Activity"@en ;
+      dcterms:title "Export and Import Activity"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/export-and-import-activity> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/export-and-import-activity> .
+    <http://gss-data.org.uk/def/concept-scheme/export-and-import-activity> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/export-and-import-activity-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/hmrc-industry-groups-metadata> {
+    <http://gss-data.org.uk/vocabs/hmrc-industry-groups-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "HMRC Industry Groups Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/hmrc-industry-groups-metadata> .
+    <http://gss-data.org.uk/vocabs/hmrc-industry-groups> a pmdcat:Dataset ;
+      rdfs:label "HMRC Industry Groups"@en ;
+      dcterms:title "HMRC Industry Groups"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/hmrc-industry-groups> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> .
+    <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/hmrc-industry-groups-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/itis-services-metadata> {
+    <http://gss-data.org.uk/vocabs/itis-services-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "ITIS Services Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/itis-services-metadata> .
+    <http://gss-data.org.uk/vocabs/itis-services> a pmdcat:Dataset ;
+      rdfs:label "ITIS Services"@en ;
+      dcterms:title "ITIS Services"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/itis-services> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/itis-services> .
+    <http://gss-data.org.uk/def/concept-scheme/itis-services> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/itis-services-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/nuts-geography-metadata> {
+    <http://gss-data.org.uk/vocabs/nuts-geography-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "NUTS Geography Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/nuts-geography-metadata> .
+    <http://gss-data.org.uk/vocabs/nuts-geography> a pmdcat:Dataset ;
+      rdfs:label "NUTS Geography"@en ;
+      dcterms:title "NUTS Geography"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/nuts-geography> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/nuts-geography> .
+    <http://gss-data.org.uk/def/concept-scheme/nuts-geography> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/nuts-geography-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/ons-abs-trades-metadata> {
+    <http://gss-data.org.uk/vocabs/ons-abs-trades-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "ONS ABS Trades Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/ons-abs-trades-metadata> .
+    <http://gss-data.org.uk/vocabs/ons-abs-trades> a pmdcat:Dataset ;
+      rdfs:label "ONS ABS Trades"@en ;
+      dcterms:title "ONS ABS Trades"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/ons-abs-trades> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/ons-abs-trades> .
+    <http://gss-data.org.uk/def/concept-scheme/ons-abs-trades> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/ons-abs-trades-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/ons-functional-category-metadata> {
+    <http://gss-data.org.uk/vocabs/ons-functional-category-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "ONS Functional Category Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/ons-functional-category-metadata> .
+    <http://gss-data.org.uk/vocabs/ons-functional-category> a pmdcat:Dataset ;
+      rdfs:label "ONS Functional Category"@en ;
+      dcterms:title "ONS Functional Category"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/ons-functional-category> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> .
+    <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/ons-functional-category-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/pink-book-services-metadata> {
+    <http://gss-data.org.uk/vocabs/pink-book-services-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Pink Book Services Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/pink-book-services-metadata> .
+    <http://gss-data.org.uk/vocabs/pink-book-services> a pmdcat:Dataset ;
+      rdfs:label "Pink Book Services"@en ;
+      dcterms:title "Pink Book Services"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/pink-book-services> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/pink-book-services> .
+    <http://gss-data.org.uk/def/concept-scheme/pink-book-services> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/pink-book-services-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/price-classifications-metadata> {
+    <http://gss-data.org.uk/vocabs/price-classifications-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Price Classifications Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/price-classifications-metadata> .
+    <http://gss-data.org.uk/vocabs/price-classifications> a pmdcat:Dataset ;
+      rdfs:label "Price Classifications"@en ;
+      dcterms:title "Price Classifications"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/price-classifications> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+    <http://gss-data.org.uk/def/concept-scheme/price-classifications> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/price-classifications-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/sic-2007-metadata> {
+    <http://business.data.gov.uk/companies/def/sic-2007/scheme-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "SIC code Concept Scheme Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/sic-2007-metadata> .
+    <http://business.data.gov.uk/companies/def/sic-2007/scheme> a pmdcat:Dataset ;
+      rdfs:label "SIC code Concept Scheme"@en ;
+      dcterms:title "SIC code Concept Scheme"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/sic-2007> ;
+      pmdcat:datasetContents <http://business.data.gov.uk/companies/def/sic-2007/scheme> ;
+      a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://business.data.gov.uk/companies/def/sic-2007/scheme-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/cord-sitc-metadata> {
+    <http://gss-data.org.uk/vocabs/cord-sitc-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "CORD SITC Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/cord-sitc-metadata> .
+    <http://gss-data.org.uk/vocabs/cord-sitc> a pmdcat:Dataset ;
+      rdfs:label "CORD SITC"@en ;
+      dcterms:title "CORD SITC"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/cord-sitc> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/cord-sitc> .
+    <http://gss-data.org.uk/def/concept-scheme/cord-sitc> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/cord-sitc-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/reference-times-metadata> {
+    <http://gss-data.org.uk/vocabs/reference-period-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Reference Period Catalog Record" ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/reference-times-metadata> .
+    <http://gss-data.org.uk/vocabs/reference-period> a pmdcat:Dataset ;
+      rdfs:label "Reference Period"@en ;
+      dcterms:title "Reference Period"@en ;
+      dcterms:created "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:25:52.930+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/reference-times> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/reference-period> .
+    <http://gss-data.org.uk/def/concept-scheme/reference-period> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/reference-period-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/measure-types-metadata> {
+    <http://gss-data.org.uk/vocabs/measure-types-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Measure Types Catalog Record" ;
+      dcterms:issued "2020-04-21T13:37:48.611+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:37:48.611+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/measure-types-metadata> .
+    <http://gss-data.org.uk/vocabs/measure-types> a pmdcat:Dataset ;
+      rdfs:label "Measure Types"@en ;
+      dcterms:title "Measure Types"@en ;
+      dcterms:created "2020-04-21T13:37:48.611+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:37:48.611+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:37:48.611+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/measure-types> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/measure-types-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/product-metadata> {
+    <http://gss-data.org.uk/vocabs/product-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Product Catalog Record" ;
+      dcterms:issued "2020-04-21T13:37:09.838+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:37:09.838+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/product-metadata> .
+    <http://gss-data.org.uk/vocabs/product> a pmdcat:Dataset ;
+      rdfs:label "Product"@en ;
+      dcterms:title "Product"@en ;
+      dcterms:created "2020-04-21T13:37:09.838+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-21T13:37:09.838+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-21T13:37:09.838+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/product> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/product> .
+    <http://gss-data.org.uk/def/concept-scheme/product> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/product-catalog-record> .
+}
