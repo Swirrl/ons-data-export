@@ -12,3 +12,6 @@ SELECT *
 ```
 
 Migration direction should not be in trade data - remove scheme graph and any link between flow dimension and the migration direction.
+
+`DROP GRAPH <http://gss-data.org.uk/graph/vocab/migration-directions>`
+`DROP GRAPH <http://gss-data.org.uk/graph/vocab/migration-directions-metadata>`
