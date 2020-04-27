@@ -1,0 +1,4 @@
+<http://gss-data.org.uk/graph/components> {
+	<http://gss-data.org.uk/def/dimension/publication-date> <http://purl.org/linked-data/cube#codeList> <http://gss-data.org.uk/def/concept-scheme/reference-period> .
+	<http://gss-data.org.uk/def/dimension/gdp-reference-period> <http://purl.org/linked-data/cube#codeList> <http://gss-data.org.uk/def/concept-scheme/reference-period> .
+}
