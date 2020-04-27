@@ -1,0 +1,49 @@
+@prefix : <http://api.stardog.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://gss-data.org.uk/graph/vocab/marker> {
+<http://gss-data.org.uk/def/concept-scheme/marker> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:label "Marker"@en ;
+	<http://purl.org/dc/terms/title> "Marker"@en ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://gss-data.org.uk/def/concept/marker/> , <http://gss-data.org.uk/def/concept/marker/disclosive> , <http://gss-data.org.uk/def/concept/marker/itis-nil> , <http://gss-data.org.uk/def/concept/marker/not-applicable> , <http://gss-data.org.uk/def/concept/marker/suppressed> ;
+	<http://www.w3.org/2004/02/skos/core#member> <http://gss-data.org.uk/def/concept/marker/> , <http://gss-data.org.uk/def/concept/marker/disclosive> , <http://gss-data.org.uk/def/concept/marker/itis-nil> , <http://gss-data.org.uk/def/concept/marker/not-applicable> , <http://gss-data.org.uk/def/concept/marker/suppressed> .
+
+<http://gss-data.org.uk/def/concept/marker/> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "No marker" ;
+	rdfs:comment "There is no marker" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/marker> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "No marker" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/marker> .
+
+<http://gss-data.org.uk/def/concept/marker/disclosive> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Disclosive" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "disclosive" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/marker> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Disclosive" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/marker> .
+
+<http://gss-data.org.uk/def/concept/marker/itis-nil> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Nil or less than £500,000" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "itis-nil" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/marker> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Nil or less than £500,000" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/marker> .
+
+<http://gss-data.org.uk/def/concept/marker/not-applicable> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Not Applicable" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "not-applicable" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/marker> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Not Applicable" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/marker> .
+
+<http://gss-data.org.uk/def/concept/marker/suppressed> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Suppressed" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "suppressed" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/marker> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Suppressed" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/marker> .
+}

@@ -1,0 +1,1574 @@
+@prefix : <http://api.stardog.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://gss-data.org.uk/graph/vocab/product> {
+	<http://gss-data.org.uk/def/concept-scheme/product> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+		rdfs:label "Product"@en ;
+		<http://www.w3.org/2004/02/skos/core#member> <http://gss-data.org.uk/def/concept/product/all> , <http://gss-data.org.uk/def/concept/product/non-perennial-crops> , <http://gss-data.org.uk/def/concept/product/perennial-crops> , <http://gss-data.org.uk/def/concept/product/planting-material> , <http://gss-data.org.uk/def/concept/product/live-animals-animal-products> , <http://gss-data.org.uk/def/concept/product/trees-their-seeds> , <http://gss-data.org.uk/def/concept/product/wood-in-the-rough> , <http://gss-data.org.uk/def/concept/product/wild-growing-non-wood-products> , <http://gss-data.org.uk/def/concept/product/coal> , <http://gss-data.org.uk/def/concept/product/lignite> , <http://gss-data.org.uk/def/concept/product/crude-petroleum> , <http://gss-data.org.uk/def/concept/product/natural-gas> , <http://gss-data.org.uk/def/concept/product/iron-ores> , <http://gss-data.org.uk/def/concept/product/non-ferrous-metal-ores> , <http://gss-data.org.uk/def/concept/product/unworked-stone-gravel-sand-clays-kaolin> , <http://gss-data.org.uk/def/concept/product/mining-quarrying-products-n-e-c> , <http://gss-data.org.uk/def/concept/product/preserved-meat-meat-products> , <http://gss-data.org.uk/def/concept/product/processed-and-preserved-fish-crustaceans-molluscs-fruit-and-vegetables> , <http://gss-data.org.uk/def/concept/product/processed-preserved-fish-crustaceans-molluscs> , <http://gss-data.org.uk/def/concept/product/processed-preserved-fruit-and-vegetables> , <http://gss-data.org.uk/def/concept/product/vegetable-animal-oils-fats> , <http://gss-data.org.uk/def/concept/product/dairy-products> , <http://gss-data.org.uk/def/concept/product/grain-mill-products-starches-starch-products> , <http://gss-data.org.uk/def/concept/product/bakery-farinaceous-products> , <http://gss-data.org.uk/def/concept/product/other-food-products> , <http://gss-data.org.uk/def/concept/product/prepared-feeds-for-farm-animals> , <http://gss-data.org.uk/def/concept/product/alcoholic-beverages> , <http://gss-data.org.uk/def/concept/product/distilled-alcoholic-beverages> , <http://gss-data.org.uk/def/concept/product/wine> , <http://gss-data.org.uk/def/concept/product/cider-other-fruit-wines> , <http://gss-data.org.uk/def/concept/product/other-non-distilled-fermented-beverages> , <http://gss-data.org.uk/def/concept/product/beer> , <http://gss-data.org.uk/def/concept/product/malt> , <http://gss-data.org.uk/def/concept/product/soft-drinks-bottled-waters> , <http://gss-data.org.uk/def/concept/product/tobacco-products> , <http://gss-data.org.uk/def/concept/product/textile-yarn-thread> , <http://gss-data.org.uk/def/concept/product/woven-textiles> , <http://gss-data.org.uk/def/concept/product/other-textiles> , <http://gss-data.org.uk/def/concept/product/wearing-apparel-except-fur-apparel> , <http://gss-data.org.uk/def/concept/product/articles-of-fur> , <http://gss-data.org.uk/def/concept/product/knitted-crocheted-hosiery-pullovers-cardigans> , <http://gss-data.org.uk/def/concept/product/tanned-and-dressed-leather-fur> , <http://gss-data.org.uk/def/concept/product/footwear> , <http://gss-data.org.uk/def/concept/product/wood-sawn-planed> , <http://gss-data.org.uk/def/concept/product/products-of-wood-cork-straw-plaiting-material> , <http://gss-data.org.uk/def/concept/product/pulp-paper-paperboard> , <http://gss-data.org.uk/def/concept/product/articles-of-paper-paperboard> , <http://gss-data.org.uk/def/concept/product/printing-type-blocks> , <http://gss-data.org.uk/def/concept/product/coke-oven-products> , <http://gss-data.org.uk/def/concept/product/refined-petroleum-products> , <http://gss-data.org.uk/def/concept/product/industrial-gases> , <http://gss-data.org.uk/def/concept/product/other-inorganic-basic-chemicals> , <http://gss-data.org.uk/def/concept/product/fertilisers-nitrogen-compounds> , <http://gss-data.org.uk/def/concept/product/other-organic-basic-chemicals> , <http://gss-data.org.uk/def/concept/product/plastics-in-primary-forms> , <http://gss-data.org.uk/def/concept/product/synthetic-rubber> , <http://gss-data.org.uk/def/concept/product/man-made-fibres> , <http://gss-data.org.uk/def/concept/product/dyes-pigments> , <http://gss-data.org.uk/def/concept/product/pesticides-other-agrochemical-products> , <http://gss-data.org.uk/def/concept/product/paints-varnishes-printing-ink> , <http://gss-data.org.uk/def/concept/product/cleaning-polishing-preparation> , <http://gss-data.org.uk/def/concept/product/other-chemical-products> , <http://gss-data.org.uk/def/concept/product/basic-pharmaceutical-products> , <http://gss-data.org.uk/def/concept/product/pharmaceutical-preparations> , <http://gss-data.org.uk/def/concept/product/rubber-products> , <http://gss-data.org.uk/def/concept/product/plastic-products> , <http://gss-data.org.uk/def/concept/product/glass-glass-products> , <http://gss-data.org.uk/def/concept/product/refractory-products> , <http://gss-data.org.uk/def/concept/product/bricks-tiles-etc> , <http://gss-data.org.uk/def/concept/product/other-porcelain-ceramic-products> , <http://gss-data.org.uk/def/concept/product/cut-shaped-finished-stone> , <http://gss-data.org.uk/def/concept/product/other-non-metallic-mineral-products> , <http://gss-data.org.uk/def/concept/product/manufacture-of-cement-lime-plaster-and-articles-of-concrete-cement-and-plaster> , <http://gss-data.org.uk/def/concept/product/cement-lime-plaster> , <http://gss-data.org.uk/def/concept/product/articles-of-concrete-cement-products> , <http://gss-data.org.uk/def/concept/product/basic-iron-and-steel> , <http://gss-data.org.uk/def/concept/product/basic-iron-steel-ferro-alloys> , <http://gss-data.org.uk/def/concept/product/non-cast-steel-tubes-pipes-hollow-profiles> , <http://gss-data.org.uk/def/concept/product/other-products-of-the-first-processing-of-steel> , <http://gss-data.org.uk/def/concept/product/other-basic-metals-and-casting> , <http://gss-data.org.uk/def/concept/product/basic-precious-other-non-ferrous-metals> , <http://gss-data.org.uk/def/concept/product/cast-iron-steel-tubes-pipes> , <http://gss-data.org.uk/def/concept/product/structural-metal-products> , <http://gss-data.org.uk/def/concept/product/tanks-reservoirs-containers-of-metal> , <http://gss-data.org.uk/def/concept/product/steam-generators-nuclear-reactors> , <http://gss-data.org.uk/def/concept/product/cutlery-tools-general-hardware> , <http://gss-data.org.uk/def/concept/product/other-fabricated-metal-products> , <http://gss-data.org.uk/def/concept/product/weapons-ammunition> , <http://gss-data.org.uk/def/concept/product/electronic-components-boards> , <http://gss-data.org.uk/def/concept/product/computers-peripherals> , <http://gss-data.org.uk/def/concept/product/communication-equipment> , <http://gss-data.org.uk/def/concept/product/consumer-electronics> , <http://gss-data.org.uk/def/concept/product/measuring-testing-navigating-equip-watches-and-clocks> , <http://gss-data.org.uk/def/concept/product/irradiation-electromedical-electrotherapeutic> , <http://gss-data.org.uk/def/concept/product/optical-instruments-photographic-equipment> , <http://gss-data.org.uk/def/concept/product/magnetic-optical-media> , <http://gss-data.org.uk/def/concept/product/electric-motors-electrictiy-distribution-control> , <http://gss-data.org.uk/def/concept/product/batteries-accumulators> , <http://gss-data.org.uk/def/concept/product/wiring-wiring-devices> , <http://gss-data.org.uk/def/concept/product/electric-lighting-equipment> , <http://gss-data.org.uk/def/concept/product/domestic-appliances> , <http://gss-data.org.uk/def/concept/product/other-electrical-equipment> , <http://gss-data.org.uk/def/concept/product/general-purpose-machinery> , <http://gss-data.org.uk/def/concept/product/other-general-purpose-machinery> , <http://gss-data.org.uk/def/concept/product/agricultural-forestry-machines> , <http://gss-data.org.uk/def/concept/product/metal-forming-machinery-machine-tools> , <http://gss-data.org.uk/def/concept/product/other-special-purpose-machinery> , <http://gss-data.org.uk/def/concept/product/motor-vehicles> , <http://gss-data.org.uk/def/concept/product/bodies-for-motor-vehicles-trailers-and-semi-trailers> , <http://gss-data.org.uk/def/concept/product/parts-accessories-for-motor-vehicles> , <http://gss-data.org.uk/def/concept/product/ships-boats-floating-structures> , <http://gss-data.org.uk/def/concept/product/air-spacecraft-related-machinery> , <http://gss-data.org.uk/def/concept/product/railway-locomotives-rolling-stock> , <http://gss-data.org.uk/def/concept/product/military-fighting-vehicles> , <http://gss-data.org.uk/def/concept/product/transport-equipment-n-e-c> , <http://gss-data.org.uk/def/concept/product/jewellery-bijouterie-related-articles> , <http://gss-data.org.uk/def/concept/product/musical-instruments> , <http://gss-data.org.uk/def/concept/product/sports-goods> , <http://gss-data.org.uk/def/concept/product/games-toys> , <http://gss-data.org.uk/def/concept/product/medical-dental-instruments-supplies> , <http://gss-data.org.uk/def/concept/product/manufactured-goods-n-e-c> , <http://gss-data.org.uk/def/concept/product/electricity> , <http://gss-data.org.uk/def/concept/product/manufactured-gas> , <http://gss-data.org.uk/def/concept/product/waste> , <http://gss-data.org.uk/def/concept/product/waste-treatment-and-disposal-services> , <http://gss-data.org.uk/def/concept/product/secondary-raw-materials> , <http://gss-data.org.uk/def/concept/product/printed-matter> , <http://gss-data.org.uk/def/concept/product/packaged-computer-software> , <http://gss-data.org.uk/def/concept/product/films-videos> , <http://gss-data.org.uk/def/concept/product/audio-recordings-printed-music> , <http://gss-data.org.uk/def/concept/product/architectural-plans-drawing> , <http://gss-data.org.uk/def/concept/product/exposed-photographic-film> , <http://gss-data.org.uk/def/concept/product/paintings-sculptures> , <http://gss-data.org.uk/def/concept/product/antiques-collections> , <http://gss-data.org.uk/def/concept/product/total-exports> , <http://gss-data.org.uk/def/concept/product/industrial-gases-inorganics> , <http://gss-data.org.uk/def/concept/product/petrochemicals> , <http://gss-data.org.uk/def/concept/product/dyestuffs-agro-chemicals> , <http://gss-data.org.uk/def/concept/product/total-imports> , <http://gss-data.org.uk/def/concept/product/total-eu-exports> , <http://gss-data.org.uk/def/concept/product/total-eu-imports> , <http://gss-data.org.uk/def/concept/product/total-non-eu-exports> , <http://gss-data.org.uk/def/concept/product/total-non-eu-imports> , <http://gss-data.org.uk/def/concept/product/products-of-agriculture-forestry-fishing> , <http://gss-data.org.uk/def/concept/product/mining-quarrying> , <http://gss-data.org.uk/def/concept/product/manufactured-products> , <http://gss-data.org.uk/def/concept/product/electricity-gas-steam-air-conditioning> , <http://gss-data.org.uk/def/concept/product/water-supply-sewerage-waste-management> , <http://gss-data.org.uk/def/concept/product/information-communication-services> , <http://gss-data.org.uk/def/concept/product/professional-scientific-technical-services> , <http://gss-data.org.uk/def/concept/product/arts-entertainment-recreation> , <http://gss-data.org.uk/def/concept/product/other-services> , <http://gss-data.org.uk/def/concept/product/glass-refractory-clay-other-porcelain-and-ceramic-stone-and-abrasive-products> , <http://gss-data.org.uk/def/concept/product/fabricated-metal-products-excl-machinery-and-equipment-and-weapons-ammunition> , <http://gss-data.org.uk/def/concept/product/other-transport-equipment> , <http://gss-data.org.uk/def/concept/product/food-beverages-and-tobacco> , <http://gss-data.org.uk/def/concept/product/basic-materials> , <http://gss-data.org.uk/def/concept/product/oil> , <http://gss-data.org.uk/def/concept/product/other-fuels> , <http://gss-data.org.uk/def/concept/product/semi-manufactured-goods> , <http://gss-data.org.uk/def/concept/product/finished-manufactured-goods> , <http://gss-data.org.uk/def/concept/product/unspecified-goods> , <http://gss-data.org.uk/def/concept/product/total> , <http://gss-data.org.uk/def/concept/product/manufacturing-and-maintenance-services> , <http://gss-data.org.uk/def/concept/product/transport> , <http://gss-data.org.uk/def/concept/product/travel> , <http://gss-data.org.uk/def/concept/product/construction> , <http://gss-data.org.uk/def/concept/product/insurance-and-pension-services> , <http://gss-data.org.uk/def/concept/product/financial> , <http://gss-data.org.uk/def/concept/product/intellectual-property> , <http://gss-data.org.uk/def/concept/product/telecommunication-computer-and-information-services> , <http://gss-data.org.uk/def/concept/product/other-business> , <http://gss-data.org.uk/def/concept/product/personal-cultural-and-recreational-services> , <http://gss-data.org.uk/def/concept/product/government> , <http://gss-data.org.uk/def/concept/product/primary-and-utilities> , <http://gss-data.org.uk/def/concept/product/manufacturing> , <http://gss-data.org.uk/def/concept/product/wholesale-and-motor-trades> , <http://gss-data.org.uk/def/concept/product/retail-excluding-motor-trades> , <http://gss-data.org.uk/def/concept/product/transportation-and-storage> , <http://gss-data.org.uk/def/concept/product/accommodation-and-food-service-activities> , <http://gss-data.org.uk/def/concept/product/information-and-communication> , <http://gss-data.org.uk/def/concept/product/financial-and-insurance-activities> , <http://gss-data.org.uk/def/concept/product/real-estate-activities> , <http://gss-data.org.uk/def/concept/product/professional-scientific-and-technical-activities> , <http://gss-data.org.uk/def/concept/product/administrative-and-support-service-activities> , <http://gss-data.org.uk/def/concept/product/all-industries> , <http://gss-data.org.uk/def/concept/product/non-manufacturing-production-services> , <http://gss-data.org.uk/def/concept/product/wholesale-and-motor-trade> , <http://gss-data.org.uk/def/concept/product/transport-and-storage> , <http://gss-data.org.uk/def/concept/product/accommodation-and-food-services> , <http://gss-data.org.uk/def/concept/product/professional-scientific-and-technical-activities-real-estate> , <http://gss-data.org.uk/def/concept/product/production-a-f> , <http://gss-data.org.uk/def/concept/product/business-based-professional-services-l-n> , <http://gss-data.org.uk/def/concept/product/other-services-g-k-o-s> , <http://gss-data.org.uk/def/concept/product/all-services> ;
+		<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://gss-data.org.uk/def/concept/product/all> , <http://gss-data.org.uk/def/concept/product/non-perennial-crops> , <http://gss-data.org.uk/def/concept/product/perennial-crops> , <http://gss-data.org.uk/def/concept/product/planting-material> , <http://gss-data.org.uk/def/concept/product/live-animals-animal-products> , <http://gss-data.org.uk/def/concept/product/trees-their-seeds> , <http://gss-data.org.uk/def/concept/product/wood-in-the-rough> , <http://gss-data.org.uk/def/concept/product/wild-growing-non-wood-products> , <http://gss-data.org.uk/def/concept/product/coal> , <http://gss-data.org.uk/def/concept/product/lignite> , <http://gss-data.org.uk/def/concept/product/crude-petroleum> , <http://gss-data.org.uk/def/concept/product/natural-gas> , <http://gss-data.org.uk/def/concept/product/iron-ores> , <http://gss-data.org.uk/def/concept/product/non-ferrous-metal-ores> , <http://gss-data.org.uk/def/concept/product/unworked-stone-gravel-sand-clays-kaolin> , <http://gss-data.org.uk/def/concept/product/mining-quarrying-products-n-e-c> , <http://gss-data.org.uk/def/concept/product/preserved-meat-meat-products> , <http://gss-data.org.uk/def/concept/product/processed-and-preserved-fish-crustaceans-molluscs-fruit-and-vegetables> , <http://gss-data.org.uk/def/concept/product/processed-preserved-fish-crustaceans-molluscs> , <http://gss-data.org.uk/def/concept/product/processed-preserved-fruit-and-vegetables> , <http://gss-data.org.uk/def/concept/product/vegetable-animal-oils-fats> , <http://gss-data.org.uk/def/concept/product/dairy-products> , <http://gss-data.org.uk/def/concept/product/grain-mill-products-starches-starch-products> , <http://gss-data.org.uk/def/concept/product/bakery-farinaceous-products> , <http://gss-data.org.uk/def/concept/product/other-food-products> , <http://gss-data.org.uk/def/concept/product/prepared-feeds-for-farm-animals> , <http://gss-data.org.uk/def/concept/product/alcoholic-beverages> , <http://gss-data.org.uk/def/concept/product/distilled-alcoholic-beverages> , <http://gss-data.org.uk/def/concept/product/wine> , <http://gss-data.org.uk/def/concept/product/cider-other-fruit-wines> , <http://gss-data.org.uk/def/concept/product/other-non-distilled-fermented-beverages> , <http://gss-data.org.uk/def/concept/product/beer> , <http://gss-data.org.uk/def/concept/product/malt> , <http://gss-data.org.uk/def/concept/product/soft-drinks-bottled-waters> , <http://gss-data.org.uk/def/concept/product/tobacco-products> , <http://gss-data.org.uk/def/concept/product/textile-yarn-thread> , <http://gss-data.org.uk/def/concept/product/woven-textiles> , <http://gss-data.org.uk/def/concept/product/other-textiles> , <http://gss-data.org.uk/def/concept/product/wearing-apparel-except-fur-apparel> , <http://gss-data.org.uk/def/concept/product/articles-of-fur> , <http://gss-data.org.uk/def/concept/product/knitted-crocheted-hosiery-pullovers-cardigans> , <http://gss-data.org.uk/def/concept/product/tanned-and-dressed-leather-fur> , <http://gss-data.org.uk/def/concept/product/footwear> , <http://gss-data.org.uk/def/concept/product/wood-sawn-planed> , <http://gss-data.org.uk/def/concept/product/products-of-wood-cork-straw-plaiting-material> , <http://gss-data.org.uk/def/concept/product/pulp-paper-paperboard> , <http://gss-data.org.uk/def/concept/product/articles-of-paper-paperboard> , <http://gss-data.org.uk/def/concept/product/printing-type-blocks> , <http://gss-data.org.uk/def/concept/product/coke-oven-products> , <http://gss-data.org.uk/def/concept/product/refined-petroleum-products> , <http://gss-data.org.uk/def/concept/product/industrial-gases> , <http://gss-data.org.uk/def/concept/product/other-inorganic-basic-chemicals> , <http://gss-data.org.uk/def/concept/product/fertilisers-nitrogen-compounds> , <http://gss-data.org.uk/def/concept/product/other-organic-basic-chemicals> , <http://gss-data.org.uk/def/concept/product/plastics-in-primary-forms> , <http://gss-data.org.uk/def/concept/product/synthetic-rubber> , <http://gss-data.org.uk/def/concept/product/man-made-fibres> , <http://gss-data.org.uk/def/concept/product/dyes-pigments> , <http://gss-data.org.uk/def/concept/product/pesticides-other-agrochemical-products> , <http://gss-data.org.uk/def/concept/product/paints-varnishes-printing-ink> , <http://gss-data.org.uk/def/concept/product/cleaning-polishing-preparation> , <http://gss-data.org.uk/def/concept/product/other-chemical-products> , <http://gss-data.org.uk/def/concept/product/basic-pharmaceutical-products> , <http://gss-data.org.uk/def/concept/product/pharmaceutical-preparations> , <http://gss-data.org.uk/def/concept/product/rubber-products> , <http://gss-data.org.uk/def/concept/product/plastic-products> , <http://gss-data.org.uk/def/concept/product/glass-glass-products> , <http://gss-data.org.uk/def/concept/product/refractory-products> , <http://gss-data.org.uk/def/concept/product/bricks-tiles-etc> , <http://gss-data.org.uk/def/concept/product/other-porcelain-ceramic-products> , <http://gss-data.org.uk/def/concept/product/cut-shaped-finished-stone> , <http://gss-data.org.uk/def/concept/product/other-non-metallic-mineral-products> , <http://gss-data.org.uk/def/concept/product/manufacture-of-cement-lime-plaster-and-articles-of-concrete-cement-and-plaster> , <http://gss-data.org.uk/def/concept/product/cement-lime-plaster> , <http://gss-data.org.uk/def/concept/product/articles-of-concrete-cement-products> , <http://gss-data.org.uk/def/concept/product/basic-iron-and-steel> , <http://gss-data.org.uk/def/concept/product/basic-iron-steel-ferro-alloys> , <http://gss-data.org.uk/def/concept/product/non-cast-steel-tubes-pipes-hollow-profiles> , <http://gss-data.org.uk/def/concept/product/other-products-of-the-first-processing-of-steel> , <http://gss-data.org.uk/def/concept/product/other-basic-metals-and-casting> , <http://gss-data.org.uk/def/concept/product/basic-precious-other-non-ferrous-metals> , <http://gss-data.org.uk/def/concept/product/cast-iron-steel-tubes-pipes> , <http://gss-data.org.uk/def/concept/product/structural-metal-products> , <http://gss-data.org.uk/def/concept/product/tanks-reservoirs-containers-of-metal> , <http://gss-data.org.uk/def/concept/product/steam-generators-nuclear-reactors> , <http://gss-data.org.uk/def/concept/product/cutlery-tools-general-hardware> , <http://gss-data.org.uk/def/concept/product/other-fabricated-metal-products> , <http://gss-data.org.uk/def/concept/product/weapons-ammunition> , <http://gss-data.org.uk/def/concept/product/electronic-components-boards> , <http://gss-data.org.uk/def/concept/product/computers-peripherals> , <http://gss-data.org.uk/def/concept/product/communication-equipment> , <http://gss-data.org.uk/def/concept/product/consumer-electronics> , <http://gss-data.org.uk/def/concept/product/measuring-testing-navigating-equip-watches-and-clocks> , <http://gss-data.org.uk/def/concept/product/irradiation-electromedical-electrotherapeutic> , <http://gss-data.org.uk/def/concept/product/optical-instruments-photographic-equipment> , <http://gss-data.org.uk/def/concept/product/magnetic-optical-media> , <http://gss-data.org.uk/def/concept/product/electric-motors-electrictiy-distribution-control> , <http://gss-data.org.uk/def/concept/product/batteries-accumulators> , <http://gss-data.org.uk/def/concept/product/wiring-wiring-devices> , <http://gss-data.org.uk/def/concept/product/electric-lighting-equipment> , <http://gss-data.org.uk/def/concept/product/domestic-appliances> , <http://gss-data.org.uk/def/concept/product/other-electrical-equipment> , <http://gss-data.org.uk/def/concept/product/general-purpose-machinery> , <http://gss-data.org.uk/def/concept/product/other-general-purpose-machinery> , <http://gss-data.org.uk/def/concept/product/agricultural-forestry-machines> , <http://gss-data.org.uk/def/concept/product/metal-forming-machinery-machine-tools> , <http://gss-data.org.uk/def/concept/product/other-special-purpose-machinery> , <http://gss-data.org.uk/def/concept/product/motor-vehicles> , <http://gss-data.org.uk/def/concept/product/bodies-for-motor-vehicles-trailers-and-semi-trailers> , <http://gss-data.org.uk/def/concept/product/parts-accessories-for-motor-vehicles> , <http://gss-data.org.uk/def/concept/product/ships-boats-floating-structures> , <http://gss-data.org.uk/def/concept/product/air-spacecraft-related-machinery> , <http://gss-data.org.uk/def/concept/product/railway-locomotives-rolling-stock> , <http://gss-data.org.uk/def/concept/product/military-fighting-vehicles> , <http://gss-data.org.uk/def/concept/product/transport-equipment-n-e-c> , <http://gss-data.org.uk/def/concept/product/jewellery-bijouterie-related-articles> , <http://gss-data.org.uk/def/concept/product/musical-instruments> , <http://gss-data.org.uk/def/concept/product/sports-goods> , <http://gss-data.org.uk/def/concept/product/games-toys> , <http://gss-data.org.uk/def/concept/product/medical-dental-instruments-supplies> , <http://gss-data.org.uk/def/concept/product/manufactured-goods-n-e-c> , <http://gss-data.org.uk/def/concept/product/electricity> , <http://gss-data.org.uk/def/concept/product/manufactured-gas> , <http://gss-data.org.uk/def/concept/product/waste> , <http://gss-data.org.uk/def/concept/product/waste-treatment-and-disposal-services> , <http://gss-data.org.uk/def/concept/product/secondary-raw-materials> , <http://gss-data.org.uk/def/concept/product/printed-matter> , <http://gss-data.org.uk/def/concept/product/packaged-computer-software> , <http://gss-data.org.uk/def/concept/product/films-videos> , <http://gss-data.org.uk/def/concept/product/audio-recordings-printed-music> , <http://gss-data.org.uk/def/concept/product/architectural-plans-drawing> , <http://gss-data.org.uk/def/concept/product/exposed-photographic-film> , <http://gss-data.org.uk/def/concept/product/paintings-sculptures> , <http://gss-data.org.uk/def/concept/product/antiques-collections> , <http://gss-data.org.uk/def/concept/product/total-exports> , <http://gss-data.org.uk/def/concept/product/industrial-gases-inorganics> , <http://gss-data.org.uk/def/concept/product/petrochemicals> , <http://gss-data.org.uk/def/concept/product/dyestuffs-agro-chemicals> , <http://gss-data.org.uk/def/concept/product/total-imports> , <http://gss-data.org.uk/def/concept/product/total-eu-exports> , <http://gss-data.org.uk/def/concept/product/total-eu-imports> , <http://gss-data.org.uk/def/concept/product/total-non-eu-exports> , <http://gss-data.org.uk/def/concept/product/total-non-eu-imports> , <http://gss-data.org.uk/def/concept/product/products-of-agriculture-forestry-fishing> , <http://gss-data.org.uk/def/concept/product/mining-quarrying> , <http://gss-data.org.uk/def/concept/product/manufactured-products> , <http://gss-data.org.uk/def/concept/product/electricity-gas-steam-air-conditioning> , <http://gss-data.org.uk/def/concept/product/water-supply-sewerage-waste-management> , <http://gss-data.org.uk/def/concept/product/information-communication-services> , <http://gss-data.org.uk/def/concept/product/professional-scientific-technical-services> , <http://gss-data.org.uk/def/concept/product/arts-entertainment-recreation> , <http://gss-data.org.uk/def/concept/product/other-services> , <http://gss-data.org.uk/def/concept/product/glass-refractory-clay-other-porcelain-and-ceramic-stone-and-abrasive-products> , <http://gss-data.org.uk/def/concept/product/fabricated-metal-products-excl-machinery-and-equipment-and-weapons-ammunition> , <http://gss-data.org.uk/def/concept/product/other-transport-equipment> , <http://gss-data.org.uk/def/concept/product/food-beverages-and-tobacco> , <http://gss-data.org.uk/def/concept/product/basic-materials> , <http://gss-data.org.uk/def/concept/product/oil> , <http://gss-data.org.uk/def/concept/product/other-fuels> , <http://gss-data.org.uk/def/concept/product/semi-manufactured-goods> , <http://gss-data.org.uk/def/concept/product/finished-manufactured-goods> , <http://gss-data.org.uk/def/concept/product/unspecified-goods> , <http://gss-data.org.uk/def/concept/product/total> , <http://gss-data.org.uk/def/concept/product/manufacturing-and-maintenance-services> , <http://gss-data.org.uk/def/concept/product/transport> , <http://gss-data.org.uk/def/concept/product/travel> , <http://gss-data.org.uk/def/concept/product/construction> , <http://gss-data.org.uk/def/concept/product/insurance-and-pension-services> , <http://gss-data.org.uk/def/concept/product/financial> , <http://gss-data.org.uk/def/concept/product/intellectual-property> , <http://gss-data.org.uk/def/concept/product/telecommunication-computer-and-information-services> , <http://gss-data.org.uk/def/concept/product/other-business> , <http://gss-data.org.uk/def/concept/product/personal-cultural-and-recreational-services> , <http://gss-data.org.uk/def/concept/product/government> , <http://gss-data.org.uk/def/concept/product/primary-and-utilities> , <http://gss-data.org.uk/def/concept/product/manufacturing> , <http://gss-data.org.uk/def/concept/product/wholesale-and-motor-trades> , <http://gss-data.org.uk/def/concept/product/retail-excluding-motor-trades> , <http://gss-data.org.uk/def/concept/product/transportation-and-storage> , <http://gss-data.org.uk/def/concept/product/accommodation-and-food-service-activities> , <http://gss-data.org.uk/def/concept/product/information-and-communication> , <http://gss-data.org.uk/def/concept/product/financial-and-insurance-activities> , <http://gss-data.org.uk/def/concept/product/real-estate-activities> , <http://gss-data.org.uk/def/concept/product/professional-scientific-and-technical-activities> , <http://gss-data.org.uk/def/concept/product/administrative-and-support-service-activities> , <http://gss-data.org.uk/def/concept/product/all-industries> , <http://gss-data.org.uk/def/concept/product/non-manufacturing-production-services> , <http://gss-data.org.uk/def/concept/product/wholesale-and-motor-trade> , <http://gss-data.org.uk/def/concept/product/transport-and-storage> , <http://gss-data.org.uk/def/concept/product/accommodation-and-food-services> , <http://gss-data.org.uk/def/concept/product/professional-scientific-and-technical-activities-real-estate> , <http://gss-data.org.uk/def/concept/product/production-a-f> , <http://gss-data.org.uk/def/concept/product/business-based-professional-services-l-n> , <http://gss-data.org.uk/def/concept/product/other-services-g-k-o-s> , <http://gss-data.org.uk/def/concept/product/all-services> ;
+		<http://purl.org/dc/terms/title> "Product"@en .
+
+	<http://gss-data.org.uk/def/concept/product/all> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "All" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "all" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "All" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 1 .
+
+	<http://gss-data.org.uk/def/concept/product/non-perennial-crops> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Non-perennial crops" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "non-perennial-crops" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Non-perennial crops" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 2 .
+
+	<http://gss-data.org.uk/def/concept/product/perennial-crops> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Perennial crops" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "perennial-crops" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Perennial crops" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 3 .
+
+	<http://gss-data.org.uk/def/concept/product/planting-material> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Planting material" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "planting-material" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Planting material" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 4 .
+
+	<http://gss-data.org.uk/def/concept/product/live-animals-animal-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Live animals & animal products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "live-animals-animal-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Live animals & animal products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 5 .
+
+	<http://gss-data.org.uk/def/concept/product/trees-their-seeds> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Trees & their seeds" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "trees-their-seeds" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Trees & their seeds" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 6 .
+
+	<http://gss-data.org.uk/def/concept/product/wood-in-the-rough> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Wood in the rough" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "wood-in-the-rough" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Wood in the rough" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 7 .
+
+	<http://gss-data.org.uk/def/concept/product/wild-growing-non-wood-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Wild growing non-wood products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "wild-growing-non-wood-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Wild growing non-wood products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 8 .
+
+	<http://gss-data.org.uk/def/concept/product/coal> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Coal" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "coal" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Coal" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 9 .
+
+	<http://gss-data.org.uk/def/concept/product/lignite> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Lignite" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "lignite" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Lignite" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 10 .
+
+	<http://gss-data.org.uk/def/concept/product/crude-petroleum> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Crude petroleum" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "crude-petroleum" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Crude petroleum" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 11 .
+
+	<http://gss-data.org.uk/def/concept/product/natural-gas> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Natural gas" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "natural-gas" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Natural gas" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 12 .
+
+	<http://gss-data.org.uk/def/concept/product/iron-ores> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Iron ores" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "iron-ores" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Iron ores" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 13 .
+
+	<http://gss-data.org.uk/def/concept/product/non-ferrous-metal-ores> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Non-ferrous metal ores" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "non-ferrous-metal-ores" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Non-ferrous metal ores" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 14 .
+
+	<http://gss-data.org.uk/def/concept/product/unworked-stone-gravel-sand-clays-kaolin> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Unworked stone gravel sand clays & kaolin" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "unworked-stone-gravel-sand-clays-kaolin" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Unworked stone gravel sand clays & kaolin" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 15 .
+
+	<http://gss-data.org.uk/def/concept/product/mining-quarrying-products-n-e-c> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Mining & quarrying products n.e.c" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "mining-quarrying-products-n-e-c" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Mining & quarrying products n.e.c" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 16 .
+
+	<http://gss-data.org.uk/def/concept/product/preserved-meat-meat-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Preserved meat & meat products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "preserved-meat-meat-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Preserved meat & meat products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 17 .
+
+	<http://gss-data.org.uk/def/concept/product/processed-and-preserved-fish-crustaceans-molluscs-fruit-and-vegetables> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Processed and preserved fish crustaceans molluscs fruit and vegetables" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "processed-and-preserved-fish-crustaceans-molluscs-fruit-and-vegetables" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Processed and preserved fish crustaceans molluscs fruit and vegetables" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 18 .
+
+	<http://gss-data.org.uk/def/concept/product/processed-preserved-fish-crustaceans-molluscs> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Processed & preserved fish crustaceans & molluscs" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "processed-preserved-fish-crustaceans-molluscs" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Processed & preserved fish crustaceans & molluscs" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 19 .
+
+	<http://gss-data.org.uk/def/concept/product/processed-preserved-fruit-and-vegetables> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Processed & preserved fruit and vegetables" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "processed-preserved-fruit-and-vegetables" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Processed & preserved fruit and vegetables" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 20 .
+
+	<http://gss-data.org.uk/def/concept/product/vegetable-animal-oils-fats> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Vegetable & animal oils & fats" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "vegetable-animal-oils-fats" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Vegetable & animal oils & fats" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 21 .
+
+	<http://gss-data.org.uk/def/concept/product/dairy-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Dairy products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "dairy-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Dairy products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 22 .
+
+	<http://gss-data.org.uk/def/concept/product/grain-mill-products-starches-starch-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Grain mill products starches & starch products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "grain-mill-products-starches-starch-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Grain mill products starches & starch products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 23 .
+
+	<http://gss-data.org.uk/def/concept/product/bakery-farinaceous-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Bakery & farinaceous products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "bakery-farinaceous-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Bakery & farinaceous products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 24 .
+
+	<http://gss-data.org.uk/def/concept/product/other-food-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other food products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-food-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other food products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 25 .
+
+	<http://gss-data.org.uk/def/concept/product/prepared-feeds-for-farm-animals> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Prepared feeds for farm animals" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "prepared-feeds-for-farm-animals" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Prepared feeds for farm animals" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 26 .
+
+	<http://gss-data.org.uk/def/concept/product/alcoholic-beverages> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Alcoholic beverages" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "alcoholic-beverages" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Alcoholic beverages" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 27 .
+
+	<http://gss-data.org.uk/def/concept/product/distilled-alcoholic-beverages> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Distilled alcoholic beverages" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "distilled-alcoholic-beverages" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Distilled alcoholic beverages" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 28 .
+
+	<http://gss-data.org.uk/def/concept/product/wine> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Wine" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "wine" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Wine" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 29 .
+
+	<http://gss-data.org.uk/def/concept/product/cider-other-fruit-wines> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Cider & other fruit wines" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "cider-other-fruit-wines" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Cider & other fruit wines" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 30 .
+
+	<http://gss-data.org.uk/def/concept/product/other-non-distilled-fermented-beverages> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other non-distilled fermented beverages" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-non-distilled-fermented-beverages" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other non-distilled fermented beverages" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 31 .
+
+	<http://gss-data.org.uk/def/concept/product/beer> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Beer" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "beer" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Beer" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 32 .
+
+	<http://gss-data.org.uk/def/concept/product/malt> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Malt" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "malt" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Malt" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 33 .
+
+	<http://gss-data.org.uk/def/concept/product/soft-drinks-bottled-waters> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Soft drinks & bottled waters" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "soft-drinks-bottled-waters" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Soft drinks & bottled waters" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 34 .
+
+	<http://gss-data.org.uk/def/concept/product/tobacco-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Tobacco products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "tobacco-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Tobacco products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 35 .
+
+	<http://gss-data.org.uk/def/concept/product/textile-yarn-thread> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Textile yarn & thread" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "textile-yarn-thread" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Textile yarn & thread" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 36 .
+
+	<http://gss-data.org.uk/def/concept/product/woven-textiles> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Woven textiles" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "woven-textiles" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Woven textiles" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 37 .
+
+	<http://gss-data.org.uk/def/concept/product/other-textiles> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other textiles" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-textiles" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other textiles" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 38 .
+
+	<http://gss-data.org.uk/def/concept/product/wearing-apparel-except-fur-apparel> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Wearing apparel except fur apparel" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "wearing-apparel-except-fur-apparel" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Wearing apparel except fur apparel" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 39 .
+
+	<http://gss-data.org.uk/def/concept/product/articles-of-fur> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Articles of fur" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "articles-of-fur" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Articles of fur" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 40 .
+
+	<http://gss-data.org.uk/def/concept/product/knitted-crocheted-hosiery-pullovers-cardigans> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Knitted & crocheted hosiery pullovers & cardigans" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "knitted-crocheted-hosiery-pullovers-cardigans" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Knitted & crocheted hosiery pullovers & cardigans" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 41 .
+
+	<http://gss-data.org.uk/def/concept/product/tanned-and-dressed-leather-fur> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Tanned and dressed leather & fur" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "tanned-and-dressed-leather-fur" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Tanned and dressed leather & fur" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 42 .
+
+	<http://gss-data.org.uk/def/concept/product/footwear> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Footwear" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "footwear" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Footwear" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 43 .
+
+	<http://gss-data.org.uk/def/concept/product/wood-sawn-planed> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Wood sawn & planed" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "wood-sawn-planed" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Wood sawn & planed" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 44 .
+
+	<http://gss-data.org.uk/def/concept/product/products-of-wood-cork-straw-plaiting-material> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Products of wood cork straw & plaiting material" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "products-of-wood-cork-straw-plaiting-material" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Products of wood cork straw & plaiting material" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 45 .
+
+	<http://gss-data.org.uk/def/concept/product/pulp-paper-paperboard> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Pulp paper & paperboard" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "pulp-paper-paperboard" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Pulp paper & paperboard" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 46 .
+
+	<http://gss-data.org.uk/def/concept/product/articles-of-paper-paperboard> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Articles of paper & paperboard" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "articles-of-paper-paperboard" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Articles of paper & paperboard" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 47 .
+
+	<http://gss-data.org.uk/def/concept/product/printing-type-blocks> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Printing type & blocks" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "printing-type-blocks" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Printing type & blocks" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 48 .
+
+	<http://gss-data.org.uk/def/concept/product/coke-oven-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Coke oven products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "coke-oven-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Coke oven products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 49 .
+
+	<http://gss-data.org.uk/def/concept/product/refined-petroleum-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Refined petroleum products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "refined-petroleum-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Refined petroleum products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 50 .
+
+	<http://gss-data.org.uk/def/concept/product/industrial-gases> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Industrial gases" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "industrial-gases" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Industrial gases" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 51 .
+
+	<http://gss-data.org.uk/def/concept/product/other-inorganic-basic-chemicals> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other inorganic basic chemicals" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-inorganic-basic-chemicals" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other inorganic basic chemicals" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 52 .
+
+	<http://gss-data.org.uk/def/concept/product/fertilisers-nitrogen-compounds> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Fertilisers & nitrogen compounds" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "fertilisers-nitrogen-compounds" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Fertilisers & nitrogen compounds" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 53 .
+
+	<http://gss-data.org.uk/def/concept/product/other-organic-basic-chemicals> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other organic basic chemicals" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-organic-basic-chemicals" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other organic basic chemicals" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 54 .
+
+	<http://gss-data.org.uk/def/concept/product/plastics-in-primary-forms> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Plastics in primary forms" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "plastics-in-primary-forms" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Plastics in primary forms" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 55 .
+
+	<http://gss-data.org.uk/def/concept/product/synthetic-rubber> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Synthetic rubber" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "synthetic-rubber" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Synthetic rubber" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 56 .
+
+	<http://gss-data.org.uk/def/concept/product/man-made-fibres> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Man-made fibres" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "man-made-fibres" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Man-made fibres" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 57 .
+
+	<http://gss-data.org.uk/def/concept/product/dyes-pigments> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Dyes & pigments" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "dyes-pigments" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Dyes & pigments" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 58 .
+
+	<http://gss-data.org.uk/def/concept/product/pesticides-other-agrochemical-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Pesticides & other agrochemical products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "pesticides-other-agrochemical-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Pesticides & other agrochemical products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 59 .
+
+	<http://gss-data.org.uk/def/concept/product/paints-varnishes-printing-ink> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Paints varnishes & printing ink" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "paints-varnishes-printing-ink" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Paints varnishes & printing ink" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 60 .
+
+	<http://gss-data.org.uk/def/concept/product/cleaning-polishing-preparation> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Cleaning & polishing preparation" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "cleaning-polishing-preparation" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Cleaning & polishing preparation" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 61 .
+
+	<http://gss-data.org.uk/def/concept/product/other-chemical-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other chemical products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-chemical-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other chemical products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 62 .
+
+	<http://gss-data.org.uk/def/concept/product/basic-pharmaceutical-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Basic pharmaceutical products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "basic-pharmaceutical-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Basic pharmaceutical products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 63 .
+
+	<http://gss-data.org.uk/def/concept/product/pharmaceutical-preparations> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Pharmaceutical preparations" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "pharmaceutical-preparations" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Pharmaceutical preparations" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 64 .
+
+	<http://gss-data.org.uk/def/concept/product/rubber-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Rubber products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "rubber-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Rubber products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 65 .
+
+	<http://gss-data.org.uk/def/concept/product/plastic-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Plastic products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "plastic-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Plastic products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 66 .
+
+	<http://gss-data.org.uk/def/concept/product/glass-glass-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Glass & glass products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "glass-glass-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Glass & glass products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 67 .
+
+	<http://gss-data.org.uk/def/concept/product/refractory-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Refractory products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "refractory-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Refractory products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 68 .
+
+	<http://gss-data.org.uk/def/concept/product/bricks-tiles-etc> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Bricks tiles etc" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "bricks-tiles-etc" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Bricks tiles etc" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 69 .
+
+	<http://gss-data.org.uk/def/concept/product/other-porcelain-ceramic-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other porcelain & ceramic products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-porcelain-ceramic-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other porcelain & ceramic products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 70 .
+
+	<http://gss-data.org.uk/def/concept/product/cut-shaped-finished-stone> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Cut shaped & finished stone" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "cut-shaped-finished-stone" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Cut shaped & finished stone" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 71 .
+
+	<http://gss-data.org.uk/def/concept/product/other-non-metallic-mineral-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other non-metallic mineral products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-non-metallic-mineral-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other non-metallic mineral products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 72 .
+
+	<http://gss-data.org.uk/def/concept/product/manufacture-of-cement-lime-plaster-and-articles-of-concrete-cement-and-plaster> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Manufacture of cement lime plaster and articles of concrete cement and plaster" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "manufacture-of-cement-lime-plaster-and-articles-of-concrete-cement-and-plaster" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Manufacture of cement lime plaster and articles of concrete cement and plaster" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 73 .
+
+	<http://gss-data.org.uk/def/concept/product/cement-lime-plaster> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Cement lime & plaster" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "cement-lime-plaster" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Cement lime & plaster" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 74 .
+
+	<http://gss-data.org.uk/def/concept/product/articles-of-concrete-cement-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Articles of concrete cement & products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "articles-of-concrete-cement-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Articles of concrete cement & products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 75 .
+
+	<http://gss-data.org.uk/def/concept/product/basic-iron-and-steel> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Basic iron and steel" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "basic-iron-and-steel" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Basic iron and steel" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 76 .
+
+	<http://gss-data.org.uk/def/concept/product/basic-iron-steel-ferro-alloys> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Basic iron steel & ferro-alloys" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "basic-iron-steel-ferro-alloys" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Basic iron steel & ferro-alloys" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 77 .
+
+	<http://gss-data.org.uk/def/concept/product/non-cast-steel-tubes-pipes-hollow-profiles> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Non-cast steel tubes pipes & hollow profiles" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "non-cast-steel-tubes-pipes-hollow-profiles" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Non-cast steel tubes pipes & hollow profiles" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 78 .
+
+	<http://gss-data.org.uk/def/concept/product/other-products-of-the-first-processing-of-steel> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other products of the first processing of steel" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-products-of-the-first-processing-of-steel" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other products of the first processing of steel" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 79 .
+
+	<http://gss-data.org.uk/def/concept/product/other-basic-metals-and-casting> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other basic metals and casting" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-basic-metals-and-casting" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other basic metals and casting" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 80 .
+
+	<http://gss-data.org.uk/def/concept/product/basic-precious-other-non-ferrous-metals> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Basic precious & other non-ferrous metals" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "basic-precious-other-non-ferrous-metals" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Basic precious & other non-ferrous metals" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 81 .
+
+	<http://gss-data.org.uk/def/concept/product/cast-iron-steel-tubes-pipes> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Cast iron & steel tubes & pipes" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "cast-iron-steel-tubes-pipes" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Cast iron & steel tubes & pipes" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 82 .
+
+	<http://gss-data.org.uk/def/concept/product/structural-metal-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Structural metal products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "structural-metal-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Structural metal products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 83 .
+
+	<http://gss-data.org.uk/def/concept/product/tanks-reservoirs-containers-of-metal> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Tanks reservoirs & containers of metal" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "tanks-reservoirs-containers-of-metal" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Tanks reservoirs & containers of metal" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 84 .
+
+	<http://gss-data.org.uk/def/concept/product/steam-generators-nuclear-reactors> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Steam generators & nuclear reactors" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "steam-generators-nuclear-reactors" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Steam generators & nuclear reactors" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 85 .
+
+	<http://gss-data.org.uk/def/concept/product/cutlery-tools-general-hardware> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Cutlery tools & general hardware" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "cutlery-tools-general-hardware" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Cutlery tools & general hardware" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 86 .
+
+	<http://gss-data.org.uk/def/concept/product/other-fabricated-metal-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other fabricated metal products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-fabricated-metal-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other fabricated metal products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 87 .
+
+	<http://gss-data.org.uk/def/concept/product/weapons-ammunition> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Weapons & ammunition" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "weapons-ammunition" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Weapons & ammunition" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 88 .
+
+	<http://gss-data.org.uk/def/concept/product/electronic-components-boards> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Electronic components & boards" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "electronic-components-boards" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Electronic components & boards" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 89 .
+
+	<http://gss-data.org.uk/def/concept/product/computers-peripherals> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Computers & peripherals" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "computers-peripherals" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Computers & peripherals" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 90 .
+
+	<http://gss-data.org.uk/def/concept/product/communication-equipment> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Communication equipment" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "communication-equipment" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Communication equipment" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 91 .
+
+	<http://gss-data.org.uk/def/concept/product/consumer-electronics> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Consumer electronics" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "consumer-electronics" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Consumer electronics" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 92 .
+
+	<http://gss-data.org.uk/def/concept/product/measuring-testing-navigating-equip-watches-and-clocks> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Measuring testing & navigating equip; watches and clocks" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "measuring-testing-navigating-equip-watches-and-clocks" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Measuring testing & navigating equip; watches and clocks" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 93 .
+
+	<http://gss-data.org.uk/def/concept/product/irradiation-electromedical-electrotherapeutic> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Irradiation electromedical & electrotherapeutic" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "irradiation-electromedical-electrotherapeutic" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Irradiation electromedical & electrotherapeutic" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 94 .
+
+	<http://gss-data.org.uk/def/concept/product/optical-instruments-photographic-equipment> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Optical instruments & photographic equipment" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "optical-instruments-photographic-equipment" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Optical instruments & photographic equipment" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 95 .
+
+	<http://gss-data.org.uk/def/concept/product/magnetic-optical-media> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Magnetic & optical media" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "magnetic-optical-media" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Magnetic & optical media" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 96 .
+
+	<http://gss-data.org.uk/def/concept/product/electric-motors-electrictiy-distribution-control> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Electric motors & electrictiy distribution & control" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "electric-motors-electrictiy-distribution-control" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Electric motors & electrictiy distribution & control" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 97 .
+
+	<http://gss-data.org.uk/def/concept/product/batteries-accumulators> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Batteries & accumulators" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "batteries-accumulators" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Batteries & accumulators" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 98 .
+
+	<http://gss-data.org.uk/def/concept/product/wiring-wiring-devices> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Wiring & wiring devices" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "wiring-wiring-devices" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Wiring & wiring devices" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 99 .
+
+	<http://gss-data.org.uk/def/concept/product/electric-lighting-equipment> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Electric lighting equipment" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "electric-lighting-equipment" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Electric lighting equipment" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 100 .
+
+	<http://gss-data.org.uk/def/concept/product/domestic-appliances> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Domestic appliances" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "domestic-appliances" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Domestic appliances" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 101 .
+
+	<http://gss-data.org.uk/def/concept/product/other-electrical-equipment> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other electrical equipment" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-electrical-equipment" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other electrical equipment" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 102 .
+
+	<http://gss-data.org.uk/def/concept/product/general-purpose-machinery> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "General-purpose machinery" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "general-purpose-machinery" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "General-purpose machinery" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 103 .
+
+	<http://gss-data.org.uk/def/concept/product/other-general-purpose-machinery> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other general-purpose machinery" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-general-purpose-machinery" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other general-purpose machinery" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 104 .
+
+	<http://gss-data.org.uk/def/concept/product/agricultural-forestry-machines> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Agricultural & forestry machines" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "agricultural-forestry-machines" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Agricultural & forestry machines" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 105 .
+
+	<http://gss-data.org.uk/def/concept/product/metal-forming-machinery-machine-tools> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Metal forming machinery & machine tools" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "metal-forming-machinery-machine-tools" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Metal forming machinery & machine tools" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 106 .
+
+	<http://gss-data.org.uk/def/concept/product/other-special-purpose-machinery> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other special-purpose machinery" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-special-purpose-machinery" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other special-purpose machinery" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 107 .
+
+	<http://gss-data.org.uk/def/concept/product/motor-vehicles> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Motor vehicles" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "motor-vehicles" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Motor vehicles" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 108 .
+
+	<http://gss-data.org.uk/def/concept/product/bodies-for-motor-vehicles-trailers-and-semi-trailers> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Bodies for motor vehicles; trailers and semi-trailers" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "bodies-for-motor-vehicles-trailers-and-semi-trailers" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Bodies for motor vehicles; trailers and semi-trailers" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 109 .
+
+	<http://gss-data.org.uk/def/concept/product/parts-accessories-for-motor-vehicles> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Parts & accessories for motor vehicles" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "parts-accessories-for-motor-vehicles" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Parts & accessories for motor vehicles" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 110 .
+
+	<http://gss-data.org.uk/def/concept/product/ships-boats-floating-structures> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Ships boats & floating structures" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "ships-boats-floating-structures" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Ships boats & floating structures" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 111 .
+
+	<http://gss-data.org.uk/def/concept/product/air-spacecraft-related-machinery> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Air & spacecraft & related machinery" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "air-spacecraft-related-machinery" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Air & spacecraft & related machinery" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 112 .
+
+	<http://gss-data.org.uk/def/concept/product/railway-locomotives-rolling-stock> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Railway locomotives & rolling stock" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "railway-locomotives-rolling-stock" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Railway locomotives & rolling stock" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 113 .
+
+	<http://gss-data.org.uk/def/concept/product/military-fighting-vehicles> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Military fighting vehicles" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "military-fighting-vehicles" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Military fighting vehicles" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 114 .
+
+	<http://gss-data.org.uk/def/concept/product/transport-equipment-n-e-c> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Transport equipment n.e.c." ;
+		<http://www.w3.org/2004/02/skos/core#notation> "transport-equipment-n-e-c" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Transport equipment n.e.c." ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 115 .
+
+	<http://gss-data.org.uk/def/concept/product/jewellery-bijouterie-related-articles> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Jewellery bijouterie & related articles" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "jewellery-bijouterie-related-articles" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Jewellery bijouterie & related articles" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 116 .
+
+	<http://gss-data.org.uk/def/concept/product/musical-instruments> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Musical instruments" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "musical-instruments" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Musical instruments" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 117 .
+
+	<http://gss-data.org.uk/def/concept/product/sports-goods> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Sports goods" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "sports-goods" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Sports goods" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 118 .
+
+	<http://gss-data.org.uk/def/concept/product/games-toys> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Games & toys" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "games-toys" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Games & toys" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 119 .
+
+	<http://gss-data.org.uk/def/concept/product/medical-dental-instruments-supplies> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Medical & dental instruments & supplies" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "medical-dental-instruments-supplies" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Medical & dental instruments & supplies" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 120 .
+
+	<http://gss-data.org.uk/def/concept/product/manufactured-goods-n-e-c> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Manufactured goods n.e.c." ;
+		<http://www.w3.org/2004/02/skos/core#notation> "manufactured-goods-n-e-c" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Manufactured goods n.e.c." ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 121 .
+
+	<http://gss-data.org.uk/def/concept/product/electricity> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Electricity" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "electricity" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Electricity" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 122 .
+
+	<http://gss-data.org.uk/def/concept/product/manufactured-gas> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Manufactured gas" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "manufactured-gas" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Manufactured gas" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 123 .
+
+	<http://gss-data.org.uk/def/concept/product/waste> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Waste" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "waste" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Waste" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 124 .
+
+	<http://gss-data.org.uk/def/concept/product/waste-treatment-and-disposal-services> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Waste treatment and disposal services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "waste-treatment-and-disposal-services" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Waste treatment and disposal services" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 125 .
+
+	<http://gss-data.org.uk/def/concept/product/secondary-raw-materials> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Secondary raw materials" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "secondary-raw-materials" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Secondary raw materials" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 126 .
+
+	<http://gss-data.org.uk/def/concept/product/printed-matter> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Printed matter" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "printed-matter" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Printed matter" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 127 .
+
+	<http://gss-data.org.uk/def/concept/product/packaged-computer-software> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Packaged computer software" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "packaged-computer-software" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Packaged computer software" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 128 .
+
+	<http://gss-data.org.uk/def/concept/product/films-videos> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Films & videos" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "films-videos" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Films & videos" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 129 .
+
+	<http://gss-data.org.uk/def/concept/product/audio-recordings-printed-music> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Audio recordings & printed music" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "audio-recordings-printed-music" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Audio recordings & printed music" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 130 .
+
+	<http://gss-data.org.uk/def/concept/product/architectural-plans-drawing> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Architectural plans & drawing" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "architectural-plans-drawing" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Architectural plans & drawing" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 134 .
+
+	<http://gss-data.org.uk/def/concept/product/exposed-photographic-film> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Exposed photographic film" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "exposed-photographic-film" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Exposed photographic film" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 135 .
+
+	<http://gss-data.org.uk/def/concept/product/paintings-sculptures> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Paintings & sculptures" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "paintings-sculptures" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Paintings & sculptures" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 136 .
+
+	<http://gss-data.org.uk/def/concept/product/antiques-collections> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Antiques & collections" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "antiques-collections" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Antiques & collections" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 137 .
+
+	<http://gss-data.org.uk/def/concept/product/total-exports> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Total Exports" , "Total exports" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "total-exports" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Total Exports" , "Total exports" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 138 , 166 .
+
+	<http://gss-data.org.uk/def/concept/product/industrial-gases-inorganics> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Industrial Gases Inorganics" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "industrial-gases-inorganics" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Industrial Gases Inorganics" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 139 .
+
+	<http://gss-data.org.uk/def/concept/product/petrochemicals> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Petrochemicals" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "petrochemicals" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Petrochemicals" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 140 .
+
+	<http://gss-data.org.uk/def/concept/product/dyestuffs-agro-chemicals> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Dyestuffs Agro Chemicals" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "dyestuffs-agro-chemicals" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Dyestuffs Agro Chemicals" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 141 .
+
+	<http://gss-data.org.uk/def/concept/product/total-imports> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Total Imports" , "Total imports" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "total-imports" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Total Imports" , "Total imports" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 142 , 167 .
+
+	<http://gss-data.org.uk/def/concept/product/total-eu-exports> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Total EU Exports" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "total-eu-exports" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Total EU Exports" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 143 .
+
+	<http://gss-data.org.uk/def/concept/product/total-eu-imports> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Total EU Imports" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "total-eu-imports" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Total EU Imports" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 144 .
+
+	<http://gss-data.org.uk/def/concept/product/total-non-eu-exports> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Total Non EU Exports" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "total-non-eu-exports" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Total Non EU Exports" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 145 .
+
+	<http://gss-data.org.uk/def/concept/product/total-non-eu-imports> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Total Non EU Imports" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "total-non-eu-imports" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Total Non EU Imports" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 146 .
+
+	<http://gss-data.org.uk/def/concept/product/products-of-agriculture-forestry-fishing> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Products Of Agriculture Forestry Fishing" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "products-of-agriculture-forestry-fishing" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Products Of Agriculture Forestry Fishing" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 147 .
+
+	<http://gss-data.org.uk/def/concept/product/mining-quarrying> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Mining Quarrying" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "mining-quarrying" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Mining Quarrying" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 148 .
+
+	<http://gss-data.org.uk/def/concept/product/manufactured-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Manufactured Products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "manufactured-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Manufactured Products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 149 .
+
+	<http://gss-data.org.uk/def/concept/product/electricity-gas-steam-air-conditioning> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Electricity Gas Steam Air Conditioning" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "electricity-gas-steam-air-conditioning" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Electricity Gas Steam Air Conditioning" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 150 .
+
+	<http://gss-data.org.uk/def/concept/product/water-supply-sewerage-waste-management> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Water Supply Sewerage Waste Management" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "water-supply-sewerage-waste-management" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Water Supply Sewerage Waste Management" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 151 .
+
+	<http://gss-data.org.uk/def/concept/product/information-communication-services> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Information Communication Services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "information-communication-services" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Information Communication Services" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 152 .
+
+	<http://gss-data.org.uk/def/concept/product/professional-scientific-technical-services> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Professional Scientific Technical Services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "professional-scientific-technical-services" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Professional Scientific Technical Services" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 153 .
+
+	<http://gss-data.org.uk/def/concept/product/arts-entertainment-recreation> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Arts Entertainment Recreation" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "arts-entertainment-recreation" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Arts Entertainment Recreation" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 154 .
+
+	<http://gss-data.org.uk/def/concept/product/other-services> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other services" , "Other Services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-services" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other services" , "Other Services" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 155 , 193 .
+
+	<http://gss-data.org.uk/def/concept/product/glass-refractory-clay-other-porcelain-and-ceramic-stone-and-abrasive-products> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Glass Refractory Clay Other Porcelain And Ceramic Stone And Abrasive Products" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "glass-refractory-clay-other-porcelain-and-ceramic-stone-and-abrasive-products" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Glass Refractory Clay Other Porcelain And Ceramic Stone And Abrasive Products" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 156 .
+
+	<http://gss-data.org.uk/def/concept/product/fabricated-metal-products-excl-machinery-and-equipment-and-weapons-ammunition> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Fabricated Metal Products Excl Machinery And Equipment And Weapons Ammunition" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "fabricated-metal-products-excl-machinery-and-equipment-and-weapons-ammunition" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Fabricated Metal Products Excl Machinery And Equipment And Weapons Ammunition" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 157 .
+
+	<http://gss-data.org.uk/def/concept/product/other-transport-equipment> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other Transport Equipment" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-transport-equipment" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other Transport Equipment" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 158 .
+
+	<http://gss-data.org.uk/def/concept/product/food-beverages-and-tobacco> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Food, beverages and tobacco" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "food-beverages-and-tobacco" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Food, beverages and tobacco" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 159 .
+
+	<http://gss-data.org.uk/def/concept/product/basic-materials> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Basic materials" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "basic-materials" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Basic materials" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 160 .
+
+	<http://gss-data.org.uk/def/concept/product/oil> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Oil" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "oil" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Oil" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 161 .
+
+	<http://gss-data.org.uk/def/concept/product/other-fuels> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other fuels" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-fuels" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other fuels" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 162 .
+
+	<http://gss-data.org.uk/def/concept/product/semi-manufactured-goods> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Semi-manufactured goods" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "semi-manufactured-goods" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Semi-manufactured goods" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 163 .
+
+	<http://gss-data.org.uk/def/concept/product/finished-manufactured-goods> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Finished manufactured goods" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "finished-manufactured-goods" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Finished manufactured goods" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 164 .
+
+	<http://gss-data.org.uk/def/concept/product/unspecified-goods> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Unspecified goods" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "unspecified-goods" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Unspecified goods" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 165 .
+
+	<http://gss-data.org.uk/def/concept/product/total> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Total" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "total" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Total" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 168 .
+
+	<http://gss-data.org.uk/def/concept/product/manufacturing-and-maintenance-services> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Manufacturing and maintenance services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "manufacturing-and-maintenance-services" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Manufacturing and maintenance services" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 169 .
+
+	<http://gss-data.org.uk/def/concept/product/transport> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Transport" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "transport" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Transport" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 170 .
+
+	<http://gss-data.org.uk/def/concept/product/travel> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Travel" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "travel" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Travel" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 171 .
+
+	<http://gss-data.org.uk/def/concept/product/construction> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Construction" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "construction" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Construction" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 172 .
+
+	<http://gss-data.org.uk/def/concept/product/insurance-and-pension-services> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Insurance and pension services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "insurance-and-pension-services" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Insurance and pension services" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 173 .
+
+	<http://gss-data.org.uk/def/concept/product/financial> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Financial" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "financial" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Financial" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 174 .
+
+	<http://gss-data.org.uk/def/concept/product/intellectual-property> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Intellectual property" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "intellectual-property" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Intellectual property" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 175 .
+
+	<http://gss-data.org.uk/def/concept/product/telecommunication-computer-and-information-services> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Telecommunication, computer and information services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "telecommunication-computer-and-information-services" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Telecommunication, computer and information services" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 176 .
+
+	<http://gss-data.org.uk/def/concept/product/other-business> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other business" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-business" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other business" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 178 .
+
+	<http://gss-data.org.uk/def/concept/product/personal-cultural-and-recreational-services> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Personal, cultural and recreational services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "personal-cultural-and-recreational-services" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Personal, cultural and recreational services" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 179 .
+
+	<http://gss-data.org.uk/def/concept/product/government> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Government" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "government" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Government" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 180 .
+
+	<http://gss-data.org.uk/def/concept/product/primary-and-utilities> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Primary and utilities" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "primary-and-utilities" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Primary and utilities" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 181 .
+
+	<http://gss-data.org.uk/def/concept/product/manufacturing> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Manufacturing" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "manufacturing" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Manufacturing" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 182 .
+
+	<http://gss-data.org.uk/def/concept/product/wholesale-and-motor-trades> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Wholesale and motor trades" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "wholesale-and-motor-trades" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Wholesale and motor trades" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 184 .
+
+	<http://gss-data.org.uk/def/concept/product/retail-excluding-motor-trades> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Retail excluding motor trades" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "retail-excluding-motor-trades" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Retail excluding motor trades" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 185 .
+
+	<http://gss-data.org.uk/def/concept/product/transportation-and-storage> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Transportation and storage" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "transportation-and-storage" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Transportation and storage" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 186 .
+
+	<http://gss-data.org.uk/def/concept/product/accommodation-and-food-service-activities> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Accommodation and food service activities" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "accommodation-and-food-service-activities" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Accommodation and food service activities" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 187 .
+
+	<http://gss-data.org.uk/def/concept/product/information-and-communication> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Information and communication" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "information-and-communication" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Information and communication" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 188 .
+
+	<http://gss-data.org.uk/def/concept/product/financial-and-insurance-activities> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Financial and insurance activities" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "financial-and-insurance-activities" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Financial and insurance activities" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 189 .
+
+	<http://gss-data.org.uk/def/concept/product/real-estate-activities> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Real estate activities" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "real-estate-activities" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Real estate activities" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 190 .
+
+	<http://gss-data.org.uk/def/concept/product/professional-scientific-and-technical-activities> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Professional scientific and technical activities" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "professional-scientific-and-technical-activities" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Professional scientific and technical activities" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 191 .
+
+	<http://gss-data.org.uk/def/concept/product/administrative-and-support-service-activities> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Administrative and support service activities" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "administrative-and-support-service-activities" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Administrative and support service activities" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 192 .
+
+	<http://gss-data.org.uk/def/concept/product/all-industries> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "All industries" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "all-industries" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "All industries" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 194 .
+
+	<http://gss-data.org.uk/def/concept/product/non-manufacturing-production-services> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Non manufacturing production services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "non-manufacturing-production-services" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Non manufacturing production services" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 195 .
+
+	<http://gss-data.org.uk/def/concept/product/wholesale-and-motor-trade> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Wholesale and motor trade" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "wholesale-and-motor-trade" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Wholesale and motor trade" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 196 .
+
+	<http://gss-data.org.uk/def/concept/product/transport-and-storage> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Transport and storage" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "transport-and-storage" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Transport and storage" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 197 .
+
+	<http://gss-data.org.uk/def/concept/product/accommodation-and-food-services> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Accommodation and Food Services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "accommodation-and-food-services" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Accommodation and Food Services" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 198 .
+
+	<http://gss-data.org.uk/def/concept/product/professional-scientific-and-technical-activities-real-estate> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Professional scientific and technical activities and Real estate" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "professional-scientific-and-technical-activities-real-estate" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Professional scientific and technical activities and Real estate" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 199 .
+
+	<http://gss-data.org.uk/def/concept/product/production-a-f> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Production A-F" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "production-a-f" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Production A-F" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 201 .
+
+	<http://gss-data.org.uk/def/concept/product/business-based-professional-services-l-n> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Business-based professional services L-N" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "business-based-professional-services-l-n" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Business-based professional services L-N" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 202 .
+
+	<http://gss-data.org.uk/def/concept/product/other-services-g-k-o-s> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other services G-K and O-S" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "other-services-g-k-o-s" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other services G-K and O-S" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 203 .
+
+	<http://gss-data.org.uk/def/concept/product/all-services> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "all services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "all-services" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "all services" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/product> ;
+		<http://www.w3.org/ns/ui#sortPriority> 204 .
+}

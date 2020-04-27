@@ -1,0 +1,105 @@
+@prefix : <http://api.stardog.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://gss-data.org.uk/graph/vocab/price-classifications> {
+<http://gss-data.org.uk/def/concept-scheme/price-classifications> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:label "Price Classifications"@en ;
+	<http://purl.org/dc/terms/title> "Price Classifications"@en ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://gss-data.org.uk/def/concept/price-classifications/CP> , <http://gss-data.org.uk/def/concept/price-classifications/DEF> , <http://gss-data.org.uk/def/concept/price-classifications/VM> , <http://gss-data.org.uk/def/concept/price-classifications/CVM> , <http://gss-data.org.uk/def/concept/price-classifications/PYP> , <http://gss-data.org.uk/def/concept/price-classifications/CYP> , <http://gss-data.org.uk/def/concept/price-classifications/IDEF> , <http://gss-data.org.uk/def/concept/price-classifications/KQ> , <http://gss-data.org.uk/def/concept/price-classifications/PYQ> , <http://gss-data.org.uk/def/concept/price-classifications/CYQ> , <http://gss-data.org.uk/def/concept/price-classifications/CRP> , <http://gss-data.org.uk/def/concept/price-classifications/PRP> , <http://gss-data.org.uk/def/concept/price-classifications/CVMRE> ;
+	<http://www.w3.org/2004/02/skos/core#member> <http://gss-data.org.uk/def/concept/price-classifications/CP> , <http://gss-data.org.uk/def/concept/price-classifications/DEF> , <http://gss-data.org.uk/def/concept/price-classifications/VM> , <http://gss-data.org.uk/def/concept/price-classifications/CVM> , <http://gss-data.org.uk/def/concept/price-classifications/PYP> , <http://gss-data.org.uk/def/concept/price-classifications/CYP> , <http://gss-data.org.uk/def/concept/price-classifications/IDEF> , <http://gss-data.org.uk/def/concept/price-classifications/KQ> , <http://gss-data.org.uk/def/concept/price-classifications/PYQ> , <http://gss-data.org.uk/def/concept/price-classifications/CYQ> , <http://gss-data.org.uk/def/concept/price-classifications/CRP> , <http://gss-data.org.uk/def/concept/price-classifications/PRP> , <http://gss-data.org.uk/def/concept/price-classifications/CVMRE> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/CP> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Current prices" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "CP" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Current prices" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/DEF> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Deflator" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "DEF" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Deflator" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/VM> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Volume measure" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "VM" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Volume measure" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/CVM> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Chained volume measure" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "CVM" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Chained volume measure" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/PYP> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Previous year's prices" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "PYP" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Previous year's prices" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/CYP> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Current year's prices" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "CYP" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Current year's prices" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/IDEF> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Implied deflator" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "IDEF" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Implied deflator" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/KQ> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Constant quantity" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "KQ" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Constant quantity" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/PYQ> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Previous year's quantity" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "PYQ" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Previous year's quantity" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/CYQ> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Current year's quantity" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "CYQ" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Current year's quantity" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/CRP> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Current replacement cost" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "CRP" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Current replacement cost" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/PRP> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Previous year's replacement cost" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "PRP" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Previous year's replacement cost" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+
+<http://gss-data.org.uk/def/concept/price-classifications/CVMRE> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "CVM Re-referenced" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "CVMRE" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/price-classifications> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CVM Re-referenced" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/price-classifications> .
+}

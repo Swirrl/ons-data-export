@@ -1,0 +1,110 @@
+@prefix : <http://api.stardog.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://gss-data.org.uk/graph/vocab/hmrc-industry-groups> {
+<http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:label "HMRC Industry Groups"@en ;
+	<http://purl.org/dc/terms/title> "HMRC Industry Groups"@en ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#member> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-1> , <http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-2> , <http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-3> , <http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-4> , <http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-5> , <http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-6> , <http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-7> , <http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-8> , <http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-9> , <http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-10> , <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> , <http://gss-data.org.uk/def/concept/hmrc-industry-groups/unknown> .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Agriculture and Food" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "group-1" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Agriculture and Food" ;
+	<http://www.w3.org/ns/ui#sortPriority> 1 .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Mining, Petroleum products and Waste" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "group-2" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mining, Petroleum products and Waste" ;
+	<http://www.w3.org/ns/ui#sortPriority> 2 .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Chemicals" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "group-3" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Chemicals" ;
+	<http://www.w3.org/ns/ui#sortPriority> 3 .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Pharmaceuticals" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "group-4" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pharmaceuticals" ;
+	<http://www.w3.org/ns/ui#sortPriority> 4 .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Electronic and Electrical equipment" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "group-5" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Electronic and Electrical equipment" ;
+	<http://www.w3.org/ns/ui#sortPriority> 5 .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Machinery and equipment n.e.s" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "group-6" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Machinery and equipment n.e.s" ;
+	<http://www.w3.org/ns/ui#sortPriority> 6 .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-7> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Motor vehicles, transport equipment (excluding aerospace)" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "group-7" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Motor vehicles, transport equipment (excluding aerospace)" ;
+	<http://www.w3.org/ns/ui#sortPriority> 7 .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-8> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Aerospace and related machinery" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "group-8" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aerospace and related machinery" ;
+	<http://www.w3.org/ns/ui#sortPriority> 8 .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-9> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Other manufacturing" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "group-9" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Other manufacturing" ;
+	<http://www.w3.org/ns/ui#sortPriority> 9 .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/group-10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Services" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "group-10" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Services" ;
+	<http://www.w3.org/ns/ui#sortPriority> 10 .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Total" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "total" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Total" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/ns/ui#sortPriority> 11 .
+
+<http://gss-data.org.uk/def/concept/hmrc-industry-groups/unknown> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Unknown" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "unknown" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/hmrc-industry-groups/total> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/hmrc-industry-groups> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Unknown" ;
+	<http://www.w3.org/ns/ui#sortPriority> 12 .
+}

@@ -1,0 +1,126 @@
+@prefix : <http://api.stardog.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://gss-data.org.uk/graph/vocab/ons-functional-category> {
+<http://gss-data.org.uk/def/concept-scheme/ons-functional-category> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:label "ONS Functional Category"@en ;
+	<http://purl.org/dc/terms/title> "ONS Functional Category"@en ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#member> <http://gss-data.org.uk/def/concept/ons-functional-category/all> , <http://gss-data.org.uk/def/concept/ons-functional-category/primary-utilities> , <http://gss-data.org.uk/def/concept/ons-functional-category/manufacturing> , <http://gss-data.org.uk/def/concept/ons-functional-category/transport> , <http://gss-data.org.uk/def/concept/ons-functional-category/travel> , <http://gss-data.org.uk/def/concept/ons-functional-category/construction> , <http://gss-data.org.uk/def/concept/ons-functional-category/wholesale-motor> , <http://gss-data.org.uk/def/concept/ons-functional-category/retail> , <http://gss-data.org.uk/def/concept/ons-functional-category/information-communication> , <http://gss-data.org.uk/def/concept/ons-functional-category/real-estate> , <http://gss-data.org.uk/def/concept/ons-functional-category/insurance-pension> , <http://gss-data.org.uk/def/concept/ons-functional-category/financial> , <http://gss-data.org.uk/def/concept/ons-functional-category/administrative-support> , <http://gss-data.org.uk/def/concept/ons-functional-category/other> .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/all> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "All categories" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "all" ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "All categories" ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/ns/ui#sortPriority> 1 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/primary-utilities> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Primary and utilities" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "primary-utilities" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Primary and utilities" ;
+	<http://www.w3.org/ns/ui#sortPriority> 2 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/manufacturing> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Manufacturing" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "manufacturing" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Manufacturing" ;
+	<http://www.w3.org/ns/ui#sortPriority> 3 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/transport> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Transport" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "transport" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Transport" ;
+	<http://www.w3.org/ns/ui#sortPriority> 4 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/travel> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Travel" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "travel" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Travel" ;
+	<http://www.w3.org/ns/ui#sortPriority> 5 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/construction> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Construction" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "construction" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Construction" ;
+	<http://www.w3.org/ns/ui#sortPriority> 6 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/wholesale-motor> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Wholesale and motor trades" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "wholesale-motor" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Wholesale and motor trades" ;
+	<http://www.w3.org/ns/ui#sortPriority> 7 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/retail> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Retail (excluding motor trades)" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "retail" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Retail (excluding motor trades)" ;
+	<http://www.w3.org/ns/ui#sortPriority> 8 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/information-communication> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Information and communication" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "information-communication" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Information and communication" ;
+	<http://www.w3.org/ns/ui#sortPriority> 9 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/real-estate> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Real estate, professional, scientific and technical" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "real-estate" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Real estate, professional, scientific and technical" ;
+	<http://www.w3.org/ns/ui#sortPriority> 10 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/insurance-pension> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Insurance and pension services" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "insurance-pension" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Insurance and pension services" ;
+	<http://www.w3.org/ns/ui#sortPriority> 11 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/financial> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Financial" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "financial" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Financial" ;
+	<http://www.w3.org/ns/ui#sortPriority> 12 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/administrative-support> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Administrative and support services" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "administrative-support" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Administrative and support services" ;
+	<http://www.w3.org/ns/ui#sortPriority> 13 .
+
+<http://gss-data.org.uk/def/concept/ons-functional-category/other> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rdfs:label "Other services" ;
+	<http://www.w3.org/2004/02/skos/core#notation> "other" ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/ons-functional-category/all> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/ons-functional-category> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Other services" ;
+	<http://www.w3.org/ns/ui#sortPriority> 14 .
+}

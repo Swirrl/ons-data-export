@@ -148,9 +148,10 @@ stardog data add --named-graph http://gss-data.org.uk/graph/vocab/product  --for
 
 
 
+stardog data export --named-graph http://gss-data.org.uk/def/concept-scheme/sdmx-bop  --format TURTLE http://localhost:7820/pmd-data /Users/jenw/Documents/GitHub/ons-data-export/data-issues/missing-reference-data/ref/sdmx-bop.ttl
 
 
-
+stardog data add --named-graph http://gss-data.org.uk/graph/vocab/sdmx-bop  --format TURTLE cogs-staging-2020-04-23 /Users/jenw/Documents/GitHub/ons-data-export/data-issues/missing-reference-data/ref/sdmx-bop.ttl
 
 
 

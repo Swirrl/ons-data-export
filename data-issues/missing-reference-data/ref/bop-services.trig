@@ -1,0 +1,98 @@
+@prefix : <http://api.stardog.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://gss-data.org.uk/graph/vocab/bop-services> {
+	<http://gss-data.org.uk/def/concept-scheme/bop-services> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+		rdfs:label "BOP Services"@en ;
+		<http://purl.org/dc/terms/title> "BOP Services"@en ;
+		<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#member> <http://gss-data.org.uk/def/concept/bop-services/0> , <http://gss-data.org.uk/def/concept/bop-services/1+2> , <http://gss-data.org.uk/def/concept/bop-services/3> , <http://gss-data.org.uk/def/concept/bop-services/4> , <http://gss-data.org.uk/def/concept/bop-services/5> , <http://gss-data.org.uk/def/concept/bop-services/6> , <http://gss-data.org.uk/def/concept/bop-services/7> , <http://gss-data.org.uk/def/concept/bop-services/8> , <http://gss-data.org.uk/def/concept/bop-services/9> , <http://gss-data.org.uk/def/concept/bop-services/10> , <http://gss-data.org.uk/def/concept/bop-services/11> , <http://gss-data.org.uk/def/concept/bop-services/12> .
+
+	<http://gss-data.org.uk/def/concept/bop-services/0> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Total" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "0" ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Total" ;
+		<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://gss-data.org.uk/def/concept-scheme/bop-services> .
+
+	<http://gss-data.org.uk/def/concept/bop-services/1+2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Manufacturing and maintenance services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "1+2" ;
+		<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Manufacturing and maintenance services" .
+
+	<http://gss-data.org.uk/def/concept/bop-services/3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Transport" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "3" ;
+		<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Transport" .
+
+	<http://gss-data.org.uk/def/concept/bop-services/4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Travel" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "4" ;
+		<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Travel" .
+
+	<http://gss-data.org.uk/def/concept/bop-services/5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Construction" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "5" ;
+		<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Construction" .
+
+	<http://gss-data.org.uk/def/concept/bop-services/6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Insurance and pension services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "6" ;
+		<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Insurance and pension services" .
+
+	<http://gss-data.org.uk/def/concept/bop-services/7> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Financial" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "7" ;
+		<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Financial" .
+
+	<http://gss-data.org.uk/def/concept/bop-services/8> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Intellectual property" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "8" ;
+		<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Intellectual property" .
+
+	<http://gss-data.org.uk/def/concept/bop-services/9> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Telecommunication, computer and information services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "9" ;
+		<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Telecommunication, computer and information services" .
+
+	<http://gss-data.org.uk/def/concept/bop-services/10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Other business" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "10" ;
+		<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Other business" .
+
+	<http://gss-data.org.uk/def/concept/bop-services/11> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Personal, cultural and recreational services" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "11" ;
+		<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Personal, cultural and recreational services" .
+
+	<http://gss-data.org.uk/def/concept/bop-services/12> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+		rdfs:label "Government" ;
+		<http://www.w3.org/2004/02/skos/core#notation> "12" ;
+		<http://www.w3.org/2004/02/skos/core#broader> <http://gss-data.org.uk/def/concept/bop-services/0> ;
+		<http://www.w3.org/2004/02/skos/core#inScheme> <http://gss-data.org.uk/def/concept-scheme/bop-services> ;
+		<http://www.w3.org/2004/02/skos/core#prefLabel> "Government" .
+}
