@@ -1,0 +1,65 @@
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix pmdcat: <http://publishmydata.com/pmdcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pmdds: <http://publishmydata.com/def/dataset#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://gss-data.org.uk/graph/vocab/sdmx-bop-metadata> {
+    <http://gss-data.org.uk/vocabs/sdmx-bop/cl_area-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Area code list Catalog Record" ;
+      dcterms:issued "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/sdmx-bop-metadata> .
+    <http://gss-data.org.uk/vocabs/sdmx-bop/cl_area> a pmdcat:Dataset ;
+      rdfs:label "Area code list"@en ;
+      dcterms:title "Area code list"@en ;
+      dcterms:created "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/sdmx-bop> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/sdmx-bop/cl_area> .
+    <http://gss-data.org.uk/def/concept-scheme/sdmx-bop/cl_area> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/sdmx-bop/cl_area-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/reference-times-metadata> {
+    <http://gss-data.org.uk/vocabs/reference-period-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Reference Period Catalog Record" ;
+      dcterms:issued "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/reference-times-metadata> .
+    <http://gss-data.org.uk/vocabs/reference-period> a pmdcat:Dataset ;
+      rdfs:label "Reference Period"@en ;
+      dcterms:title "Reference Period"@en ;
+      dcterms:created "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/reference-times> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/reference-period> .
+    <http://gss-data.org.uk/def/concept-scheme/reference-period> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/reference-period-catalog-record> .
+}
+
+<http://gss-data.org.uk/graph/vocab/measure-types-metadata> {
+    <http://gss-data.org.uk/vocabs/measure-types-catalog-record> a dcat:CatalogRecord ;
+      rdfs:label "Measure Types Catalog Record" ;
+      dcterms:issued "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      pmdcat:metadataGraph <http://gss-data.org.uk/graph/vocab/measure-types-metadata> .
+    <http://gss-data.org.uk/vocabs/measure-types> a pmdcat:Dataset ;
+      rdfs:label "Measure Types"@en ;
+      dcterms:title "Measure Types"@en ;
+      dcterms:created "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      dcterms:modified "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      dcterms:issued "2020-04-27T10:03:44.133+01:00"^^xsd:dateTime ;
+      pmdcat:graph <http://gss-data.org.uk/graph/vocab/measure-types> ;
+      pmdcat:datasetContents <http://gss-data.org.uk/def/concept-scheme/measure-types> .
+    <http://gss-data.org.uk/def/concept-scheme/measure-types> a pmdcat:ConceptScheme .
+    <http://gss-data.org.uk/catalog/vocabularies> dcat:record <http://gss-data.org.uk/vocabs/measure-types-catalog-record> .
+}
