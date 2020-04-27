@@ -12,10 +12,11 @@ A number of these issues can be addressed by fixing or adjusting configuraion op
 
 ### Dataset extraction details
 
-Extraction Date | Details | Imported to PMD4 Date
--- | --
-2020-04-23 | https://github.com/Swirrl/ons-data-export/issues/33 | 2020-04-27
-2020-04-16 | - | -
-2020-04-08 | - | -
-2020-03-30 | - | -
-2020-03-12 | - | -
+
+| Extraction Date | Details | Live on PMD4|
+|--|--|--|
+|2020-04-23  | https://github.com/Swirrl/ons-data-export/issues/33  | 2020-04-27 |
+2020-04-16 | - | - |
+2020-04-08 | - | - |
+2020-03-30 | - | - |
+2020-03-12 | - | - |
