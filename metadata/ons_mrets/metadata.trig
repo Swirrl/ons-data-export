@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gss: <http://gss-data.org.uk/def/metadata/> .
+
+<http://gss-data.org.uk/graph/ons_mrets-metadata> {
+
+<http://gss-data.org.uk/data/ons_mrets-catalog-entry> 
+
+	<http://publishmydata.com/pmdcat#markdownDescription> """The UK Trade release includes a number of different published elements showing trade in goods and services data on a balance of payments basis. These elements include:
+
+- Trade Bulletin – explaining recent trends
+- Publication tables – see data catalogue entry
+- All Country dataset - see data catalogue entry
+- Trade in goods by country and commodity datasets - see data catalogue entry
+- UK Trade time series – more detailed Trade data
+- Records sheet – showing key records
+- Revisions – showing top level revisions from previous publication
+- Response Rates – Trade in Goods response rated from Intrastat as also published by HMRC
+
+Data is collated from several data sources:
+
+ - Trade in Goods – mainly from HMRC with additional sources to include data that is not shown in HMRC data as it is on an economic ownership basis only. These sources include the ONS’ International Trade in Services Survey (ITIS) and BofE
+ - Trade in Services – Data comes from 28 data sources with a mixture of admin and survey data from ONS and external sources. Examples include ITIS, International Passenger Survey (IPS), Civil Aviation Authority (CAA) and Chamber of Shipping (CoS).
+
+**Aggregation**
+Goods – Product/Country
+Services – Total only
+
+**Classification**
+Goods - SITC
+
+**Related information**
+
+UK Trade data is also available:
+
+- HMRC OTS data, published on the same day as UK Trade. Data here are not on a Balance of Payments basis nor is it seasonally adjusted.
+- Other ONS UK Trade releases. It is worth noting here that revision periods between different Trade releases may differ
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>;
+
+	gss:recommendedUsage """UK Trade publication is the most up to date and detailed view of UK Trade on a balance of payments basis. Data shows top level Trade (goods and services) and is shown on a nominal (current price) and volume (chained volume measure) basis. More granular detail of country and commodity for goods is also available.
+
+Key features of the data:
+- It is seasonally adjusted (note that this is the case for all but the country and commodity datasets)
+- It is on an economic ownership basis
+- Data does not match the HMRC OTS data
+- Data aligns to other ONS National Account Outputs (note that this may differ where the revision periods differ and additional data has been taken on at a later stage) 
+- The revision periods differ by release and align to the National Accounts revision timetable. 
+
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+  
+  gss:strengths """- Most up to date and detailed view of UK Trade on a balance of payments basis.
+- Timely trade in goods data at a granular (country and commodity) level.
+
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+  gss:weaknesses """- Does not include granular data on trade in services.
+- As monthly release, data published can be subject to revision in later publications.
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+  gss:source "Mix of admin and survey" ;
+
+  gss:status "Official Statistics" ;
+
+  <http://www.w3.org/ns/dcat#keyword> "business", "trade" .
+
+}
