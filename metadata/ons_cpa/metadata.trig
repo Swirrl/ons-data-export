@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gss: <http://gss-data.org.uk/def/metadata/> .
+
+<http://gss-data.org.uk/graph/ons_cpa-metadata> {
+
+<http://gss-data.org.uk/data/ons_cpa-catalog-entry> 
+
+	<http://publishmydata.com/pmdcat#markdownDescription> """Dataset provides granular level of trade in goods on a classification of product by activity basis (CPA). 
+
+This provides quarterly estimates of exports and imports split by EU and Non-EU, back to 1998. This release provides additional information to the monthly UK Trade release for trade in goods.
+
+Goods data are collated mainly using data from HMRC, with additional sources used to convert the data from a “movement of goods” basis (the basis upon which HMRC publish their Overseas Trade Statistics) to an “economic ownership”, or balance of payments, basis, that is, to include goods which change economic ownership but which don’t cross borders, and to exclude goods that have crossed the border but without a change in economic ownership. These sources include the ONS’ International Trade in Services (ITIS) survey and surveys conducted by the Bank of England.
+
+**Aggregation**
+Product of Activity and region (EU/non-EU)
+
+**Classification**
+CPA (Classification of Product by Activity)
+
+**Related information**
+Other UK Trade data is also available:
+- HMRC OTS data, published on the same day as monthly UK Trade. Data here are not on a Balance of Payments basis nor is it seasonally adjusted
+- Other ONS UK Trade releases, such as the monthly bulletin and trade in goods by industry. It is worth noting here that revision periods between different Trade releases may differ  
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>;
+
+	gss:recommendedUsage """Data are the most up to date view of UK trade in goods by CPA. 
+
+Key features of the data:
+- It is seasonally adjusted (note that this is the case for all but the country and commodity datasets)
+- It is on an economic ownership basis
+- Data does not match the HMRC OTS data
+- Data aligns to other ONS National Account Outputs (note that this may differ where the revision periods differ and additional data has been taken on at a later stage) 
+- The revision periods differ by release and align to the National Accounts revision timetable.
+
+**Example of use by BEIS**
+CPA is a trade classification that matches goods to the industry, defined by SIC code, that produced them (for example clothing to the clothing manufacturing sector and cars to the car manufacturing sector).  This allows trade in goods to be reported on a consistent basis as industry (SIC) based measures such as turnover, employment and gross value added. This is reported to a detailed (3-digit) level.
+ 
+This differs from “trade by industry” which counts the trade of goods by the industry of the business that reported the export/import them. The main reason for this is that retailers and wholesalers export a wide range of goods which are the products of other industries and much more so on the import side for sale to households. Also, producers of a given good are less likely to be importers of such goods. 
+ 
+Trade by CPA allows users to gauge how reliant different sectors are on exports as market for their goods and conversely the level of foreign competition from imports or how reliant the UK is on imported goods to satisfy demand for goods of a given sector.
+
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+  
+  gss:strengths """This is the only release available of trade in goods data by CPA and is provided annually and quarterly for the whole time series (back to 1998)
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+  gss:weaknesses """Data are published on a quarterly basis only and does not provide specific country data (only EU/non-EU)
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+  gss:source "Mix of admin and survey" ;
+
+  gss:status "Official Statistics" ;
+
+  <http://www.w3.org/ns/dcat#keyword> "business", "trade" .
+
+}
