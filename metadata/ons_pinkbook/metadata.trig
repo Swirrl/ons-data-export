@@ -2,9 +2,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix gss: <http://gss-data.org.uk/def/metadata/> .
 
-<http://gss-data.org.uk/graph/ons-pink-book-chapter-3-metadata> {
+<http://gss-data.org.uk/graph/gss_data/trade/ons_pinkbook-metadata> {
 
-<http://gss-data.org.uk/data/ons-pink-book-chapter-3-catalog-entry> 
+<http://gss-data.org.uk/data/gss_data/trade/ons_pinkbook-catalog-entry> 
 
 	<http://publishmydata.com/pmdcat#markdownDescription> """
 	- The UK Balance of Payments measures economic transactions between economic entities resident in the UK and the rest of the world. It also draws a series of balances between inward and outward transactions, provides a net flow of transactions between UK residents and the rest of the world, and reports how that flow is funded.
