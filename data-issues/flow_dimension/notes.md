@@ -2,11 +2,17 @@
 PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
 PREFIX qb:      <http://purl.org/linked-data/cube#>
 PREFIX pmdqb:   <http://publishmydata.com/def/qb/>
-
+# DELETE {
+#     GRAPH <http://gss-data.org.uk/graph/components> {
+#         ?dim qb:codeList ?code_list 
+#     }
+# }
 SELECT *
+WHERE
 {
     GRAPH <http://gss-data.org.uk/graph/components> {
-        <http://gss-data.org.uk/def/dimension/flow> ?p ?o 
+        BIND(<http://gss-data.org.uk/def/concept-scheme/migration-directions> AS ?code_list)
+        ?dim qb:codeList ?code_list 
     }
 }
 ```

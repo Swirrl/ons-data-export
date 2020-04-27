@@ -10,11 +10,19 @@ PREFIX dcat:    <http://www.w3.org/ns/dcat#>
 PREFIX pmdds:   <http://publishmydata.com/def/dataset#>   
 PREFIX pmdcat:  <http://publishmydata.com/pmdcat#>
 
-SELECT ?dim ?lbl (COUNT(?lbl) AS ?lbl_count) {
-
+SELECT ?dim ?lbl1 ?lbl2 {
         ?dim a qb:DimensionProperty .
-        ?dim rdfs:label ?lbl 
+        ?dim rdfs:label ?lbl1, ?lbl2 .
+        FILTER (?lbl1 != ?lbl2)
         
 }
-GROUP BY ?dim ?lbl 
-HAVING (?lbl_count > 1)
+ORDER BY ?dim ?lbl1
+
+# SELECT ?dim ?lbl (COUNT(?lbl) AS ?lbl_count) {
+
+#         ?dim a qb:DimensionProperty .
+#         ?dim rdfs:label ?lbl 
+        
+# }
+# GROUP BY ?dim ?lbl 
+# HAVING (?lbl_count > 1)
