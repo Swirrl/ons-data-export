@@ -15,6 +15,7 @@ A number of these issues can be addressed by fixing or adjusting configuraion op
 
 | Extraction Date | Details | Live on PMD4|
 |--|--|--|
+|2020-04-27  | Addition of dataset `ons_cpa` - "UK trade in goods by classification of product by activity time series"  | 2020-04-27 |
 |2020-04-23  | https://github.com/Swirrl/ons-data-export/issues/33  | 2020-04-27 |
 2020-04-16 | - | - |
 2020-04-08 | - | - |
