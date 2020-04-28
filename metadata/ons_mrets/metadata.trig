@@ -2,9 +2,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix gss: <http://gss-data.org.uk/def/metadata/> .
 
-<http://gss-data.org.uk/graph/ons_mrets-metadata> {
+<http://gss-data.org.uk/graph/gss_data/trade/ons_mrets-metadata> {
 
-<http://gss-data.org.uk/data/ons_mrets-catalog-entry> 
+<http://gss-data.org.uk/data/gss_data/trade/ons_mrets-catalog-entry> 
 
 	<http://publishmydata.com/pmdcat#markdownDescription> """The UK Trade release includes a number of different published elements showing trade in goods and services data on a balance of payments basis. These elements include:
 

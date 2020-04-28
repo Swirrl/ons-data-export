@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gss: <http://gss-data.org.uk/def/metadata/> .
+
+<http://gss-data.org.uk/graph/gss_data/trade/ons-international-exports-of-services-from-subnational-areas-of-the-uk-metadata> {
+
+  <http://gss-data.org.uk/data/gss_data/trade/ons-international-exports-of-services-from-subnational-areas-of-the-uk-catalog-entry>
+
+  	<http://publishmydata.com/pmdcat#markdownDescription> """Subnational Service Exports break down the national-level UK Balance of Payments to create estimates of exports of services at smaller geographic levels.
+
+This experimental approach was first created in 2016 and has been significantly developed through the ONS Devolution Programme. Work is still ongoing, however most significant developments have been implemented as of [the release on 11 September 2019](https://www.ons.gov.uk/businessindustryandtrade/internationaltrade/articles/estimatingthevalueofserviceexportsabroadfromdifferentpartsoftheuk/2017).
+
+Results are released as an analytical article supported by a collection of spreadsheets. Outputs currently include breakdowns by:
+- Industry section by NUTS1 region
+- Broad industry grouping by NUTS2 area
+- Total value by NUTS3 area
+- Industry section by ‘joint authority’ (English Combined Authorities, Scottish and Welsh City Deals)
+
+The tables listed also include breakdowns by destination of export split as trade to EU countries versus trade to all non-EU countries.
+
+These outputs are broadly comparable with HMRC’s [Regional Trade Statistics](https://www.gov.uk/government/statistics/regional-trade-in-goods-statistics-dis-aggregated-by-smaller-geographical-areas-2017) which cover imports and exports of goods. Although created on different methodologies, the fundamental approach is similar. Users are advised to use caution when comparing results.
+
+Work is underway to create complementary values of imports of services at the subnational level. This is not expected to be ready until Summer 2020 at the earliest.
+
+Data is collated from several data sources:
+- International Trade in Services survey
+- Inter-Departmental Business Register
+- Business Register and Employment Survey
+- Bank of England FISIM and FEES
+- UK Balance of Payments
+- International Passenger Survey
+- Broad Economy Sales and Exports Statistics (Northern Ireland)
+
+
+**Aggregation**
+Services,
+by industry,
+by smaller geography,
+by destination (EU/non-EU)
+
+**Classification**
+SIC 2007
+
+**Related information**
+
+[UK Balance of Payments, The Pink Book: 2018](https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/unitedkingdombalanceofpaymentsthepinkbook/2018)
+
+[HMRC Regional Trade (in goods) Statistics](https://www.gov.uk/government/collections/uk-overseas-trade-statistics-and-regional-trade-statistics)
+
+[UK trade in services by industry, country and service type: 2016 to 2017](https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/uktradeinservicesbyindustrycountryandservicetype/2016to2017)
+
+
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>;
+
+  	gss:recommendedUsage """This is the only ONS output covering services trade at the subnational level. Results are consistent with values in the UK Balance of Payments, shown in nominal (current price) terms.
+
+Results are presented on an industry basis, not a product or commodity basis.
+
+Data is presented on an annual (calendar year) basis so should not suffer from seasonality.
+
+Caution should be used when comparing with HMRC’s goods statistics as they are produced using different methodologies, in particular noting that subnational services are constrained to match the UK Balance of Payments whereas subnational goods are not constrained.
+
+These results are still experimental and are subject to change. Such change may be due to changes in source data, or changes in methodological approach, as development work continues.
+
+    """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+    
+    gss:strengths """- Only source of subnational service trade
+- Consistent with UK Balance of Payments
+- Includes EU/non-EU split
+- Calculated on an industry basis, so comparable with business and job statistics
+
+    """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+    gss:weaknesses """- Long lag from reference period
+- Reliability reduces with each successive breakdown
+- Some broad assumptions have to be used due to lack of better sources
+- Not fully comparable with goods statistics
+- Cannot directly compare against outputs produced on a commodity basis
+    """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+    gss:source "Mix of admin and survey" ;
+
+    gss:status "Experimental Statistics" ;
+
+    <http://www.w3.org/ns/dcat#keyword> "business", "trade" .
+
+}
