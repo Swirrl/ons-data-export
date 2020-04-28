@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gss: <http://gss-data.org.uk/def/metadata/> .
+
+<http://gss-data.org.uk/graph/gss_data/trade/hmrc_ots_cn8-metadata> {
+
+<http://gss-data.org.uk/data/gss_data/trade/hmrc_ots_cn8-catalog-entry> 
+
+	<http://publishmydata.com/pmdcat#markdownDescription> """The Overseas Trade Statistics (OTS) are a detailed dataset covering the UK's trade in goods at a disaggregated country and product level. They are published from trade declarations, providing access to both aggregated and detailed data for over 9,000 commodities and 250 partner countries.
+
+Trade statistics are regarded as an important economic indicator of the performance of the UK. Export data in particular is used as an indicator of the state of health of the UK manufacturing industry and a key element of the UK Balance of Payments figures produced by the ONS. 
+
+Required under EU legislation by Eurostat to monitor trade and establish policies.
+
+EU legislation requires a passive confidentiality system which means that some detailed data may be disclosive. Traders can apply to have their data suppressed in such cases.
+
+Providing a legal gateway for information sharing is in place, access to non-suppressed microdata or customised analysis can be requested via uktradeinfo@hmrc.gov.uk.  
+ 
+Further information can be found at the following link: [Methodology paper for the Overseas Trade Statistics](https://www.uktradeinfo.com/Statistics/OverseasTradeStatistics/AboutOverseastradeStatistics/Pages/PoliciesandMethodologies.aspx)
+
+**Aggregation**
+Country / Commodity / Monthly / Trade flow / Ports
+
+**Classification**
+Compiled using commodity codes from the UN Tariff (HS Nomenclature) and the Intrastat Classification Nomenclature (ICN). Some data products presented using a different form of classification (e.g. Standard International Trade Classification or SITC).
+
+**Related information**
+UK trade in goods data is also available via Eurostat’s ‘Comext’ which contains trade in goods exports and imports data for all 28 EU member states. Data is provided in Euros (€).
+
+The UN’s ‘Comtrade’ website provides trade in goods exports and imports data for all countries. Data is provided in US dollar (US$)
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource>;
+
+	gss:recommendedUsage """This data can be used to analyse UK trade in goods exported and imported from other countries, with detailed commodity and country breakdowns. 
+By accessing the ‘Build your own tables’ page of the uktradeinfo.com website, users are able to drill down into the vast OTS data to create their own detailed data tables, with the option to focus on imports/exports with particular countries or commodities.
+
+Before interrogating the Overseas Trade Statistics (OTS) data, it is important to be familiar with the data fields and matters affecting their presentation. Please see [understanding our data for more information](https://www.uktradeinfo.com/Statistics/OverseasTradeStatistics/AboutOverseastradeStatistics/UnderstandingOTSData/Pages/UnderstandingOTSData.aspx).
+
+Common misconceptions about the data include:
+- Assumption that it is seasonally adjusted
+- Assumption it includes trade in services
+- A misinterpretation of how we suppress data- thinking it is nil trade, rather than suppressed
+- Misunderstanding of EU data being classified as arrivals and dispatches in some outputs
+- Misunderstanding that OTS should match Balance Of Payments (BOP) data
+- Not aware of the OTS methodology detail and some of the changes that have occurred to OTS data over the past several years (e.g. General/Special trade split, Below threshold trade methodology change).
+- Misunderstanding that it is based on change of ownership, when OTS is based on the physical movement across the boundary.
+- Not all goods are cleared at ports.
+
+The OTS methodology paper (July 2016) covers all aspects of statistics compilation – data sources, classifications and definitions, quality assurance, publications and governance. It is a useful companion to the trade data, providing the definitions and methodologies on which the data are based. The paper is available [here](https://www.uktradeinfo.com/Statistics/OverseasTradeStatistics/AboutOverseastradeStatistics/Documents/OTSMethodology_paper.pdf).
+
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+  
+  gss:strengths """OTS data provides detailed UK trade in goods data from 1996 to present, enabling the UK to monitor the state of UK exports and imports with partner countries. OTS data is key for numerous publications, including the Overseas trade statistics, Regional trade statistics, ONS’ UK Trade and Balance of Payments
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+  gss:weaknesses """- EU data obtained through the Intrastat survey does not include detailed trade in goods data for small businesses below the Intrastat thresholds, with their trade being estimated. 
+- This data has not been adjusted for seasonality and is in nominal prices
+- Does not include trade in services
+- Break in time series: from May 2016 month trade-in-goods statistics compiled using the ‘Special Trade’ system. Prior to May 2016 they used the ‘General Trade’ system.
+  """^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+
+  gss:source "Admin / Survey data" ;
+  gss:source "EU trade data is collected from VAT registered businesses through the Intrastat survey." ;
+  gss:source "Non-EU trade data is obtained through Customs declarations via the CHIEF system" ;
+
+  gss:status "National Statistics" ;
+
+  <http://www.w3.org/ns/dcat#keyword> "business", "trade", "hmrc" .
+
+}
