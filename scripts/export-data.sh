@@ -68,12 +68,9 @@ if [[ -n "$DATASET_GRAPH_URI" &&
         echo
         echo "<${DATASET_GRAPH_URI}> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://publishmydata.com/def/drafter/ManagedGraph> . 
         <${DATASET_GRAPH_URI}> <http://publishmydata.com/def/drafter/isPublic> true . 
-        <${DATASET_GRAPH_URI}> <http://purl.org/dc/terms/issued> \"${NOW}\"^^xsd:dateTime .
-        <${DATASET_GRAPH_URI}> <http://purl.org/dc/terms/modified> \"${NOW}\"^^xsd:dateTime ." > "${OUTPUT_DIR}/drafter-data-${DATASET_SLUG}.ttl"
+        " > "${OUTPUT_DIR}/drafter-data-${DATASET_SLUG}.ttl"
         echo "<${DATASET_GRAPH_URI}-metadata> a <http://publishmydata.com/def/drafter/ManagedGraph> . 
-        <${DATASET_GRAPH_URI}-metadata> <http://publishmydata.com/def/drafter/isPublic> true . 
-        <${DATASET_GRAPH_URI}-metadata> <http://purl.org/dc/terms/issued> \"${NOW}\"^^xsd:dateTime .
-        <${DATASET_GRAPH_URI}-metadata> <http://purl.org/dc/terms/modified> \"${NOW}\"^^xsd:dateTime ." > "${OUTPUT_DIR}/drafter-metadata-${DATASET_SLUG}.ttl"
+        <${DATASET_GRAPH_URI}-metadata> <http://publishmydata.com/def/drafter/isPublic> true . " > "${OUTPUT_DIR}/drafter-metadata-${DATASET_SLUG}.ttl"
 
     else 
         echo "Skipping data and drafter RDF creation as this script run updates metadata only"
