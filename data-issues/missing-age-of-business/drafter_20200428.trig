@@ -1,0 +1,8 @@
+
+<http://publishmydata.com/graphs/drafter/drafts> {
+    <http://gss-data.org.uk/graph/vocab/age-of-business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://publishmydata.com/def/drafter/ManagedGraph> ;
+     <http://publishmydata.com/def/drafter/isPublic> true .
+
+    <http://gss-data.org.uk/graph/vocab/age-of-business-metadata>  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://publishmydata.com/def/drafter/ManagedGraph> ;
+     <http://publishmydata.com/def/drafter/isPublic> true .
+}
