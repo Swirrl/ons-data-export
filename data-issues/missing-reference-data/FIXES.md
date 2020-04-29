@@ -154,8 +154,10 @@ stardog data export --named-graph http://gss-data.org.uk/def/concept-scheme/sdmx
 stardog data add --named-graph http://gss-data.org.uk/graph/vocab/sdmx-bop  --format TURTLE cogs-staging-2020-04-23 /Users/jenw/Documents/GitHub/ons-data-export/data-issues/missing-reference-data/ref/sdmx-bop.ttl
 
 
+## "Combined Nomenclature, 2012" (hmrc_rts product dimension values)
+stardog data export --named-graph https://trade.ec.europa.eu/def/cn_2012 --format TURTLE http://localhost:7820/pmd-data /Users/jenw/Documents/GitHub/ons-data-export/data-issues/missing-reference-data/ref/cn_2012.ttl
 
-
+stardog data add cogs-staging /Users/jenw/Documents/GitHub/ons-data-export/data-issues/missing-reference-data/ref/cn_2012.trig 
 
 
 
