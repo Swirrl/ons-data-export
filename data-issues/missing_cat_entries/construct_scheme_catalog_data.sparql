@@ -18,7 +18,7 @@ CONSTRUCT {
                 rdfs:label ?record_lbl ;
                 dcterms:issued ?now ;
                 dcterms:modified ?now ;
-                foaf:primaryTopic ?catalog_id ;
+                foaf:primaryTopic ?cat_entry ;
                 pmdcat:metadataGraph ?scheme_metadata_graph .
             
             ?cat_entry a pmdcat:Dataset ;
@@ -49,7 +49,7 @@ WHERE {
   BIND( CONCAT(?lbl, " Catalog Record") AS ?record_lbl)
     BIND(NOW() AS ?now)
 
-  BIND(IRI(CONCAT(STR(?scheme), "-metadata")) AS ?scheme__metadata_graph)
+  BIND(IRI(CONCAT(STR(?scheme), "-metadata")) AS ?scheme_metadata_graph)
   FILTER NOT EXISTS {
     ?cat_entry pmdcat:datasetContents ?scheme .
   }

@@ -13,7 +13,6 @@
   <http://gss-data.org.uk/vocabs/reference-period-catalog-record> a <http://www.w3.org/ns/dcat#CatalogRecord> ;
     <http://purl.org/dc/terms/issued> "2020-03-24T16:10:11.098Z"^^xsd:dateTime ;
     <http://purl.org/dc/terms/modified>"2019-11-18T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-    <http://xmlns.com/foaf/0.1/primaryTopic> <http://gss-data.org.uk/vocabs/flow-directions> ;
     <http://publishmydata.com/pmdcat#metadataGraph> <http://gss-data.org.uk/graph/vocab/reference-times-metadata> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Record of Reference Times in Vocabulary Catalog" ;
     <http://xmlns.com/foaf/0.1/primaryTopic> <http://gss-data.org.uk/vocabs/reference-period-catalog-entry> ;

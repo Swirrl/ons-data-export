@@ -1,0 +1,50 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://gss-data.org.uk/graph/vocab/measurement-units-metadata> {
+    <http://gss-data.org.uk/vocabs/measurement-units-catalog-record> foaf:primaryTopic <http://gss-data.org.uk/vocab/measurement-units> , <http://gss-data.org.uk/vocabs/measurement-units> .
+}
+
+<http://gss-data.org.uk/graph/vocab/sdmx-bop-metadata> {
+    <http://gss-data.org.uk/vocabs/sdmx-bop/cl_area-catalog-record> foaf:primaryTopic <http://gss-data.org.uk/vocabs/sdmx-bop/cl_area> .
+}
+
+<http://gss-data.org.uk/graph/vocab/measure-types-metadata> {
+    <http://gss-data.org.uk/vocabs/measure-types-catalog-record> foaf:primaryTopic <http://gss-data.org.uk/vocabs/measure-types> .
+}
+
+<http://gss-data.org.uk/graph/vocab/age-of-business-metadata> {
+    <http://gss-data.org.uk/vocabs/age-of-business-catalog-record> foaf:primaryTopic <http://gss-data.org.uk/vocabs/age-of-business> .
+}
+
+<http://gss-data.org.uk/graph/vocab/pink-book-services-metadata> {
+    <http://gss-data.org.uk/vocabs/pink-book-services-catalog-record> foaf:primaryTopic <http://gss-data.org.uk/vocabs/pink-book-services> .
+}
+
+<http://gss-data.org.uk/graph/vocab/ons-abs-trades-metadata> {
+    <http://gss-data.org.uk/vocabs/ons-abs-trades-catalog-record> foaf:primaryTopic <http://gss-data.org.uk/vocabs/ons-abs-trades> .
+}
+
+<http://gss-data.org.uk/graph/vocab/product-metadata> {
+    <http://gss-data.org.uk/vocabs/product-catalog-record> foaf:primaryTopic <http://gss-data.org.uk/vocabs/product> .
+}
+
+<http://gss-data.org.uk/graph/vocab/itis-services-metadata> {
+    <http://gss-data.org.uk/vocabs/itis-services-catalog-record> foaf:primaryTopic <http://gss-data.org.uk/vocabs/itis-services> .
+}
+
+<http://gss-data.org.uk/graph/vocab/ons-trade-areas-itis-metadata> {
+    <http://gss-data.org.uk/vocabs/ons-trade-areas-itis-catalog-record> foaf:primaryTopic <http://gss-data.org.uk/vocabs/ons-trade-areas-itis> .
+}
+
+<http://gss-data.org.uk/graph/vocab/ons-functional-category-metadata> {
+    <http://gss-data.org.uk/vocabs/ons-functional-category-catalog-record> foaf:primaryTopic <http://gss-data.org.uk/vocabs/ons-functional-category> .
+}
+
+<http://gss-data.org.uk/graph/vocab/cpav2008-metadata> {
+    <http://stamina-project.org/codes/cpav2008/cpa-catalog-record> foaf:primaryTopic <http://stamina-project.org/codes/cpav2008/cpa> .
+}
+
+<http://gss-data.org.uk/graph/vocab/cn_2012-metadata> {
+    <https://trade.ec.europa.eu/def/cn_2012-catalog-record> foaf:primaryTopic <https://trade.ec.europa.eu/def/cn_2012> .
+}
