@@ -18,8 +18,8 @@ CONSTRUCT {
 
         ?record a dcat:CatalogRecord ;
                 rdfs:label ?record_lbl ;
-                dcterms:issued ?now ;
-                dcterms:modified ?now ;
+                # dcterms:issued ?now ;
+                # dcterms:modified ?now ;
                 foaf:primaryTopic ?catalog_id ;
                 pmdcat:metadataGraph ?metadata_graph .
 
@@ -27,8 +27,8 @@ CONSTRUCT {
                 rdfs:label ?lbl ;
                 dcterms:title ?title ;
                 dcterms:created ?now ;                 
-                dcterms:modified ?now ;
-                dcterms:issued ?now ;
+                # dcterms:modified ?now ;
+                # dcterms:issued ?now ;
                 pmdcat:graph ?concept_graph ;
                 pmdcat:datasetContents ?concept_scheme .
 
@@ -55,7 +55,7 @@ CONSTRUCT {
     BIND( IRI ( CONCAT(STR(?concept_graph), "-metadata")) AS ?metadata_graph)
     
     BIND( CONCAT(?lbl, " Catalog Record") AS ?record_lbl)
-    BIND(NOW() AS ?now)
+    # BIND(NOW() AS ?now)
     
 
     ?concept_scheme 
