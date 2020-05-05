@@ -1,6 +1,6 @@
 PREFIX qb:      <http://purl.org/linked-data/cube#>
 
-SELECT ?codelist
+SELECT DISTINCT ?codelist
 {
     # BIND(<http://gss-data.org.uk/data/ons-pink-book-chapter-3> AS ?cube)        
     ?cube qb:structure/qb:component/qb:dimension/qb:codeList ?codelist
