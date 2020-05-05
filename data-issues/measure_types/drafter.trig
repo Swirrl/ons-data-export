@@ -1,8 +1,0 @@
-
-<http://publishmydata.com/graphs/drafter/drafts> {
-
-     <http://gss-data.org.uk/graph/vocab/measure-types> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://publishmydata.com/def/drafter/ManagedGraph> ;
-     <http://publishmydata.com/def/drafter/isPublic> true .
-     
-
-}

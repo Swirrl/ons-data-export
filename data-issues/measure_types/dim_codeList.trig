@@ -1,3 +1,0 @@
-<http://gss-data.org.uk/graph/components> {
-	<http://purl.org/linked-data/cube#measureType> <http://purl.org/linked-data/cube#codeList> <http://gss-data.org.uk/def/concept-scheme/measure-types> .
-}

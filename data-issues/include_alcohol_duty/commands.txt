@@ -1,4 +1,0 @@
-stardog data export --named-graph http://gss-data.org.uk/graph/gss_data/health/hmrc_alcohol_bulletin --format TRIG cogs-data-2020-04-16 ~/Documents/GitHub/ons-data-export/data-issues/include_alcohol_duty/hmrc_alcohol_bulletin_data.trig
-
-stardog data export --named-graph http://gss-data.org.uk/graph/gss_data/health/hmrc_alcohol_bulletin-metadata --format TRIG cogs-data-2020-04-16 ~/Documents/GitHub/ons-data-export/data-issues/include_alcohol_duty/hmrc_alcohol_bulletin_metadata.trig
-
