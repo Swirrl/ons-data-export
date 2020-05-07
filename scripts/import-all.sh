@@ -1,18 +1,18 @@
 #!/bin/bash
 
 DB_TO=$1
-FILENAME=$2
+FILEPATH=$2
 
 
 if [[ -n "$DB_TO" && 
-  -n "$FILENAME" ]]; then
+  -n "$FILEPATH" ]]; then
 
   	export WORKING_DIR=/Users/jenw/Documents/GitHub/ons-data-export
 	export MUTTNIK_DIR=/Users/jenw/Documents/GitHub/muttnik
 
 	cd $MUTTNIK_DIR
 
-	DATASET_FILE="${WORKING_DIR}/${FILENAME}"
+	DATASET_FILE="${FILEPATH}"
     
     echo "Looking up dataset details from $DATASET_FILE"
     echo
@@ -106,6 +106,6 @@ else
     echo script error: There appears to be an error a required variable was not set.    
     echo "usage:"
     echo "import-all.sh <db-to> <filename>"
-    echo "e.g. ./import-all.sh cogs-staging datasets_to_import.csv"
+    echo "e.g. ./import-all.sh cogs-staging /path/to/datasets.csv"
 
 fi

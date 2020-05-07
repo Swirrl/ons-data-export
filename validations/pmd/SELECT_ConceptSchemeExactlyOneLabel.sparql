@@ -2,16 +2,17 @@ PREFIX qb:      <http://purl.org/linked-data/cube#>
 PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
 PREFIX ui:      <http://www.w3.org/ns/ui#>
 
-SELECT ?scheme ?count {
+SELECT ?scheme ?count ?lbl  {
     {
-        SELECT ?scheme (COUNT(?lbl) AS ?count) 
+        SELECT ?scheme ?lbl (COUNT(?lbl) AS ?count) 
         WHERE {
         { 
             ?scheme a skos:ConceptScheme .
-            ?scheme rdfs:label ?lbl 
+            ?scheme rdfs:label ?lbl, ?lbl2
+            FILTER(?lbl != ?lbl2)
         }
         }
-        GROUP BY ?scheme
+        GROUP BY ?scheme ?lbl 
         HAVING (?count > 1)
     }
     UNION {

@@ -2,7 +2,7 @@
 # set -e #exit on error
 
 DB_FROM=$1
-FILENAME=$2
+FILEPATH=$2
 
 export GRAPH_PREFIX=http://gss-data.org.uk/graph
 export CUBE_PREFIX=http://gss-data.org.uk/data
@@ -11,10 +11,10 @@ export WORKING_DIR=/Users/jenw/Documents/GitHub/ons-data-export
 
 
 if [[ -n "$DB_FROM" && 
-  -n "$FILENAME" ]]; then
+  -n "$FILEPATH" ]]; then
 
   	cd $WORKING_DIR
-    DATASET_FILE="${WORKING_DIR}/${FILENAME}"
+    DATASET_FILE="${FILEPATH}"
     
     echo "Looking up dataset details from $DATASET_FILE"
     echo
@@ -67,5 +67,5 @@ else
     echo "usage:"
     echo "http://localhost:9820/gss_alpha "
      echo "export-all.sh <db-from> <filename>"
-    echo "e.g. ./export-all.sh http://localhost:9820/gss_alpha datasets_to_export.csv"
+    echo "e.g. ./export-all.sh http://localhost:7820/pmd-data /path/to/datasets.csv"
 fi
