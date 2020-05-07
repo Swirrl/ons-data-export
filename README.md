@@ -15,6 +15,7 @@ A number of these issues can be addressed by fixing or adjusting configuraion op
 
 | Extraction Date | Details | Live on PMD4|
 |--|--|--|
+| 2020-05-07 | Added "UK trade in goods by business characteristics 2018 - data tables", "International exports of services from subnational areas of the UK", "Individual country data (goods) on a monthly basis". See [#53](https://github.com/Swirrl/ons-data-export/issues/53) and [#52](https://github.com/Swirrl/ons-data-export/issues/) | 2020-05-07 |
 |2020-05-04  | Complete refresh of all datasets on cogs-staging with those listed on ONS Trade Dataset Family list. Details: https://github.com/Swirrl/ons-data-export/issues/50  | 2020-05-05 |
 | 2020-04-28 | Added Overseas Trade Statistics (CN8) and REGIONAL TRADE STATISTICS that were [missing](https://github.com/Swirrl/ons-data-export/issues/39) from 2020-04-23 complete refresh of data | 2020-04-29 |
 |2020-04-28  | [Extract ons-fdi from PMD3](https://github.com/Swirrl/ons-data-export/issues/39#issuecomment-620008485). Include [old copy of hmrc_alcohol_bulletin](https://github.com/Swirrl/ons-data-export/issues/39#issuecomment-620055256). Added [extra metadata](https://github.com/Swirrl/ons-data-export/issues/40)  | 2020-04-28 |
