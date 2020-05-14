@@ -20,7 +20,7 @@ if [[ -n "$DB_FROM" ]]; then
     echo $CMD_DATA_EXPORT
     eval $CMD_DATA_EXPORT
 
-    CMD_COMP_EXPORT="./scripts/export-components.sh ${DB_FROM} ${DATASET_URI} ${DATASET_SLUG}"
+    CMD_COMP_EXPORT="./scripts/export-components.sh ${DB_FROM} ${GRAPH_URI} ${DATASET_URI} ${DATASET_SLUG}"
     echo $CMD_COMP_EXPORT
     eval $CMD_COMP_EXPORT
 

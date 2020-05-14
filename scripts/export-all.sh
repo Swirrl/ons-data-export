@@ -43,7 +43,7 @@ if [[ -n "$DB_FROM" &&
         echo $CMD_DATA_EXPORT
         eval $CMD_DATA_EXPORT
 
-        CMD_COMP_EXPORT="./scripts/export-components.sh ${DB_FROM} ${CLEAN_DS} ${CLEAN_SLUG}"
+        CMD_COMP_EXPORT="./scripts/export-components.sh ${DB_FROM} ${CLEAN_GRAPH} ${CLEAN_DS} ${CLEAN_SLUG}"
         echo $CMD_COMP_EXPORT
         eval $CMD_COMP_EXPORT
 

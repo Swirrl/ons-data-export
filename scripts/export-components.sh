@@ -3,14 +3,16 @@ set -e #exit on error
 
 
 DB_FROM=$1
-DATASET_URI=$2
-DATASET_SLUG=$3
+DATASET_GRAPH_URI=$2
+DATASET_URI=$3
+DATASET_SLUG=$4
 
 export WORKING_DIR=/Users/jenw/Documents/GitHub/ons-data-export
 export OUTPUT_DIR=${WORKING_DIR}/export/${DATASET_SLUG}
 export MUTTNIK_DIR=/Users/jenw/Documents/GitHub/muttnik
 
 if [[ -n "$DATASET_URI" && 
+   -n "$DATASET_GRAPH_URI" && 
   -n "$DB_FROM" ]]; then
 
     cd $WORKING_DIR
@@ -21,25 +23,27 @@ if [[ -n "$DATASET_URI" &&
   	echo
 
 
-    components_output=$OUTPUT_DIR/components.trig
+    dimensions_output=$OUTPUT_DIR/dimensions.trig
+    attributes_output=$OUTPUT_DIR/attributes.trig
+    measures_output=$OUTPUT_DIR/measures.trig
     
-    stardog query -b cube="<$DATASET_URI>" -f TRIG $DB_FROM $WORKING_DIR/queries/construct-components.sparql > $components_output
+    stardog query -b cube="<$DATASET_URI>" cube_graph="<$DATASET_GRAPH_URI>" p="<http://purl.org/linked-data/cube#dimension>" -f TRIG $DB_FROM $WORKING_DIR/queries/construct-component-properties.sparql > $dimensions_output
 
-          NOW=$(date +"%FT%TZ")
-          echo $NOW
+    stardog query -b cube="<$DATASET_URI>" cube_graph="<$DATASET_GRAPH_URI>" p="<http://purl.org/linked-data/cube#attribute>" -f TRIG $DB_FROM $WORKING_DIR/queries/construct-component-properties.sparql > $attributes_output
+
+    stardog query -b cube="<$DATASET_URI>" cube_graph="<$DATASET_GRAPH_URI>" p="<http://purl.org/linked-data/cube#measure>" -f TRIG $DB_FROM $WORKING_DIR/queries/construct-component-properties.sparql > $measures_output
+
+
           GRAPH_URI="http://gss-data.org.uk/graph/components"
 
          # DRAFTER
           echo "Creating triples to make components public in drafter"
           echo
           echo "<${GRAPH_URI}> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://publishmydata.com/def/drafter/ManagedGraph> . 
-          <${GRAPH_URI}> <http://publishmydata.com/def/drafter/isPublic> true . 
-          <${GRAPH_URI}> <http://purl.org/dc/terms/issued> \"${NOW}\"^^xsd:dateTime .
-          <${GRAPH_URI}> <http://purl.org/dc/terms/modified> \"${NOW}\"^^xsd:dateTime ." > "${OUTPUT_DIR}/drafter-components.ttl"
+          <${GRAPH_URI}> <http://publishmydata.com/def/drafter/isPublic> true ." > "${OUTPUT_DIR}/drafter-components.ttl"
+
           echo "<${GRAPH_URI}-metadata> a <http://publishmydata.com/def/drafter/ManagedGraph> . 
-          <${GRAPH_URI}-metadata> <http://publishmydata.com/def/drafter/isPublic> true . 
-          <${GRAPH_URI}-metadata> <http://purl.org/dc/terms/issued> \"${NOW}\"^^xsd:dateTime .
-          <${GRAPH_URI}-metadata> <http://purl.org/dc/terms/modified> \"${NOW}\"^^xsd:dateTime ." > "${OUTPUT_DIR}/drafter-components-metadata.ttl"
+          <${GRAPH_URI}-metadata> <http://publishmydata.com/def/drafter/isPublic> true . " > "${OUTPUT_DIR}/drafter-components-metadata.ttl"
           
 
 
@@ -50,6 +54,6 @@ if [[ -n "$DATASET_URI" &&
 else
     echo script error: There appears to be an error a required variable was not set.    
     echo "usage:"
-    echo "export-components.sh <db-from> <dataset-uri> <dataset-slug>"
-    echo "e.g. ./export-components.sh http://localhost:9820/gss_alpha http://gss-data.org.uk/data/ons-pink-book-chapter-3 ons-pink-book-chapter-3"
+    echo "export-components.sh <db-from> <dataset-graph-uri> <dataset-uri> <dataset-slug>"
+    echo "e.g. ./export-components.sh http://localhost:7820/pmd-data http://gss-data.org.uk/graph/gss_data/trade/hmrc_rts http://gss-data.org.uk/data/gss_data/trade/hmrc_rts hmrc_rts"
 fi
