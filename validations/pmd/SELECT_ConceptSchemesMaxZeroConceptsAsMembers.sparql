@@ -10,4 +10,4 @@ SELECT ?scheme
         ?scheme skos:member ?concept .
     }
 }
-GROUP BY ?scheme
+# GROUP BY ?scheme
