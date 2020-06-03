@@ -27,11 +27,11 @@ if [[ -n "$DATASET_URI" &&
     attributes_output=$OUTPUT_DIR/attributes.trig
     measures_output=$OUTPUT_DIR/measures.trig
     
-    stardog query -b cube="<$DATASET_URI>" cube_graph="<$DATASET_GRAPH_URI>" p="<http://purl.org/linked-data/cube#dimension>" -f TRIG $DB_FROM $WORKING_DIR/queries/construct-component-properties.sparql > $dimensions_output
+    stardog query -b cube="<$DATASET_URI>" cube_graph="<$DATASET_GRAPH_URI>" -f TRIG $DB_FROM $WORKING_DIR/queries/construct-dimensions.sparql > $dimensions_output
 
-    stardog query -b cube="<$DATASET_URI>" cube_graph="<$DATASET_GRAPH_URI>" p="<http://purl.org/linked-data/cube#attribute>" -f TRIG $DB_FROM $WORKING_DIR/queries/construct-component-properties.sparql > $attributes_output
+    stardog query -b cube="<$DATASET_URI>" cube_graph="<$DATASET_GRAPH_URI>" -f TRIG $DB_FROM $WORKING_DIR/queries/construct-attributes.sparql > $attributes_output
 
-    stardog query -b cube="<$DATASET_URI>" cube_graph="<$DATASET_GRAPH_URI>" p="<http://purl.org/linked-data/cube#measure>" -f TRIG $DB_FROM $WORKING_DIR/queries/construct-component-properties.sparql > $measures_output
+    stardog query -b cube="<$DATASET_URI>" cube_graph="<$DATASET_GRAPH_URI>" -f TRIG $DB_FROM $WORKING_DIR/queries/construct-measures.sparql > $measures_output
 
 
           GRAPH_URI="http://gss-data.org.uk/graph/components"

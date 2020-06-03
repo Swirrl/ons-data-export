@@ -19,11 +19,10 @@ CONSTRUCT {
 {
     # BIND(<http://gss-data.org.uk/data/gss_data/trade/ons-uk-trade-in-services> AS ?cube)
     # BIND(<http://gss-data.org.uk/graph/gss_data/trade/ons-uk-trade-in-services> AS ?cube_graph)
-    # BIND(<http://purl.org/linked-data/cube#dimension> AS ?p)
     GRAPH ?cube_graph {
             ?cube a qb:DataSet .
             ?cube qb:structure/qb:component ?comp_spec .
-            ?comp_spec ?p ?comp_prop .
+            ?comp_spec qb:measure ?comp_prop .
     }
     
     GRAPH ?prop_graph {
