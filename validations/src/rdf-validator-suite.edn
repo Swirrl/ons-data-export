@@ -1,1 +1,8 @@
-{:cogs ["swirrl/validations/cogs/ObservationsHaveMeasureValueOrMarker.sparql"]}
+{:cogs-whole {
+  				:import [:pmd4]}
+ :cogs-db {
+  				:import [:pmd-qb]
+						:exclude [:pmd-qb/ic17]
+						:tests [{:source "swirrl/validations/cogs/ObservationsHaveMeasureValueOrMarker.sparql"
+															:type :sparql
+															:name "ObservationsHaveMeasureValueOrMarker"}]}}
