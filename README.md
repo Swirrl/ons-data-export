@@ -15,6 +15,8 @@ A number of these issues can be addressed by fixing or adjusting configuraion op
 
 | Extraction Date | Details | Live on PMD4|
 |--|--|--|
+| 2020-06-11 | Updated Quarterly National Accounts (ons_bop| 2020-06-17 |
+| 2020-06-03 | Updated 19 datasets - [#60](https://github.com/Swirrl/ons-data-export/issues/60)| 2020-06-04 |
 | 2020-05-18 | Added 7 datasets for "UK Economic Accounts; balance of payments" - [#56](https://github.com/Swirrl/ons-data-export/issues/56)| 2020-05-18 |
 | 2020-05-14 | Updated 14 datasets - see [#54](https://github.com/Swirrl/ons-data-export/issues/54)| 2020-05-14 |
 | 2020-05-07 | Added "UK trade in goods by business characteristics 2018 - data tables", "International exports of services from subnational areas of the UK", "Individual country data (goods) on a monthly basis". See [#53](https://github.com/Swirrl/ons-data-export/issues/53) and [#52](https://github.com/Swirrl/ons-data-export/issues/) | 2020-05-07 |
